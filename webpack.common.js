@@ -140,27 +140,13 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       },
-      // Header для Theory
-      {
-        path: path.join(__dirname, './src/partials/header.html'),
-        location: 'body',
-        template_filename: 'Theory.html',
-        priority: 'high'
-      },
-      // Header для Practice
-      {
-        path: path.join(__dirname, './src/partials/header.html'),
-        location: 'body',
-        template_filename: 'Practice.html',
-        priority: 'high'
-      },
-      // Header для About_Us
-      {
-        path: path.join(__dirname, './src/partials/header.html'),
-        location: 'body',
-        template_filename: 'About_Us.html',
-        priority: 'high'
-      }
+      // прилипающий хедер на будущее
+      //  {
+      //   path: path.join(__dirname, './src/partials/header.html'),
+      //   location: 'body',
+      //   template_filename: '*',
+      //   priority: 'replace'
+      // }
     ])
 
 
