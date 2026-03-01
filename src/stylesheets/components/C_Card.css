@@ -1,0 +1,34 @@
+/* Grid container for cards */
+.C_Card {
+        width: 100%;
+        display: grid;
+        /* three equal columns by default */
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        row-gap: 46px;
+        column-gap: 20px;
+        align-items: stretch;
+        justify-items: stretch;
+        align-self: stretch;
+}
+
+/* Ensure the mount node fills its parent */
+#cards-root {
+    width: 100%;
+}
+
+.C_Card.is-collapsed > .M_Card:nth-child(n + 5) {
+  display: none;
+}
+
+/* For medium screens (>=745px and <=1080px) show 3 per row => hide from 4th */
+@media (min-width: 745px) and (max-width: 1080px) {
+  .C_Card.is-collapsed > .M_Card:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+/* For small screens (<745px) do not collapse (show all) */
+
+.W_Cards.is-expanded .M_CardsChevron {
+  display: none;
+}

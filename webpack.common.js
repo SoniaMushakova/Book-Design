@@ -1,0 +1,176 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
+const webpack = require('webpack')
+const path = require('path')
+
+module.exports = {
+  entry: {
+    page: './src/page.js', //на страницах где нужен css
+    index: './src/index.jsx', //на страницах где я использую своим компоненты jsx
+    M_Card: './src/javascript/M_Card.jsx',
+    A_Chips: './src/javascript/A_Chips.jsx',
+    A_CardText: './src/javascript/A_CardText.jsx',
+    cardsChevron: './src/javascript/cardsChevron.js'
+  },
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'docs')
+    // clean: true
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/i,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
+      },
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader'
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[hash][ext][query]'
+        }
+      },
+      {
+        test: /\.(ttf|otf|woff|woff2)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]'
+        }
+      }
+    ]
+  },
+  plugins: [
+    new MiniCssExtractPlugin(),
+
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'src/images',
+          to: 'images',
+          noErrorOnMissing: true
+        }
+      ]
+    }),
+
+    // Landing page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/index.html',
+      filename: './index.html',
+      chunks: ['page', 'index', 'A_CardText', 'cardsChevron'] // было index
+    }),
+
+    // Internal pages
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/page.html',
+      filename: './pages/page.html',
+      chunks: ['page', 'M_Card']
+    }),
+
+    // Theory page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Theory.html',
+      filename: './pages/Theory.html',
+      chunks: ['page', 'index', 'A_CardText']
+    }),
+
+    // Practice page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Practice.html',
+      filename: './pages/Practice.html',
+      chunks: ['page', 'index', 'A_CardText']
+    }),
+
+    // About Us page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/About_Us.html',
+      filename: './pages/About_Us.html',
+      chunks: ['page']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Main.html',
+      filename: './pages/Main.html',
+      chunks: ['page']
+    }),
+
+    // Partials
+    new HtmlWebpackPartialsPlugin([
+      // analytics
+      {
+        path: path.join(__dirname, './src/partials/analytics.html'),
+        location: 'analytics',
+        template_filename: '*',
+        priority: 'replace'
+      },
+      // Header для Main
+      {
+        path: path.join(__dirname, './src/partials/navbar.html'),
+        location: 'navbar',
+        template_filename: '*',
+        priority: 'replace'
+      },
+      // Header для Theory
+      {
+        path: path.join(__dirname, './src/partials/header.html'),
+        location: 'body',
+        template_filename: 'Theory.html',
+        priority: 'high'
+      },
+      // Header для Practice
+      {
+        path: path.join(__dirname, './src/partials/header.html'),
+        location: 'body',
+        template_filename: 'Practice.html',
+        priority: 'high'
+      },
+      // Header для About_Us
+      {
+        path: path.join(__dirname, './src/partials/header.html'),
+        location: 'body',
+        template_filename: 'About_Us.html',
+        priority: 'high'
+      }
+    ])
+
+
+  ],
+  optimization: {
+    minimizer: [new CssMinimizerPlugin()]
+  },
+  resolve: {
+    fallback: {
+      stream: require.resolve('stream-browserify')
+    }
+  }
+}

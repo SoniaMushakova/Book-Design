@@ -1,0 +1,51 @@
+/* Chips */
+/* for A_Chips.jsx */
+
+.A_Chips {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 999px;
+  background: var(--grey);
+  color: var(--black-light);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease;
+  font-size: var(--font-size-button);
+  line-height: 1;
+  border: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .A_Chips:hover {
+    background: var(--green);
+    color: var(--white);
+  }
+}
+
+.A_Chips:focus {
+  outline: 2px solid rgba(0,0,0,0.12);
+  outline-offset: 2px;
+}
+
+.A_Chips--active,
+.A_Chips:active {
+  background: var(--green);
+  color: var(--white);
+  transform: translateY(1px);
+}
+
+.ChipsList {
+  width: 100%;
+  max-width: var(--main-container, 1100px);
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 22px;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+/* MainPage Sections */

@@ -1,0 +1,63 @@
+:root {
+
+  /* COLORS */
+  --white: #FFFAF1;
+  --white-dark: #F2EDE5;
+  --green: #1FAE62;
+  --orange: #FF711F;
+  --black: #3B3B3B;
+  --black-light: #7C7C7C;
+  --grey: #EAEAEA;
+
+  /* FONTS */
+  --font-family-base: 'BrutalType', sans-serif;
+
+  --font-size-header: 14px;
+  --font-size-h1: 52px;
+  --font-size-h2: 44px;
+  --font-size-h2-number: 44px;
+  --font-size-intro: 24px;
+  --font-size-h3: 36px;
+  --font-size-h4: 18px;
+
+  --font-size-body: 18px;
+  --font-size-caption: 18px;
+
+  --font-size-card-heading: 24px;
+  --font-size-card-text: 16px;
+
+  --line-height-card-text: 22px;
+  --line-height-h2: 52px;
+  --line-height-intro: 32px;
+  
+
+  /* TEXT LINE HEIGHT */
+
+  /* sizes */
+  --main-container: calc(100% - 120px);
+  /*--main-container: 100%; */
+  --gap-100-section: 52px;
+
+  --card-border-radius: 30px;
+  --card-horisontal-paddings: 8px;
+  --card-image-border-radius: calc(var(--card-border-radius) - var(--card-horisontal-paddings));
+}
+
+/* 
+@media (min-width: 1728px) {
+
+}
+
+@media (min-width: 1376px) {
+    
+}
+
+@media (min-width: 834px) {
+    
+}
+
+@media (min-width: 375px) {
+    
+}
+*/
+

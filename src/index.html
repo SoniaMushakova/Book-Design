@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Book design tutorial</title>
+    <analytics></analytics>
+  </head>
+
+  <body class="index">
+    <!-- что из хедера оборачивать в nav? какое свойство задать контейнеру nav?-->
+    <navbar></navbar>
+    <img class="fullscreen-image" src="images/mainPage-S-cover.svg">
+    <main>
+
+      <!-- 0 Chips -->
+      <section class="W_Section">
+        <h1 style="width: 640px; text-align: center;">Здесь есть все, что нужно знать о книгах</h1>
+        <div id="chips2-root"></div>
+        <a class="button" href="./pages/Theory.html">Начать чтение</a>
+      </section>
+
+      <img class="fullscreen-image" src="images/mainPage-S-banner.svg">
+      
+      <!-- 1 Theory -->
+      <section class="W_Section">
+
+        <div class="W_SectionGrid W_SectionGrid--theory">
+            <p class="A_SectionNumber">❶</p>
+            <div class="M_SectionTextContainer">
+              <h2>Вся необходимая теория</h2>
+              <p class="intro">8 глав, которые охватывают все необходимые темы: от макета книги до печати. Этот блок придаст уверенности в решениях, и сформирует прочную базу для дальнейшей работы над собственной книгой</p>
+            </div>
+            <a class="button" href="./pages/Theory.html">Перейти к теории</a>
+        </div>
+
+        <!-- Cards -->
+        <div class="W_Cards">
+        <div class="C_Card is-collapsed" id="cardsGrid">
+
+            <a class="M_Card" href="./pages/Theory.html">
+              <img class="A_CardImage" src="./images/Card_Cover_1.svg" alt="Card image" loading="lazy" />
+              <div class="W_CardTypography">
+                    <h5 class="card-heading">
+                        <span class="card-heading-number">01</span> 
+                        Введение
+                    </h5>
+                    <p class="card-body">Как будет построено твое обучение</p>
+              </div>
+            </a>
+
+            <a class="M_Card" href="./pages/Theory.html">
+              <img class="A_CardImage" src="./images/Card_Cover_2.svg" alt="Card image" loading="lazy" />
+              <div class="W_CardTypography">
+                    <h5 class="card-heading">
+                        <span class="card-heading-number">02</span> 
+                        Ориентиры
+                    </h5>
+                    <p class="card-body">Ты узнаешь о двух подходах к дизайну книг и получишь сводку правил по типографике и верстке</p>
+              </div>
+            </a>
+
+            <a class="M_Card" href="./pages/Theory.html">
+              <img class="A_CardImage" src="./images/Card_Cover_3.svg" alt="Card image" loading="lazy" />
+              <div class="W_CardTypography">
+                    <h5 class="card-heading">
+                        <span class="card-heading-number">03</span> 
+                        План работы
+                    </h5>
+                    <p class="card-body">Разберем реальный кейс и познакомимся с одним из способов эффективно выстроить работу</p>
+              </div>
+            </a>
+
+            <a class="M_Card" href="./pages/Theory.html">
+              <img class="A_CardImage" src="./images/Card_Cover_4.svg" alt="Card image" loading="lazy" />
+              <div class="W_CardTypography">
+                    <h5 class="card-heading">
+                        <span class="card-heading-number">04</span> 
+                        Анатомия книги
+                    </h5>
+                    <p class="card-body">Узнаем, как книга печатается и собирается, и как это влияет на наш дизайн</p>
+              </div>
+            </a>
+
+            <a class="M_Card" href="./pages/Theory.html">
+              <img class="A_CardImage" src="./images/Card_Cover_5.svg" alt="Card image" loading="lazy" />
+              <div class="W_CardTypography">
+                    <h5 class="card-heading">
+                        <span class="card-heading-number">05</span> 
+                        Разделы книги
+                    </h5>
+                    <p class="card-body">Разберем все типичные развороты в книгах и определимся, какие из них нужны именно тебе</p>
+              </div>
+            </a>
+
+            <a class="M_Card" href="./pages/Theory.html">
+              <img class="A_CardImage" src="./images/Card_Cover_6.svg" alt="Card image" loading="lazy" />
+              <div class="W_CardTypography">
+                    <h5 class="card-heading">
+                        <span class="card-heading-number">06</span> 
+                        Элементы разворота
+                    </h5>
+                    <p class="card-body">Как много разных блоков текста обычно используется в одной книге, какие кроме них есть объекты на развороте – с разбором типичного оформления каждого</p>
+              </div>
+            </a>
+
+            <a class="M_Card" href="./pages/Theory.html">
+              <img class="A_CardImage" src="./images/Card_Cover_7.svg" alt="Card image" loading="lazy" />
+              <div class="W_CardTypography">
+                    <h5 class="card-heading">
+                        <span class="card-heading-number">07</span> 
+                        Композиция
+                    </h5>
+                    <p class="card-body">Советы по сильной композиции, способы выстроить иерархию, а также немного про все виды сеток</p>
+              </div>
+            </a>
+            <a class="M_Card" href="./pages/Theory.html">
+              <img class="A_CardImage" src="./images/Card_Cover_8.svg" alt="Card image" loading="lazy" />
+              <div class="W_CardTypography">
+                    <h5 class="card-heading">
+                        <span class="card-heading-number">08</span> 
+                        Шрифт
+                    </h5>
+                    <p class="card-body">Объемная глава, где мы затронем как теорию (разберемся с терминологией и классификацией), так и практику: научимся выбирать шрифты и сочетать их</p>
+              </div>
+            </a>
+
+
+        </div>
+
+        <button class="M_CardsChevron" id="cardsChevron"  aria-controls="cardsGrid" aria-expanded="false">
+          <span class="cards-chevron-font">Показать все статьи</span>
+          <img src="./images/I_CardsChevron.svg" class="I_NavbarLogo" aria-hidden="true">
+        </button>
+        
+        </div>
+
+      </section>
+
+      <!-- 2 InDesign -->
+      <section class="W_Section">
+        <div class="W_SectionGrid W_SectionGrid--indesign">
+          <img src="images/mainPage-S-banner-2.svg">
+          <p class="A_SectionNumber">❷</p>
+          <div class="M_SectionTextContainer">
+            <h2>Комментарии по&nbsp;работе с&nbsp;InDesign</h2>
+            <p class="intro">Мы на личном опыте знаем, как сложно сопоставить советы из теории с практикой. Поэтому все главы в практическом блоке сопровождены советами по работе в программе InDesign</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="W_BannerPDF">
+        <img
+          class="A_BannerPDFText"
+          src="images/mainPage-S-banner-pdf-text.svg"
+          alt="Дарим PDF со всей теорией по дизайну книги"
+        />
+
+        <div class="M_BannerPDFForm">
+          <!-- пока просто визуальный инпут -->
+          <div class="A_BannerPDFField">
+            <span class="A_BannerPDFPrefix">tg:</span>
+            <span class="A_BannerPDFPlaceholder"> </span>
+          </div>
+
+          <a class="A_BannerPDFButton" href="#">
+            Отправить
+          </a>
+        </div>
+      </section>
+
+      <!-- 3 Practice-->
+      <section class="W_Section">
+
+        <div class="W_SectionGrid W_SectionGrid--theory">
+            <p class="A_SectionNumber">❸</p>
+            <div class="M_SectionTextContainer">
+              <h2>Практика: создание книги по&nbsp;шагам</h2>
+              <p class="intro">Если ты уверен в базе или у тебя нет времени на чтение теории, в этом блоке ты пройдешь все этапы создания книги, начиная с выбора дизайна, заканчивая предпечатной подготовкой</p>
+            </div>
+            <a class="button" href="./pages/Practice.html">Перейти к практике</a>
+        </div>
+
+        <div class="W_Lending">
+          <div id="cards-practice-root"></div>
+        </div>
+        
+      </section>
+
+    </main>
+
+  </body>
+</html>

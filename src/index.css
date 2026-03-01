@@ -1,0 +1,23 @@
+@import 'stylesheets/reset.css';
+@import 'stylesheets/vars.css';
+@import 'stylesheets/fonts.css';
+@import 'stylesheets/basics.css';
+@import 'partials/navbar.css';
+@import 'stylesheets/typography.css';
+
+@import 'stylesheets/pages/main-page.css';
+@import 'stylesheets/pages/article.css';
+@import 'stylesheets/pages/about-us.css';
+@import 'stylesheets/pages/practice-and-theory.css';
+
+@import 'stylesheets/components/A_CardImage.css';
+@import 'stylesheets/components/A_CardHeading.css';
+@import 'stylesheets/components/A_Chips.css';
+@import 'stylesheets/components/button.css';
+
+@import 'stylesheets/components/M_Card.css';
+@import 'stylesheets/components/M_CardsChevron.css';
+@import 'stylesheets/components/C_Card.css';
+
+@import 'stylesheets/components/W_CardTypography.css';
+@import 'stylesheets/components/W_Cards.css';

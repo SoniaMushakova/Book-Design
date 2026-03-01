@@ -1,0 +1,1 @@
+import './index.css' // изменила, раньше тут было ./page.css

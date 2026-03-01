@@ -1,0 +1,118 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+    width: var(--main-container);
+    margin: 0 auto;
+    /* width: 100%; */
+    /* margin: 0 60px; */
+    height: 64px;
+    padding: 0 32px;
+
+    border-radius: 80px;
+    background: var(--white);
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
+
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.A_Menu {
+    display: inline-flex;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    font-size: var(--font-size-header);
+}
+
+.W_Menu {
+    display: inline-flex;
+    padding-bottom: 1px;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.I_NavbarLogo {
+    width: 40px;
+    height: auto;
+}
+
+.W_NavbarLogo {
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.M_Search {
+    display: flex;
+    width: 260px;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 12px;
+
+    border-radius: 100px;
+    background: var(--white-dark);
+}
+
+@media (min-width: 1728px) {
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1720px;
+    height: 100px;
+    padding: 52px;
+
+    border-radius: 80px;
+    background: var(--, #FFFAF1);
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
+
+    position: fixed;
+    top: 32px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1000;
+    }
+
+    .W_Menu {
+    display: flex;
+    padding-bottom: 1px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    }
+
+    .A_Menu {
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    }
+
+    .W_NavbarLogo {
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+    }
+
+    .M_Search {
+    display: flex;
+    width: 260px;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 12px;
+
+    border-radius: 100px;
+    background: var(--, #F2EDE5);
+    }
+}

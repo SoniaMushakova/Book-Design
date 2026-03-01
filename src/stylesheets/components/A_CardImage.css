@@ -1,0 +1,7 @@
+.A_CardImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    align-self: stretch;
+    border-radius: var(--card-image-border-radius);
+}

@@ -1,0 +1,17 @@
+.button {
+  display:inline-flex;
+  padding: 20px 44px; /* адаптивить через вэриаблс? */
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px; /* поменять на общий??*/
+  background: var(--black);
+  color: var(--white);  
+  /* 
+  width: fit-content;        можно и без этой строки
+  text-decoration: none;     хз надо ли, я уже обнулила стили для ссылок
+  */
+}
+.button:hover {
+  background: var(--orange);
+  color: var(--white);
+}

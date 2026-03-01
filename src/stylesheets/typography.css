@@ -1,0 +1,109 @@
+
+h1,h2,h3,h4,text {
+    color: var(--black);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-family: 'TT_Mussels';
+  /* line-height: var(--line-height-h1); */
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  font-family: 'TT_Mussels';
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-family: 'TT_Mussels';
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+.button {
+  font-size: var(--font-size-button);
+}
+
+.body {
+  font-size: var(--font-size-text);
+}
+
+.header {
+  font-size: var(--font-size-header);
+}
+
+
+/* Cards */
+
+/*
+.card-heading .card-heading-number{
+  font-size: var(--card-heading);
+  font-family: 'TT_Mussels', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+*/
+.card-heading {
+  font-size: var(--font-size-card-heading);
+  font-family: 'TT_Mussels', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--white);
+}
+.card-heading-number {
+  font-size: var(--font-size-card-heading);
+  font-family: 'TT_Mussels', sans-serif;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.card-body {
+  font-size: var(--font-size-card-text);
+  line-height: var(--line-height-card-text);
+  font-family: 'BrutalType';
+  font-weight: 400;
+  color: var(--white);
+}
+
+.cards-chevron-font {
+  font-size: var(--font-size-button);
+  font-family: 'BrutalType';
+  font-weight: 500;
+  color: var(--black);
+}
+
+/* убрать тк для секций испоьзуется h2*/
+/*
+.A_SectionHeader{
+    display: flex;
+    width: 100%;
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+    font-family: 'BrutalType';
+    font-weight: 400;
+    color: var(--white);
+
+}
+h2*/
+
+.intro{
+  font-size: var(--font-size-intro);
+  line-height: var(--line-height-intro);
+  font-family: 'BrutalType';
+  font-weight: 400;
+  color: var(--black);
+}
+
+/* удалить тк для секций испоьзуется h2 */
+.A_Section-Header {
+    display: flex;
+    width: 506px;
+    padding: var(--h-2-padding-article, 12px) 0;
+    align-items: center;
+
+    border-bottom: 1px solid #3B3B3B;
+}
