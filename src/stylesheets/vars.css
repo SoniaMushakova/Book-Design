@@ -1,5 +1,4 @@
 :root {
-
   /* COLORS */
   --white: #FFFAF1;
   --white-dark: #F2EDE5;
@@ -9,38 +8,137 @@
   --black-light: #7C7C7C;
   --grey: #EAEAEA;
 
-  /* FONTS */
+  /* FONT */
   --font-family-base: 'BrutalType', sans-serif;
+}
 
-  --font-size-header: 14px;
-  --font-size-h1: 52px;
-  --font-size-h2: 44px;
-  --font-size-h2-number: 44px;
-  --font-size-intro: 24px;
-  --font-size-h3: 36px;
-  --font-size-h4: 18px;
 
-  --font-size-body: 18px;
-  --font-size-caption: 18px;
+/* FONT*/
 
-  --font-size-card-heading: 24px;
-  --font-size-card-text: 16px;
+@media (min-width: 1720px) {
 
-  --line-height-card-text: 22px;
-  --line-height-h2: 52px;
-  --line-height-intro: 32px;
-  
+  :root {
+    /* FONT-SIZE */
+    --font-size-navbar: 18px;
+    --font-size-footer: 18px;
+    --font-size-body: 26px;
+    --font-size-caption: 18px;
 
-  /* TEXT LINE HEIGHT */
+    --font-size-h1: 98px;
+    --font-size-h2: 72px;
+    --font-size-h2-number: 70px;
+    --font-size-subheading: 44px;
+    --font-size-intro: 28px;
+    --font-size-h3: 48px;
+    --font-size-h4: var(--font-size-body);
 
+    --font-size-card-heading: 34px;
+    --font-size-card-text: 24px;
+
+    --font-size-info: 32px;
+    --font-size-button: 28px; /* еще нигде не применяла */
+
+    --font-size-sidebar-text: 20px;
+    --font-size-sidebar-number-icon: 17px;
+
+    /* LINE HEIGHT */
+    --line-height-navbar: 20px;
+    --line-height-footer: 0px; /* нет величины пока что */
+    --line-height-body: 38px;
+    --line-height-caption: 26px;
+
+    --line-height-h1: 100px;
+    --line-height-h2: 76px;
+    --line-height-h2-number: var(--line-height-h2);
+    --line-height-subheading: 58px;
+    --line-height-intro: 38px;
+    --line-height-h3: 58px;
+    --line-height-h4: var(--line-height-body);
+
+    --line-height-card-heading: 38px;
+    --line-height-card-text: 32px;
+
+    --line-height-info: 38px;
+    --line-height-button: 34px; /* еще нигде не применяла, проверить, так как странная величина */
+
+    --line-height-sidebar-text: 24px;
+    --line-height-sidebar-number-icon: 20px;
+  }
+}
+
+
+@media (min-width: 834px) {
+
+  :root {
+    /* FONT-SIZE */
+    --font-size-navbar: 14px;
+    --font-size-footer: 14px;
+    --font-size-body: 18px;
+    --font-size-caption: 14px;
+
+    --font-size-h1: 52px;
+    --font-size-h2: 44px;
+    --font-size-h2-number: 44px;
+    --font-size-subheading: 24px;
+    --font-size-intro: 24px;
+    --font-size-h3: 36px;
+    --font-size-h4: var(--font-size-body);
+
+    --font-size-card-heading: 24px;
+    --font-size-card-text: 16px;
+
+    --font-size-info: 16px;
+    --font-size-button: 16px; /* еще нигде не применяла */
+
+    --font-size-sidebar-text: 16px;
+    --font-size-sidebar-number-icon: 12px;
+
+    /* LINE HEIGHT */
+    --line-height-navbar: 14px;
+    --line-height-footer: 0px; /* нет величины пока что */
+    --line-height-body: 27px;
+    --line-height-caption: 21px;
+
+    --line-height-h1: 62px;
+    --line-height-h2: 52px;
+    --line-height-h2-number: var(--line-height-h2);
+    --line-height-subheading: 32px;
+    --line-height-intro: 29px;
+    --line-height-h3: 54px; /* странная величина, проверить */
+    --line-height-h4: var(--line-height-body);
+
+    --line-height-card-heading: 27px;
+    --line-height-card-text: 22px;
+
+    --line-height-info: 18px;
+    --line-height-button: 18px; /* еще нигде не применяла, проверить, так как странная величина */
+
+    --line-height-sidebar-text: 17px;
+    --line-height-sidebar-number-icon: 15px;
+  }
+}
+
+
+
+:root {
   /* sizes */
   --main-container: calc(100% - 120px);
+  --main-margin: 60px;
+  --main-gap: 180px;
+  --main-container-gap: 160px;
   /*--main-container: 100%; */
   --gap-100-section: 52px;
 
   --card-border-radius: 30px;
   --card-horisontal-paddings: 8px;
   --card-image-border-radius: calc(var(--card-border-radius) - var(--card-horisontal-paddings));
+}
+
+  @media (min-width: 1720px) {
+    :root {
+      --main-container: 1612px;
+      --main-margin: auto;
+    }
 }
 
 /* 

@@ -12,15 +12,19 @@
     <img class="fullscreen-image" src="images/mainPage-S-cover.svg">
     <main>
 
+    <div class="main-container">
+
       <!-- 0 Chips -->
       <section class="W_Section">
         <h1 style="width: 640px; text-align: center;">Здесь есть все, что нужно знать о книгах</h1>
         <div id="chips2-root"></div>
         <a class="button" href="./pages/Theory.html">Начать чтение</a>
       </section>
+    </div>
 
       <img class="fullscreen-image" src="images/mainPage-S-banner.svg">
-      
+    
+    <div class="main-container">
       <!-- 1 Theory -->
       <section class="W_Section">
 
@@ -149,25 +153,25 @@
       </section>
 
       <section class="W_BannerPDF">
-        <img
-          class="A_BannerPDFText"
-          src="images/mainPage-S-banner-pdf-text.svg"
-          alt="Дарим PDF со всей теорией по дизайну книги"
-        />
+          <img
+            class="A_BannerPDFText"
+            src="images/mainPage-S-banner-pdf-text.svg"
+            alt="Дарим PDF со всей теорией по дизайну книги"
+          />
 
-        <div class="M_BannerPDFForm">
-          <!-- пока просто визуальный инпут -->
-          <div class="A_BannerPDFField">
-            <span class="A_BannerPDFPrefix">tg:</span>
-            <span class="A_BannerPDFPlaceholder"> </span>
+          <div class="M_BannerPDFForm">
+            <!-- пока просто визуальный инпут -->
+            <div class="A_BannerPDFField">
+              <span class="A_BannerPDFPrefix">tg:</span>
+              <span class="A_BannerPDFPlaceholder"> </span>
+            </div>
+
+            <a class="A_BannerPDFButton" href="#">
+              Отправить
+            </a>
           </div>
-
-          <a class="A_BannerPDFButton" href="#">
-            Отправить
-          </a>
-        </div>
       </section>
-
+    
       <!-- 3 Practice-->
       <section class="W_Section">
 
@@ -185,7 +189,27 @@
         </div>
         
       </section>
+    </div>
+      <section class="W_BannerSubscription">
+          <img
+            class="A_BannerPDFText"
+            src="images/mainPage-S-banner-pdf-subscription.svg"
+            alt="Пришлем уведомление о новой главе"
+          />
 
+          <div class="M_BannerPDFForm">
+            <!-- пока просто визуальный инпут -->
+            <div class="A_BannerPDFField">
+              <span class="A_BannerPDFPrefix">tg:</span>
+              <span class="A_BannerPDFPlaceholder"> </span>
+            </div>
+
+            <a class="A_BannerPDFButton" style="background-color: var(--orange);" href="#">
+              Отправить
+            </a>
+          </div>
+      </section>
+      
     </main>
 
   </body>

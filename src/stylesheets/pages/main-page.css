@@ -1,11 +1,9 @@
 .fullscreen-image {
-  width: 100vw;
+  width: 100%;
   max-width: none;
   height: auto;
   display: block;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .W_Section {
@@ -78,10 +76,6 @@
 }
 
 
-
-
-
-
 .W_BannerPDF {
   width: 100%;
   height: auto;
@@ -99,6 +93,25 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.W_BannerSubscription {
+  width: 100%;
+  height: auto;
+  padding: 60px 120px; /* или через justify-content: space-evenly; */
+
+  display: flex;
+  align-items: center;        /* центр по высоте */
+  justify-content: center;    /* центр по ширине */
+  gap: 120px;
+
+  overflow: hidden; 
+
+  /*background-image: url("../../images/mainPage-S-banner-pdf-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  background-color: var(--black);
 }
 
 /* SVG-текст слева */

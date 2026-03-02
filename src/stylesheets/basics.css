@@ -6,7 +6,6 @@ html,
 body {
   height: 100%;
   background-color: var(--white);
-  overflow-x: hidden;
 }
 
 body {
@@ -19,11 +18,32 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 180px;
+  width: 100%;
+  padding-top: var(--main-gap);
+  padding-bottom: var(--main-gap);
+  gap: var(--main-gap);
+}
 
-  width: var(--main-container);
-  margin: 98px auto;
+/* align-content: space-evenly; */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: var(--main-container-gap);
+
+  /* не буду писать ширина 100% так как контент разъезжается */
+  /* margin: 98px var(--main-margin); это когда у main не было gap*/
+  margin: 0px var(--main-margin);
   border: 1px solid aquamarine;
+}
+
+@media (min-width: 1720px) {
+  .main-container {
+    width: var(--main-container);
+    margin: 0px auto;
+  }
 }
 
 .images {

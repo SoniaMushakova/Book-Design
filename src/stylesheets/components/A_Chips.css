@@ -37,7 +37,6 @@
 .ChipsList {
   width: 100%;
   max-width: var(--main-container, 1100px);
-  box-sizing: border-box;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
