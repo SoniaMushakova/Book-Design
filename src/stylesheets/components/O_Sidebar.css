@@ -1,0 +1,102 @@
+/* .I_Sidebar_Chevron{
+  width: var(--sidebar-icon-size);
+  height: var(--sidebar-icon-size);
+  flex: 0 0 var(--sidebar-icon-size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black); 
+
+  background: center / 12px 20px no-repeat;
+  background-image: url("../images/I_Sidebar_Chevron_default.svg");
+
+  transition: transform .2s ease;
+} 
+.W_Sidebar_Dropdown[open] > summary .I_Sidebar_Chevron{
+  background-image: url("../images/I_Sidebar_Chevron_active.svg");
+  transform: rotate(90deg);
+}
+*/
+
+/* из js*/
+.open {
+  display: flex;
+}
+
+.I_Sidebar_Chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  aspect-ratio: 1/1;
+}
+
+.I_Sidebar_Chevron.open {
+  transform: rotate(90deg);
+}
+
+.A_Sidebar_Text {
+  display: flex;
+  max-width: 256px;
+  align-items: flex-start;
+  font-family: 'BrutalType';
+  font-size: var(--font-size-sidebar-text);
+  line-height: var(--line-height-sidebar-text);
+  min-width: 0;
+  color: var(--black);
+}
+
+.A_Sidebar_Text--lvl1 {
+  font-weight: 700;
+  font-style: normal;
+}
+.A_Sidebar_Text--lvl2 {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.C_SidebarLinks {
+  display: none;
+  flex-direction: column;
+  gap: var(--C_SidebarLinks_Gap, 8px);
+}
+
+.C_SidebarLinks.open {
+  display: flex;
+}
+
+.I_Sidebar_number {
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 1/1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /*flex: 0 0 var(--icon);*/
+  flex-grow: 0; /* не растягиваться */
+  flex-shrink: 0; /* не сжиматься */
+  flex-basis: 32px; /* базовая ширина (в flex-оси) = 32px */
+
+  /* если это глиф шрифта — оставь свой font-family */
+  font-family: 'GothicA1', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--font-size-sidebar-number-icon);
+  line-height: 1;
+  color: var(--black);
+}
+
+.M_NumberAndText {
+  display: flex;
+  align-items: baseline;
+  gap: var(--M_Sidebar_1_Gap, 16px);
+}
+
+.W_Sidebar_Item {
+  display: flex;
+  width: 370px;
+  padding: var(--M_Sidebar_1_Padding, 10px);
+  align-items: flex-start;
+  gap: var(--M_Sidebar_1_Gap, 16px);
+}

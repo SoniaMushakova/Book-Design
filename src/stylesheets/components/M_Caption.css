@@ -1,0 +1,66 @@
+.Q_Arrow {
+    align-self: auto;
+    color: var(--orange);
+
+    /* caption-number */
+    font-family: 'Inter';
+    font-weight: 900;
+    font-style: normal;
+    font-size: var(--font-size-caption, 18px);
+    line-height: var(--line-height-caption, 26px); /* 144.444% */
+}
+
+.Q_Text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    justify-content: start; /* прижать влево по горизонтали */
+    align-items: start;     /* прижать вверх по вертикали */
+    color: var(--orange);
+
+    /* caption-number */
+    font-family: 'Inter';
+    font-weight: 900;
+    font-style: normal;
+    font-size: var(--font-size-caption, 18px);
+    line-height: var(--line-height-caption, 26px); /* 144.444% */
+}
+
+
+/* стрелка и номер */
+.A_CaptionNumber{
+    display: flex;
+    align-items: baseline;
+    align-self: flex-start;
+    gap: 4px;
+    /*    display: inline-flex;
+    align-items: center;*/
+}
+
+/* тексты */
+.A_CaptionText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+/* вся подпись */
+.M_Caption {
+    display: flex;
+    width: 260px;
+    padding-left: 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.M_Caption-mobile { 
+    display: flex;
+    width: 260px;
+    padding-right: 12px;
+    align-items: flex-start;
+    gap: 12px; 
+}

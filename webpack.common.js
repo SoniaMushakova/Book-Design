@@ -14,7 +14,8 @@ module.exports = {
     M_Card: './src/javascript/M_Card.jsx',
     A_Chips: './src/javascript/A_Chips.jsx',
     A_CardText: './src/javascript/A_CardText.jsx',
-    cardsChevron: './src/javascript/cardsChevron.js'
+    cardsChevron: './src/javascript/cardsChevron.js',
+    sidebar: './src/javascript/sidebar.js'
   },
   output: {
     filename: '[name].js',
@@ -124,6 +125,14 @@ module.exports = {
       chunks: ['page']
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_1.html',
+      filename: './pages/Article_1.html',
+      chunks: ['page', 'sidebar']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       // analytics
@@ -140,13 +149,13 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       },
-      // прилипающий хедер на будущее
-      //  {
-      //   path: path.join(__dirname, './src/partials/header.html'),
-      //   location: 'body',
-      //   template_filename: '*',
-      //   priority: 'replace'
-      // }
+      // Header прилипающий для статей
+     {
+        path: path.join(__dirname, './src/partials/navbar-2.html'),
+        location: 'navbar-2',
+        template_filename: '*',
+        priority: 'replace'
+      }
     ])
 
 

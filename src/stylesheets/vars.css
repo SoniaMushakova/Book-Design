@@ -20,6 +20,7 @@
   :root {
     /* FONT-SIZE */
     --font-size-navbar: 18px;
+    --font-size-logo-text: 24px;
     --font-size-footer: 18px;
     --font-size-body: 26px;
     --font-size-caption: 18px;
@@ -72,6 +73,7 @@
   :root {
     /* FONT-SIZE */
     --font-size-navbar: 14px;
+    --font-size-logo-text: 18px;
     --font-size-footer: 14px;
     --font-size-body: 18px;
     --font-size-caption: 14px;
@@ -96,6 +98,7 @@
     /* LINE HEIGHT */
     --line-height-navbar: 14px;
     --line-height-footer: 0px; /* нет величины пока что */
+    --line-height-logo-text: 22px;
     --line-height-body: 27px;
     --line-height-caption: 21px;
 
@@ -122,6 +125,8 @@
 
 :root {
   /* sizes */
+  --sidebar-icon-size: 32px;
+
   --main-container: calc(100% - 120px);
   --main-margin: 60px;
   --main-gap: 180px;

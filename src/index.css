@@ -15,6 +15,14 @@
 @import 'stylesheets/components/A_Chips.css';
 @import 'stylesheets/components/button.css';
 
+
+/* cards */
+@import 'stylesheets/components/O_Sidebar.css';
+
+/* captions */
+@import 'stylesheets/components/M_Caption.css';
+
+/* cards */
 @import 'stylesheets/components/M_Card.css';
 @import 'stylesheets/components/M_CardsChevron.css';
 @import 'stylesheets/components/C_Card.css';
