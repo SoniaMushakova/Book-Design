@@ -1,4 +1,3 @@
-/******/ (() => { // webpackBootstrap
 document.querySelectorAll('.W_Sidebar_Item').forEach(function (dropdown) {
   dropdown.addEventListener('click', function (e) {
     var dropDownElement = dropdown.closest('.W_Sidebar_Dropdown');
@@ -9,5 +8,3 @@ document.querySelectorAll('.W_Sidebar_Item').forEach(function (dropdown) {
     }
   });
 });
-/******/ })()
-;
