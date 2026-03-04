@@ -77,7 +77,7 @@
 }
 
 /* FOR THEORY & PRACTICE SECTIONS */
-@media (min-width: 375px) {
+/* @media (min-width: 375px) {
 }
 
 @media (min-width: 744px) {
@@ -86,7 +86,7 @@
 }
 
 @media (min-width: 1728px) {
-}
+} */
 /* FOR INDESIGN SECTION */
 
 .W_SectionText--indesign > img {
@@ -102,11 +102,26 @@
 /* баннеры и фотки */
 
 .fullscreen-image {
-  width: 100%; /* от main-lending*/
-  max-width: none;
-  height: auto;
   display: block;
-  position: relative;
+  width: 100%; /* от main-lending*/
+  max-width: 100%;
+  height: auto;
+  /* position: relative; */
+}
+
+/* picture:has(img),
+picture > img.fullscreen-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+} */
+
+.fullscreen-image-wrapper {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .W_BannerPDF {

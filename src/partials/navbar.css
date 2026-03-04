@@ -85,9 +85,9 @@
 }
 
 .A_Burger_Menu {
-  /* display: flex; */
+  display: flex;
   /* по умолчанию скрыт, тк открывается только на мобильных устройствах */
-  display: none;
+  /* display: none; */
   width: 44px;
   height: 44px;
   justify-content: center;
@@ -127,17 +127,18 @@
 }
 
 @media (min-width: 375px) {
+  /* navbar-сосиска не используется */
+  .navbar {
+    height: 62px;
+    width: var(--column4-4);
+  }
   .W_navbar-2 {
     height: 64px;
+    width: var(--column4-4);
   }
   .navbar-2 {
-    width: var(--column4-4);
+    width: 100%;
   }
-
-  .navbar {
-    width: var(--column4-4);
-  }
-  /* navbar-сосиска не используется */
 
   .A_Burger_Menu {
     display: flex;
@@ -154,10 +155,23 @@
 }
 
 @media (min-width: 744px) {
-  /* скрытие элементов */
-  .A_Burger_Menu {
-    display: none;
+  /* высота навбара */
+  .navbar {
+    height: 62px;
+    width: var(--column12-12);
   }
+  .W_navbar-2 {
+    height: 64px;
+    width: var(--column12-12);
+  }
+  .navbar-2 {
+    width: 100%;
+  }
+
+  /* скрытие элементов */
+  /* .A_Burger_Menu {
+    display: none;
+  } */
   .M_Search {
     display: flex;
   }
@@ -168,18 +182,6 @@
   /* стили */
   .A_Menu {
     padding: 0 14px;
-  }
-
-  /* высота навбара */
-  .navbar {
-    height: 62px;
-  }
-  .navbar-2 {
-    width: 100%;
-  }
-
-  .W_navbar-2 {
-    height: 64px;
   }
 }
 @media (min-width: 1376px) {
