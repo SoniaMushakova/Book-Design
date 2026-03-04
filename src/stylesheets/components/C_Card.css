@@ -1,4 +1,13 @@
-/* Grid container for cards */
+/* враппер для карточки с шевроном */
+.W_Cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+}
+
+/* сетка для коллекции из карточек */
 .C_Card {
   width: 100%;
   display: grid;
@@ -20,15 +29,32 @@
   display: none;
 }
 
+@media (min-width: 375px) {
+  .C_Card {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  /* For small screens (<745px) do not collapse (show all) */
+
+  .W_Cards.is-expanded .M_CardsChevron {
+    display: none;
+  }
+}
+
 /* For medium screens (>=745px and <=1024px) show 3 per row => hide from 4th */
-@media (min-width: 744px) and (max-width: 1024px) {
+@media (min-width: 744px) {
+  .C_Card {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .C_Card.is-collapsed > .M_Card:nth-child(n + 4) {
     display: none;
   }
 }
 
-/* For small screens (<745px) do not collapse (show all) */
-
-.W_Cards.is-expanded .M_CardsChevron {
-  display: none;
+@media (min-width: 1376px) {
+  .C_Card {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .C_Card.is-collapsed > .M_Card:nth-child(n + 5) {
+    display: none;
+  }
 }

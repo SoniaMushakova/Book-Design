@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'TT_Mussels';
+  src: url('../fonts/TTMussels-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'BrutalType';
   src: url('../fonts/BrutalType-Bold.ttf') format('truetype');
   font-weight: 700;
