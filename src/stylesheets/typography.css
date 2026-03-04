@@ -47,10 +47,6 @@ h4 {
   color: var(--black-light);
 }
 
-.button {
-  font-size: var(--font-size-button);
-}
-
 .body {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);

@@ -11,7 +11,17 @@
     <!-- что из хедера оборачивать в nav? какое свойство задать контейнеру nav?-->
     <navbar></navbar>
     <main class="main-lending">
-      <img class="fullscreen-image" src="images/mainPage-S-cover.svg" />
+      <picture>
+        <source
+          media="(min-width: 375px) and (max-width: 743.98px)"
+          srcset="images/mainPage-XS-cover.svg"
+        />
+        <img
+          class="fullscreen-image"
+          src="images/mainPage-S-cover.svg"
+          alt="Cover image"
+        />
+      </picture>
       <div class="main-container-lending">
         <!-- 0 Chips -->
         <section class="W_Section">
@@ -19,7 +29,7 @@
             Здесь есть все, что нужно знать о&nbsp;книгах
           </h1>
           <div id="chips2-root"></div>
-          <a class="button" href="./pages/Theory.html">Начать чтение</a>
+          <a class="A_Button" href="./pages/Theory.html">Начать чтение</a>
         </section>
       </div>
 
@@ -41,7 +51,7 @@
                 </p>
               </div>
             </div>
-            <a class="button" href="./pages/Theory.html">Перейти к теории</a>
+            <a class="A_Button" href="./pages/Theory.html">Перейти к теории</a>
           </div>
 
           <!-- Cards -->
@@ -230,7 +240,7 @@
               <span class="A_BannerPDFPlaceholder"> </span>
             </div>
 
-            <a class="A_BannerPDFButton" href="#"> Отправить </a>
+            <a class="A_Button-banner button-black" href="#"> Отправить </a>
           </div>
         </section>
 
@@ -248,7 +258,7 @@
                 </p>
               </div>
             </div>
-            <a class="button" href="./pages/Practice.html"
+            <a class="A_Button" href="./pages/Practice.html"
               >Перейти к практике</a
             >
           </div>
@@ -384,13 +394,9 @@
             <span class="A_BannerPDFPlaceholder"> </span>
           </div>
 
-          <a
-            class="A_BannerPDFButton"
-            style="background-color: var(--orange)"
-            href="#"
-          >
+          <button class="A_Button-banner button-orange" href="#">
             Отправить
-          </a>
+          </button>
         </div>
       </section>
     </main>

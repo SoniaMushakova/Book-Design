@@ -133,6 +133,10 @@
   .navbar-2 {
     width: var(--column4-4);
   }
+
+  .navbar {
+    width: var(--column4-4);
+  }
   /* navbar-сосиска не используется */
 
   .A_Burger_Menu {
@@ -170,6 +174,10 @@
   .navbar {
     height: 62px;
   }
+  .navbar-2 {
+    width: 100%;
+  }
+
   .W_navbar-2 {
     height: 64px;
   }

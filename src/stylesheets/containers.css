@@ -32,6 +32,8 @@
     /* --column12-12: 89.33vw;  */
     /* 335px; */
     --main-margin: auto;
+    --main-gap: 60px;
+    --main-container-gap: 40px;
 
     --column-width: 19.2vw; /* 72px;*/
     --column-gap: 4.27vw; /* 16px; */
@@ -48,6 +50,8 @@
       /* 91.4vw; */
       /* 680px; */
       --main-margin: auto;
+      --main-gap: 120px;
+      --main-container-gap: 100px;
 
       --column-width: 6.09vw; /* 9.14vw */
       --column-gap: 1.56vw; /* 2.69vw */
@@ -72,6 +76,7 @@
       /* 91.28vw; */
       /* 1256px; */
       --main-margin: auto;
+      --main-gap: 140px;
 
       --column-width: 6.32vw; /* 87px; */
       --column-gap: 1.45vw; /* 20px; */

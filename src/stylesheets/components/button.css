@@ -1,17 +1,84 @@
-.button {
-  display:inline-flex;
+.A_Button {
+  display: inline-flex;
   padding: 20px 44px; /* адаптивить через вэриаблс? */
   justify-content: center;
   align-items: center;
   border-radius: 60px; /* поменять на общий??*/
   background: var(--black);
-  color: var(--white);  
-  /* 
-  width: fit-content;        можно и без этой строки
-  text-decoration: none;     хз надо ли, я уже обнулила стили для ссылок
-  */
+  color: var(--white);
+  --btn-hover-bg: var(--orange);
+  font-size: var(--font-size-button);
 }
-.button:hover {
+
+.button-black {
+  background: var(--black);
+  --btn-hover-bg: var(--orange);
+}
+
+.button-orange {
   background: var(--orange);
+  --btn-hover-bg: var(--green); /* При наведении станет зеленой */
+}
+
+.A_Button:hover {
+  background: var(--btn-hover-bg);
   color: var(--white);
 }
+
+/* кнопка */
+.A_Button-banner {
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+  text-decoration: none;
+
+  color: var(--white);
+
+  font:
+    600 18px/1.2 'BrutalType',
+    sans-serif;
+}
+
+.A_Button-banner:hover {
+  background: var(--btn-hover-bg);
+  color: var(--white);
+}
+
+@media (min-width: 375px) {
+  .A_Button-banner,
+  .A_Button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 744px) {
+  .A_Button-banner {
+    display: inline-flex;
+    width: auto;
+  }
+  .A_Button {
+    display: inline-flex;
+    padding: 20px 44px; /* адаптивить через вэриаблс? */
+    width: auto;
+  }
+}
+@media (min-width: 1376px) {
+}
+
+@media (min-width: 1728px) {
+}
+
+/* 
+  для шеврона у карточек 
+  .button {
+  display: inline-flex;
+  padding: 20px 44px; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  background: var(--black);
+  color: var(--white);
+} */

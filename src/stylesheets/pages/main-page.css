@@ -69,7 +69,7 @@
 }
 
 /* кнопка в секции ДОДЕЛАТЬ*/
-.W_Section--theory > .button {
+.W_Section--theory > .A_Button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,46 +165,23 @@
 /* префикс tg: */
 .A_BannerPDFPrefix {
   font:
-    500 18px/1.2 system-ui,
+    500 18px/1.2 'BrutalType',
     sans-serif;
   opacity: 0.9;
 }
 
-/* кнопка */
-.A_BannerPDFButton {
-  height: 64px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 999px;
-  text-decoration: none;
-
-  background: #2f2f2f;
-  color: #fff;
-
-  font:
-    600 18px/1.2 system-ui,
-    sans-serif;
-}
-
 /* в конце главы */
 .W_BannerSubscription {
-  width: 100%;
-  height: auto;
-  padding: 60px 120px; /* или через justify-content: space-evenly; */
-
   display: flex;
   align-items: center; /* центр по высоте */
   justify-content: center; /* центр по ширине */
   gap: 120px;
+  width: 100%;
+  /* height: auto; */
+  min-height: calc(100vh + 60px);
+  padding: 60px 120px; /* или через justify-content: space-evenly; */
 
   overflow: hidden;
-
-  /*background-image: url("../../images/mainPage-S-banner-pdf-bg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
   background-color: var(--black);
 }
 
