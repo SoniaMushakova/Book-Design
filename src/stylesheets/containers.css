@@ -38,6 +38,9 @@
     --column-width: 19.2vw; /* 72px;*/
     --column-gap: 4.27vw; /* 16px; */
 
+    /* карточки */
+    /* --w-cards-gap: 20px; */
+
     /* ширина колонки */
     --column4-1: var(--column-width);
     --column4-2: calc(var(--column4-1) * 2 + var(--column-gap));

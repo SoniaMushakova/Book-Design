@@ -42,14 +42,54 @@
   display: none;
 }
 
-@media (min-width: 375px) {
-  .C_Card {
+@media (min-width: 375px) and (max-width: 743px) {
+  /* .C_Card {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
+  } */
   /* For small screens (<745px) do not collapse (show all) */
-
   .W_Cards.is-expanded .M_CardsChevron {
     display: none;
+  }
+  .C_Card {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+
+    grid-auto-columns: 85%;
+
+    /* прокрутка + ограничиваем ее контейнером */
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+    /* Настраиваем плавное прилипание (снэппинг) */
+    scroll-snap-type: inline mandatory;
+
+    /* Скрываем визуальный ползунок скроллбара (опционально) */
+    scrollbar-width: none; /* Для Firefox */
+  }
+
+  /* .C_Card {
+    /* Вырываем контейнер из ограничений родителя на всю ширину экрана */
+  /* width: 100vw;
+    margin-left: calc(50% - 50vw); */
+
+  /* Добавляем внутренние отступы, чтобы первая и последняя карточки не прилипали вплотную к рамкам телефона */
+  /* padding-left: 20px;
+    padding-right: 20px;
+  } */
+
+  /* Скрываем скроллбар для Chrome/Safari/Edge */
+  /*.C_Card::-webkit-scrollbar {
+    display: none;
+  } */
+
+  .M_Card {
+    /* Указываем, какой частью карточка должна прилипать к краю экрана при скролле */
+    scroll-snap-align: start;
+  }
+
+  /* Отменяем скрытие карточек для мобилки, чтобы в карусели были доступны все */
+  .C_Card.is-collapsed > .M_Card {
+    display: flex !important;
   }
 }
 
