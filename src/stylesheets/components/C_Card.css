@@ -25,6 +25,19 @@
   width: 100%;
 }
 
+.M_Card {
+  display: flex;
+  width: 100%;
+  /*max-width: 373px;*/
+  padding: 8px 8px 28px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: var(--card-border-radius);
+  background: var(--black);
+  box-shadow: 0 0 4.271px 1.424px rgba(59, 59, 59, 0.2);
+}
+
 .C_Card.is-collapsed > .M_Card:nth-child(n + 5) {
   display: none;
 }
@@ -53,6 +66,9 @@
 @media (min-width: 1376px) {
   .C_Card {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .C_Card.is-collapsed > .M_Card:nth-child(n + 4) {
+    display: flex;
   }
   .C_Card.is-collapsed > .M_Card:nth-child(n + 5) {
     display: none;
