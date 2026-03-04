@@ -22,6 +22,22 @@
   padding-right: calc(var(--column12-1) + var(--column-gap));
 }
 
+/* только цифра */
+.A_SectionNumber {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-family: 'GothicA1', sans-serif;
+  font-size: var(--font-size-h2-number);
+  font-weight: 600;
+  font-style: normal;
+  color: var(--black);
+
+  margin: 0;
+  padding-top: 3px;
+  width: var(--column12-1);
+}
 /* цифра + текст */
 .W_SectionNumberAndText {
   display: flex;
@@ -41,7 +57,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   gap: 24px;
 }
 .W_SectionText--theory .M_SectionTextContainer {
@@ -49,23 +64,6 @@
 }
 .W_SectionText--indesign .M_SectionTextContainer {
   width: var(--column12-5);
-}
-
-/* только цифра */
-.A_SectionNumber {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-  font-family: 'GothicA1', sans-serif;
-  font-size: var(--font-size-h2-number);
-  font-weight: 600;
-  font-style: normal;
-  color: var(--black);
-
-  margin: 0;
-  padding-top: 3px;
-  width: var(--column12-1);
 }
 
 /* кнопка в секции ДОДЕЛАТЬ*/
@@ -77,16 +75,7 @@
 }
 
 /* FOR THEORY & PRACTICE SECTIONS */
-/* @media (min-width: 375px) {
-}
 
-@media (min-width: 744px) {
-}
-@media (min-width: 1376px) {
-}
-
-@media (min-width: 1728px) {
-} */
 /* FOR INDESIGN SECTION */
 
 .W_SectionText--indesign > img {
@@ -97,6 +86,62 @@
 
 .W_SectionText--indesign > .M_SectionTextContainer {
   width: var(--column12-5);
+}
+
+@media (min-width: 375px) and (max-width: 743px) {
+  .A_SectionNumber {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 0px;
+    width: auto;
+  }
+  .W_SectionText {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .W_SectionText--theory {
+    padding-right: 0px;
+  }
+  .W_SectionText--indesign {
+    flex-direction: column-reverse;
+  }
+  /* цифра + текст */
+  .W_SectionNumberAndText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* заголовок + текст */
+  .M_SectionTextContainer {
+    gap: 12px;
+  }
+  .W_SectionText--theory .M_SectionTextContainer {
+    width: 100%;
+  }
+  .W_SectionText--indesign .M_SectionTextContainer {
+    width: 100%;
+  }
+  /* кнопка в секции*/
+  .W_Section--theory > .A_Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-self: stretch; */
+    /* width: var(--column12-3); */
+  }
+
+  /* FOR INDESIGN SECTION */
+  .W_SectionText--indesign > img {
+    width: 100%;
+    height: auto;
+    align-items: stretch;
+  }
+
+  /* заголовок + текст */
+  .W_SectionText--indesign > .M_SectionTextContainer {
+    width: 100%;
+  }
 }
 
 /* баннеры и фотки */

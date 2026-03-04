@@ -91,6 +91,9 @@
   .C_Card.is-collapsed > .M_Card {
     display: flex !important;
   }
+  .M_CardsChevron {
+    display: none;
+  }
 }
 
 /* For medium screens (>=745px and <=1024px) show 3 per row => hide from 4th */
