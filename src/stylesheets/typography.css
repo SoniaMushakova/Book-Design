@@ -8,12 +8,12 @@ text {
 
 h1 {
   font-size: var(--font-size-h1);
-  font-family: 'TT_Mussels';
+  font-family: 'TTMussels';
   /* line-height: var(--line-height-h1); */
 }
 
 h2 {
-  font-family: 'TT Mussels', sans-serif;
+  font-family: 'TTMussels', sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: var(--font-size-h2);
@@ -22,7 +22,7 @@ h2 {
 
 h3 {
   font-size: var(--font-size-h3);
-  font-family: 'TT_Mussels';
+  font-family: 'TTMussels';
 }
 
 h4 {
@@ -39,7 +39,7 @@ h4 {
 }
 
 .search-placeholder {
-  font-family: 'Brutal Type';
+  font-family: 'BrutalType';
   font-size: var(--font-size-navbar);
   font-style: normal;
   font-weight: 400;
@@ -76,21 +76,21 @@ h4 {
 /*
 .card-heading .card-heading-number{
   font-size: var(--card-heading);
-  font-family: 'TT_Mussels', sans-serif;
+  font-family: 'TTMussels', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 */
 .card-heading {
   font-size: var(--font-size-card-heading);
-  font-family: 'TT_Mussels', sans-serif;
+  font-family: 'TTMussels', sans-serif;
   font-weight: 600;
   font-style: normal;
   color: var(--white);
 }
 .card-heading-number {
   font-size: var(--font-size-card-heading);
-  font-family: 'TT_Mussels', sans-serif;
+  font-family: 'TTMussels', sans-serif;
   font-weight: 600;
   color: var(--orange);
 }
