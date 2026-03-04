@@ -2,8 +2,9 @@
 @import 'stylesheets/vars.css';
 @import 'stylesheets/fonts.css';
 @import 'stylesheets/basics.css';
-@import 'partials/navbar.css';
 @import 'stylesheets/typography.css';
+
+@import 'stylesheets/containers.css';
 
 @import 'stylesheets/pages/main-page.css';
 @import 'stylesheets/pages/article.css';
@@ -15,10 +16,6 @@
 @import 'stylesheets/components/A_Chips.css';
 @import 'stylesheets/components/button.css';
 
-
-/* cards */
-@import 'stylesheets/components/O_Sidebar.css';
-
 /* captions */
 @import 'stylesheets/components/M_Caption.css';
 
@@ -29,3 +26,8 @@
 
 @import 'stylesheets/components/W_CardTypography.css';
 @import 'stylesheets/components/W_Cards.css';
+
+/* partials */
+@import 'partials/sidebar.css';
+@import 'partials/navbar.css';
+@import 'partials/UpButton.css';

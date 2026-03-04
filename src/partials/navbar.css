@@ -1,155 +1,198 @@
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-
-    width: var(--main-container);
-    margin: 0 auto;
-    /* width: 100%; */
-    /* margin: 0 60px; */
-    height: 64px;
-    padding: 0 32px;
-
-    border-radius: 80px;
-    background: var(--white);
-    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
-
-    position: fixed;
-    top: 20px;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
+/* контейнер без отступов для navbar-2 */
 .W_navbar-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    width: var(--main-container);
-    margin: 0 auto;
-    /* width: 100%; */
-    /* margin: 0 60px; */
-    height: 64px;
-    padding: 0 32px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  width: 100%;
+  /* height: 64px; */
+  margin: 0 auto;
+
+  background: var(--white);
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
 }
 
+/* контейнер для всей навигации */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+
+  width: var(--column12-12);
+  margin: 0 auto;
+  height: 64px;
+  padding: 0 32px;
+
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  border-radius: 80px;
+  background: var(--white);
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* контейнер-2 для всей навигации */
 .navbar-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
 
-    width: 100%;
-    margin: 0 auto;
-
-    position: fixed;
-    top: 0px;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-
-    background: var(--white);
-    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
+  width: var(--column12-12);
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .A_Menu {
-    display: inline-flex;
-    padding: 0 20px;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
-    font-size: var(--font-size-navbar);
+  display: inline-flex;
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  font-size: var(--font-size-navbar);
 }
 
 .W_Menu {
-    display: inline-flex;
-    padding-bottom: 1px;
-    align-items: center;
-    gap: 4px;
-    align-self: stretch;
+  display: inline-flex;
+  padding-bottom: 1px;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.I_Burger_Menu {
+  width: 18px;
+  height: 18px;
+  aspect-ratio: 1/1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-grow: 0; /* не растягиваться */
+  flex-shrink: 0; /* не сжиматься */
+  flex-basis: 18px; /* базовая ширина (в flex-оси) = 18px */
+  color: var(--black);
+}
+
+.A_Burger_Menu {
+  /* display: flex; */
+  /* по умолчанию скрыт, тк открывается только на мобильных устройствах */
+  display: none;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-dark);
+  border-radius: 10px;
 }
 
 .I_NavbarLogo {
-    width: 40px;
-    height: auto;
+  width: 40px;
+  height: auto;
 }
 
 .W_NavbarLogo {
-    display: inline-flex;
-    align-items: center;
-    gap: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .M_Search {
-    display: flex;
-    width: 260px;
-    padding: 12px 20px;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  width: 260px;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 12px;
 
-    border-radius: 100px;
-    background: var(--white-dark);
+  border-radius: 100px;
+  background: var(--white-dark);
+  /* display: none; */
+  /* visibility: hidden; */
 }
 
-/*
+.W_MenuAndSearch {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-@media (min-width: 1728px) {
-    .navbar {
+@media (min-width: 375px) {
+  .W_navbar-2 {
+    height: 64px;
+  }
+  .navbar-2 {
+    width: var(--column4-4);
+  }
+  /* navbar-сосиска не используется */
+
+  .A_Burger_Menu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    /* написать взаимодействие при клике с телефона/планшета */
+  }
+  .M_Search {
+    display: none;
+  }
+  .W_Menu {
+    display: none;
+  }
+}
 
-    width: 1720px;
-    height: 100px;
-    padding: 52px;
-
-    border-radius: 80px;
-    background: var(--, #FFFAF1);
-    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
-
-    position: fixed;
-    top: 32px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: 1000;
-    }
-
-    .W_Menu {
+@media (min-width: 744px) {
+  /* скрытие элементов */
+  .A_Burger_Menu {
+    display: none;
+  }
+  .M_Search {
     display: flex;
-    padding-bottom: 1px;
-    align-items: center;
-    gap: 20px;
-    align-self: stretch;
-    }
-
-    .A_Menu {
-    display: flex;
-    padding: 0 20px;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
-    }
-
-    .W_NavbarLogo {
+  }
+  .W_Menu {
     display: inline-flex;
-    align-items: center;
-    gap: 28px;
-    }
+  }
 
-    .M_Search {
-    display: flex;
-    width: 260px;
-    padding: 12px 20px;
-    align-items: center;
-    gap: 12px;
+  /* стили */
+  .A_Menu {
+    padding: 0 14px;
+  }
 
-    border-radius: 100px;
-    background: var(--, #F2EDE5);
-    }
+  /* высота навбара */
+  .navbar {
+    height: 62px;
+  }
+  .W_navbar-2 {
+    height: 64px;
+  }
 }
-*/
+@media (min-width: 1376px) {
+  .M_Search {
+    display: flex;
+  }
+  .W_Menu {
+    display: inline-flex;
+  }
+  .navbar {
+    height: 62px;
+  }
+  .W_navbar-2 {
+    height: 74px;
+  }
+}
+@media (min-width: 1728px) {
+  .navbar {
+    height: 104px;
+  }
+  .W_navbar-2 {
+    height: 94px;
+  }
+}

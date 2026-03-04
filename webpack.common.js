@@ -132,6 +132,28 @@ module.exports = {
       filename: './pages/Article_1.html',
       chunks: ['page', 'sidebar']
     }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_2.html',
+      filename: './pages/Article_2.html',
+      chunks: ['page', 'sidebar']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_3.html',
+      filename: './pages/Article_3.html',
+      chunks: ['page', 'sidebar']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_none.html',
+      filename: './pages/Article_none.html',
+      chunks: ['page', 'sidebar']
+    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
@@ -150,15 +172,25 @@ module.exports = {
         priority: 'replace'
       },
       // Header прилипающий для статей
-     {
+      {
         path: path.join(__dirname, './src/partials/navbar-2.html'),
-        location: 'navbar-2',
+        location: 'W_navbar-2',
+        template_filename: '*',
+        priority: 'replace'
+      },
+      {
+        path: path.join(__dirname, './src/partials/sidebar-theory.html'),
+        location: 'sidebar-theory',
+        template_filename: '*',
+        priority: 'replace'
+      },
+      {
+        path: path.join(__dirname, './src/partials/Up_Button.html'),
+        location: 'Up_Button',
         template_filename: '*',
         priority: 'replace'
       }
     ])
-
-
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]

@@ -8,46 +8,14 @@ body {
   background-color: var(--white);
 }
 
-/* убираем маркер у summary */
-.W_Sidebar_Dropdown > summary{ list-style: none; }
-.W_Sidebar_Dropdown > summary::-webkit-details-marker{ display: none; }
+/* для ссылок в сайдбаре, чтобы мы переходили к объекту, учитывая высоту хедера */
+.W_Article :is(h3, p)[id] {
+  scroll-margin-top: var(--safe-place-under-header);
+}
 
 body {
   font-family: var(--font-family-base), Helvetica, Arial, sans-serif;
   font-weight: 400;
-}
-
-.main-lending {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: 100%;
-  padding-top: var(--main-gap);
-  padding-bottom: var(--main-gap);
-  gap: var(--main-gap);
-}
-
-/* align-content: space-evenly; */
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: var(--main-container-gap);
-
-  /* не буду писать ширина 100% так как контент разъезжается */
-  /* margin: 98px var(--main-margin); это когда у main не было gap*/
-  margin: 0px var(--main-margin);
-  border: 1px solid aquamarine;
-}
-
-@media (min-width: 1720px) {
-  .main-container {
-    width: var(--main-container);
-    margin: 0px auto;
-  }
 }
 
 .images {

@@ -1,6 +1,9 @@
-
-h1,h2,h3,h4,text {
-    color: var(--black);
+h1,
+h2,
+h3,
+h4,
+text {
+  color: var(--black);
 }
 
 h1 {
@@ -10,11 +13,11 @@ h1 {
 }
 
 h2 {
-    font-family: 'TT Mussels', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: var(--font-size-h2);
-    line-height: var(--line-height-h2);
+  font-family: 'TT Mussels', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
 }
 
 h3 {
@@ -26,18 +29,17 @@ h4 {
   font-size: var(--font-size-h4);
 }
 
-
 .logo-text {
-    color: var(--black);
-    font-family: "TT Mussels";
-    font-size: var(--font-size-logo-text);
-    font-style: italic;
-    font-weight: 400;
-    line-height: var(--line-height-logo-text);
+  color: var(--black);
+  font-family: 'TT Mussels';
+  font-size: var(--font-size-logo-text);
+  font-style: italic;
+  font-weight: 400;
+  line-height: var(--line-height-logo-text);
 }
 
 .search-placeholder {
-  font-family: "Brutal Type";
+  font-family: 'Brutal Type';
   font-size: var(--font-size-navbar);
   font-style: normal;
   font-weight: 400;
@@ -52,7 +54,7 @@ h4 {
 .body {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 400;
   font-style: normal;
 }
@@ -63,18 +65,15 @@ h4 {
   line-height: 1;
   vertical-align: super;
   transform: translateY(-0.1em);
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 900;
   font-style: normal;
   color: var(--orange);
 }
 
-
-
 .header {
   font-size: var(--font-size-navbar);
 }
-
 
 /* Cards */
 
@@ -129,7 +128,7 @@ h4 {
 }
 h2*/
 
-.intro{
+.intro {
   font-size: var(--font-size-intro);
   line-height: var(--line-height-intro);
   font-family: 'BrutalType';
@@ -139,27 +138,35 @@ h2*/
 
 /* удалить тк для секций испоьзуется h2 */
 .A_Section-Header {
-    display: flex;
-    width: 506px;
-    padding: var(--h-2-padding-article, 12px) 0;
-    align-items: center;
+  display: flex;
+  width: 506px;
+  padding: var(--h-2-padding-article, 12px) 0;
+  align-items: center;
 
-    border-bottom: 1px solid #3B3B3B;
+  border-bottom: 1px solid #3b3b3b;
 }
 
 .caption {
   font-size: var(--font-size-caption);
   line-height: var(--line-height-caption);
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 400;
 }
 
 .caption-description {
   font-size: var(--font-size-caption);
   line-height: var(--line-height-caption);
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 300;
   font-style: italic;
   color: var(--black-light);
 }
 
+@media (min-width: 375px) {
+}
+@media (min-width: 744px) {
+}
+@media (min-width: 1376px) {
+}
+@media (min-width: 1728px) {
+}

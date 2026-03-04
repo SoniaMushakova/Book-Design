@@ -1,0 +1,36 @@
+.UpButton {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 99999;
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.UpButton img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* small screens: reduce size and spacing */
+@media (max-width: 480px) {
+  .UpButton {
+    right: 16px;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+  }
+  .UpButton img {
+    width: 20px;
+    height: 20px;
+  }
+}

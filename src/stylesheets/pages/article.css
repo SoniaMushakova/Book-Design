@@ -1,15 +1,14 @@
-
 .A_Header_2 {
-    display: flex;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
 
-    padding: var(--h-2-padding-article, 12px) 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #3B3B3B;
-    
-    /* уже есть в typography */
-    /* font-family: 'TT Mussels', sans-serif;
+  padding: var(--h-2-padding-article, 12px) 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #3b3b3b;
+
+  /* уже есть в typography */
+  /* font-family: 'TT Mussels', sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: var(--font-size-h2);
@@ -17,112 +16,36 @@
 }
 
 .A_Header_3 {
-    display: flex;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
 
-    padding: var(--h-3-padding-article, 12px) 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #3B3B3B;
+  padding: var(--h-3-padding-article, 12px) 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #3b3b3b;
 }
-
 
 .W_bodyText {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
 }
+
 .W_Header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
 }
 
 .W_Article {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    align-self: stretch;
-}
-
-.A_img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    max-height: var(--A_pic_height_max, 700px);
-    padding: var(--A_pic-Paddings, 40px) 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.main-container-article {
-                /* default mobile-first: 4 columns */
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                column-gap: 20px;
-                width: calc(100% - 40px); /* 20px side gaps by default */
-                padding-top: var(--main-gap);
-                padding-bottom: var(--main-gap);
-                margin: 0 auto;
-}
-
-/* mobile (<=744px): explicit rules */
-@media (max-width: 744px) {
-    .main-container-article {
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 20px;
-        width: calc(100% - 40px); /* 20px sides */
-        margin: 0 auto;
-    }
-    /* hide aside on devices <1024px as requested */
-    .aside-article { display: none; }
-    .main-article  { grid-column: 1 / -1; background-color: var(--black); padding: 0; min-height: 200px; display: flex; flex-direction: column; justify-content: flex-start; }
-}
-
-/* >= 745px and <= 1024px: 8 columns, side gaps 32px, no aside (hide), main takes first 6 columns */
-@media (min-width: 745px) and (max-width: 1024px) {
-    .main-container-article {
-        grid-template-columns: repeat(8, 1fr);
-        width: calc(100% - 64px); /* 32px sides */
-    }
-    .aside-article { display: none; }
-    .main-article { grid-column: 1 / span 6; }
-}
-
-/* >1024px and <1720px: 12 columns, flexible width with 60px side gaps */
-@media (min-width: 1025px) and (max-width: 1719px) {
-    .main-container-article {
-        grid-template-columns: repeat(12, 1fr);
-        width: calc(100% - 120px); /* 60px sides */
-    }
-    .aside-article { display: block; 
-        grid-column: 1 / span 3; 
-        position: sticky; 
-        top: var(--header-height, 100px); 
-        align-self: start; z-index: 2;
-    }
-    .main-article  { grid-column: 4 / span 7; }
-}
-
-/* >=1720px: fixed width container (1612px), centered, 12 columns */
-@media (min-width: 1720px) {
-    .main-container-article {
-        grid-template-columns: repeat(12, 1fr);
-        width: 1612px;
-        margin: 0 auto;
-    }
-    .aside-article { display: block; 
-        grid-column: 1 / span 3; 
-        position: sticky; 
-        top: var(--header-height, 20px); 
-        align-self: start; z-index: 2;
-    }
-    .main-article  { grid-column: 4 / span 7; }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  width: 753px;
 }

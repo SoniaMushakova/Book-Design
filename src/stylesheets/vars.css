@@ -1,79 +1,76 @@
 :root {
   /* COLORS */
-  --white: #FFFAF1;
-  --white-dark: #F2EDE5;
-  --green: #1FAE62;
-  --orange: #FF711F;
-  --black: #3B3B3B;
-  --black-light: #7C7C7C;
-  --grey: #EAEAEA;
+  --white: #fffaf1;
+  --white-dark: #f2ede5;
+  --green: #1fae62;
+  --orange: #ff711f;
+  --black: #3b3b3b;
+  --black-light: #7c7c7c;
+  --grey: #eaeaea;
 
   /* FONT */
   --font-family-base: 'BrutalType', sans-serif;
 }
 
-
 /* FONT*/
 
-@media (min-width: 1720px) {
-
-  :root {
-    /* FONT-SIZE */
-    --font-size-navbar: 18px;
-    --font-size-logo-text: 24px;
-    --font-size-footer: 18px;
-    --font-size-body: 26px;
-    --font-size-caption: 18px;
-
-    --font-size-h1: 98px;
-    --font-size-h2: 72px;
-    --font-size-h2-number: 70px;
-    --font-size-subheading: 44px;
-    --font-size-intro: 28px;
-    --font-size-h3: 48px;
-    --font-size-h4: var(--font-size-body);
-
-    --font-size-card-heading: 34px;
-    --font-size-card-text: 24px;
-
-    --font-size-info: 32px;
-    --font-size-button: 28px; /* еще нигде не применяла */
-
-    --font-size-sidebar-text: 20px;
-    --font-size-sidebar-number-icon: 17px;
-
-    /* LINE HEIGHT */
-    --line-height-navbar: 20px;
-    --line-height-footer: 0px; /* нет величины пока что */
-    --line-height-body: 38px;
-    --line-height-caption: 26px;
-
-    --line-height-h1: 100px;
-    --line-height-h2: 76px;
-    --line-height-h2-number: var(--line-height-h2);
-    --line-height-subheading: 58px;
-    --line-height-intro: 38px;
-    --line-height-h3: 58px;
-    --line-height-h4: var(--line-height-body);
-
-    --line-height-card-heading: 38px;
-    --line-height-card-text: 32px;
-
-    --line-height-info: 38px;
-    --line-height-button: 34px; /* еще нигде не применяла, проверить, так как странная величина */
-
-    --line-height-sidebar-text: 24px;
-    --line-height-sidebar-number-icon: 20px;
-  }
-}
-
-
-@media (min-width: 834px) {
-
+@media (min-width: 744px) {
   :root {
     /* FONT-SIZE */
     --font-size-navbar: 14px;
-    --font-size-logo-text: 18px;
+    --line-height-navbar: 16px;
+    --font-size-logo-text: 16px;
+    --line-height-logo-text: 16px; /* убирается при адаптиве */
+    --font-size-footer: 14px;
+    --line-height-footer: 0px; /* нет величины пока что */
+    --font-size-body: 18px;
+    --line-height-body: 27px;
+    --font-size-caption: 14px;
+    --line-height-caption: 21px;
+
+    --font-size-h1: 38px;
+    --font-size-h2: 38px;
+    --font-size-h2-number: 34px;
+    --font-size-subheading: 18px;
+    --font-size-intro: 18px;
+    --font-size-h3: 36px;
+    --font-size-h4: var(--font-size-body);
+
+    --line-height-h1: 62px;
+    --line-height-h2: 52px;
+    --line-height-h2-number: var(--line-height-h2);
+    --line-height-subheading: 32px;
+    --line-height-intro: 29px;
+    --line-height-h3: 54px; /* странная величина, проверить */
+    --line-height-h4: var(--line-height-body);
+
+    --font-size-card-heading: 24px;
+    --font-size-card-text: 16px;
+
+    --font-size-info: 16px;
+    --font-size-button: 16px; /* еще нигде не применяла */
+
+    --font-size-sidebar-text: 16px;
+    --font-size-sidebar-number-icon: 18px;
+
+    /* LINE HEIGHT */
+
+    --line-height-card-heading: 27px;
+    --line-height-card-text: 22px;
+
+    --line-height-info: 18px;
+    --line-height-button: 18px; /* еще нигде не применяла, проверить, так как странная величина */
+
+    --line-height-sidebar-text: 17px;
+    --line-height-sidebar-number-icon: 15px;
+  }
+}
+
+@media (min-width: 1376px) {
+  :root {
+    /* FONT-SIZE */
+    --font-size-navbar: 14px;
+    --font-size-logo-text: 16px;
     --font-size-footer: 14px;
     --font-size-body: 18px;
     --font-size-caption: 14px;
@@ -93,7 +90,7 @@
     --font-size-button: 16px; /* еще нигде не применяла */
 
     --font-size-sidebar-text: 16px;
-    --font-size-sidebar-number-icon: 12px;
+    --font-size-sidebar-number-icon: 18px;
 
     /* LINE HEIGHT */
     --line-height-navbar: 14px;
@@ -120,47 +117,53 @@
     --line-height-sidebar-number-icon: 15px;
   }
 }
-
-
-
-:root {
-  /* sizes */
-  --sidebar-icon-size: 32px;
-
-  --main-container: calc(100% - 120px);
-  --main-margin: 60px;
-  --main-gap: 180px;
-  --main-container-gap: 160px;
-  /*--main-container: 100%; */
-  --gap-100-section: 52px;
-
-  --card-border-radius: 30px;
-  --card-horisontal-paddings: 8px;
-  --card-image-border-radius: calc(var(--card-border-radius) - var(--card-horisontal-paddings));
-}
-
-  @media (min-width: 1720px) {
-    :root {
-      --main-container: 1612px;
-      --main-margin: auto;
-    }
-}
-
-/* 
 @media (min-width: 1728px) {
+  :root {
+    /* FONT-SIZE */
+    --font-size-navbar: 18px;
+    --font-size-logo-text: 20px;
+    --font-size-footer: 18px;
+    --font-size-body: 26px;
+    --font-size-caption: 18px;
 
+    --font-size-h1: 98px;
+    --font-size-h2: 72px;
+    --font-size-h2-number: 70px;
+    --font-size-subheading: 44px;
+    --font-size-intro: 28px;
+    --font-size-h3: 48px;
+    --font-size-h4: var(--font-size-body);
+
+    --font-size-card-heading: 34px;
+    --font-size-card-text: 24px;
+
+    --font-size-info: 32px;
+    --font-size-button: 28px; /* еще нигде не применяла */
+
+    --font-size-sidebar-text: 20px;
+    --font-size-sidebar-number-icon: 22px;
+
+    /* LINE HEIGHT */
+    --line-height-navbar: 20px;
+    --line-height-footer: 0px; /* нет величины пока что */
+    --line-height-body: 38px;
+    --line-height-caption: 26px;
+
+    --line-height-h1: 100px;
+    --line-height-h2: 76px;
+    --line-height-h2-number: var(--line-height-h2);
+    --line-height-subheading: 58px;
+    --line-height-intro: 38px;
+    --line-height-h3: 58px;
+    --line-height-h4: var(--line-height-body);
+
+    --line-height-card-heading: 38px;
+    --line-height-card-text: 32px;
+
+    --line-height-info: 38px;
+    --line-height-button: 34px; /* еще нигде не применяла, проверить, так как странная величина */
+
+    --line-height-sidebar-text: 24px;
+    --line-height-sidebar-number-icon: 20px;
+  }
 }
-
-@media (min-width: 1376px) {
-    
-}
-
-@media (min-width: 834px) {
-    
-}
-
-@media (min-width: 375px) {
-    
-}
-*/
-

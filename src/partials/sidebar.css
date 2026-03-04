@@ -1,28 +1,18 @@
-/* .I_Sidebar_Chevron{
-  width: var(--sidebar-icon-size);
-  height: var(--sidebar-icon-size);
-  flex: 0 0 var(--sidebar-icon-size);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--black); 
-
-  background: center / 12px 20px no-repeat;
-  background-image: url("../images/I_Sidebar_Chevron_default.svg");
-
-  transition: transform .2s ease;
-} 
-.W_Sidebar_Dropdown[open] > summary .I_Sidebar_Chevron{
-  background-image: url("../images/I_Sidebar_Chevron_active.svg");
-  transform: rotate(90deg);
+.sidebar-theory {
+  display: flex;
+  width: 100%;
+  /* height: 628px; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
-*/
 
 /* из js*/
 .open {
   display: flex;
 }
 
+/* шеврон */
 .I_Sidebar_Chevron {
   display: flex;
   align-items: center;
@@ -30,11 +20,11 @@
   width: 32px;
   aspect-ratio: 1/1;
 }
-
 .I_Sidebar_Chevron.open {
   transform: rotate(90deg);
 }
 
+/* тексты */
 .A_Sidebar_Text {
   display: flex;
   max-width: 256px;
@@ -55,14 +45,52 @@
   font-style: normal;
 }
 
+/* контейнер текста с цифрой */
+.M_NumberAndText {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* текст с цифрой и шевроном */
+.W_Sidebar_Item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--M_Sidebar_1_Padding, 10px);
+  gap: var(--M_Sidebar_1_Gap, 16px);
+}
+
+/* контейнер для подглав */
 .C_SidebarLinks {
   display: none;
   flex-direction: column;
   gap: var(--C_SidebarLinks_Gap, 8px);
 }
-
-.C_SidebarLinks.open {
+/* подглава */
+.C_SidebarLinks a {
   display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  padding-left: 50px;
+}
+
+/* контейнер главы с подглавами */
+.W_Sidebar_Dropdown {
+  display: flex;
+  flex-direction: column;
+  /* gap: var(--W_Sidebar_Dropdown_Gap, 8px); */
+}
+
+.C_SidebarLinks.open,
+.W_Sidebar_Dropdown.open .C_SidebarLinks {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.W_Sidebar_Dropdown.open .W_Sidebar_Item .M_NumberAndText {
+  color: var(--orange);
 }
 
 .I_Sidebar_number {
@@ -87,16 +115,11 @@
   color: var(--black);
 }
 
-.M_NumberAndText {
-  display: flex;
-  align-items: baseline;
-  gap: var(--M_Sidebar_1_Gap, 16px);
+.W_Sidebar_Dropdown.open .I_Sidebar_number,
+.W_Sidebar_Dropdown.open .A_Sidebar_Text {
+  color: var(--orange);
 }
 
-.W_Sidebar_Item {
-  display: flex;
-  width: 370px;
-  padding: var(--M_Sidebar_1_Padding, 10px);
-  align-items: flex-start;
-  gap: var(--M_Sidebar_1_Gap, 16px);
+.W_Sidebar_Dropdown.open svg path {
+  fill: var(--orange);
 }

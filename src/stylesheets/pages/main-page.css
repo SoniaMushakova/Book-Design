@@ -1,123 +1,138 @@
-.fullscreen-image {
-  width: 100%;
-  max-width: none;
-  height: auto;
-  display: block;
-  position: relative;
-}
-
+/* секция целиком с карточками */
 .W_Section {
   display: flex;
-  width: 100%;
+  width: 100%; /* от main-container-lending*/
   margin: 0px auto;
   flex-direction: column;
   align-items: center;
   gap: var(--gap-100-section);
 }
 
-.W_SectionGrid {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: 20px;
-  width: 100%;
+/* все с кнопкой */
+.W_SectionText {
+  display: flex;
+  width: 100%; /* от main-container-lending*/
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+
   margin: 0px auto;
 }
+.W_SectionText--theory {
+  padding-right: calc(var(--column12-1) + var(--column-gap));
+}
 
+/* цифра + текст */
+.W_SectionNumberAndText {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.W_SectionText--theory .W_SectionNumberAndText {
+  width: var(--column12-7);
+}
+.W_SectionText--indesign .W_SectionNumberAndText {
+  width: var(--column12-6);
+}
+
+/* заголовок + текст */
+.M_SectionTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 24px;
+}
+.W_SectionText--theory .M_SectionTextContainer {
+  width: var(--column12-6);
+}
+.W_SectionText--indesign .M_SectionTextContainer {
+  width: var(--column12-5);
+}
+
+/* только цифра */
 .A_SectionNumber {
-  margin: 0;
-  justify-self: center;
-  align-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
   font-family: 'GothicA1', sans-serif;
   font-size: var(--font-size-h2-number);
   font-weight: 600;
   font-style: normal;
   color: var(--black);
+
+  margin: 0;
+  padding-top: 3px;
+  width: var(--column12-1);
 }
 
-.M_SectionTextContainer {
+/* кнопка в секции ДОДЕЛАТЬ*/
+.W_Section--theory > .button {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  width: var(--column12-3);
 }
-
 
 /* FOR THEORY & PRACTICE SECTIONS */
-
-.W_SectionGrid--theory > .A_SectionNumber {
-  grid-column: 1 / span 1;
+@media (min-width: 375px) {
 }
 
-.W_SectionGrid--theory > .M_SectionTextContainer{
-  grid-column: 2 / span 6;
+@media (min-width: 744px) {
+}
+@media (min-width: 1376px) {
 }
 
-.W_SectionGrid--theory > .button {
-  grid-column: 9 / span 3;
-  justify-self: center;
-  align-self: start;
+@media (min-width: 1728px) {
 }
-
 /* FOR INDESIGN SECTION */
 
-.W_SectionGrid--indesign > img {
-  grid-column: 1 / span 6;
-  width: 100%;
+.W_SectionText--indesign > img {
+  width: var(--column12-6);
   height: auto;
-  align-self: stretch;
+  align-items: stretch;
 }
 
-.W_SectionGrid--indesign > .A_SectionNumber {
-  grid-column: 7 / span 1;
+.W_SectionText--indesign > .M_SectionTextContainer {
+  width: var(--column12-5);
 }
 
-.W_SectionGrid--indesign > .M_SectionTextContainer {
-  grid-column: 8 / span 5;
-}
+/* баннеры и фотки */
 
+.fullscreen-image {
+  width: 100%; /* от main-lending*/
+  max-width: none;
+  height: auto;
+  display: block;
+  position: relative;
+}
 
 .W_BannerPDF {
-  width: 100%;
+  width: 100%; /* от main-container-lending*/
   height: auto;
-  padding: 60px 120px; /* или через justify-content: space-evenly; */
+  padding: 60px 0px;
+  justify-content: space-evenly;
 
   display: flex;
-  align-items: center;        /* центр по высоте */
-  justify-content: center;    /* центр по ширине */
-  gap: 120px;
+  align-items: center; /* центр по высоте */
 
   border-radius: var(--card-border-radius);
   overflow: hidden; /* важно, чтобы фон и контент обрезались по радиусу */
 
-  background-image: url("../../images/mainPage-S-banner-pdf-bg.svg");
+  background-image: url('../../images/mainPage-S-banner-pdf-bg.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.W_BannerSubscription {
-  width: 100%;
-  height: auto;
-  padding: 60px 120px; /* или через justify-content: space-evenly; */
-
-  display: flex;
-  align-items: center;        /* центр по высоте */
-  justify-content: center;    /* центр по ширине */
-  gap: 120px;
-
-  overflow: hidden; 
-
-  /*background-image: url("../../images/mainPage-S-banner-pdf-bg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  background-color: var(--black);
-}
-
 /* SVG-текст слева */
 .A_BannerPDFText {
   display: block;
-  max-width: min(620px, 45%);
+  width: 40%;
+  /* width: var(--column12-5); */
+  /* max-width: min(620px, 45%); */
   height: auto;
   flex: 0 1 auto;
 }
@@ -128,8 +143,10 @@
   flex-direction: column;
   gap: 24px;
   align-items: stretch;
-  flex: 0 1 520px;  /* базовая ширина колонки */
-  min-width: 280px;
+  width: 34%;
+  /* min-width: 280px; */
+  /* width: var(--column12-5); */
+  flex: 0 1 auto; /* базовая ширина колонки */
 }
 
 /* “поле ввода” пока как блок */
@@ -147,7 +164,9 @@
 
 /* префикс tg: */
 .A_BannerPDFPrefix {
-  font: 500 18px/1.2 system-ui, sans-serif;
+  font:
+    500 18px/1.2 system-ui,
+    sans-serif;
   opacity: 0.9;
 }
 
@@ -164,11 +183,33 @@
   background: #2f2f2f;
   color: #fff;
 
-  font: 600 18px/1.2 system-ui, sans-serif;
+  font:
+    600 18px/1.2 system-ui,
+    sans-serif;
+}
+
+/* в конце главы */
+.W_BannerSubscription {
+  width: 100%;
+  height: auto;
+  padding: 60px 120px; /* или через justify-content: space-evenly; */
+
+  display: flex;
+  align-items: center; /* центр по высоте */
+  justify-content: center; /* центр по ширине */
+  gap: 120px;
+
+  overflow: hidden;
+
+  /*background-image: url("../../images/mainPage-S-banner-pdf-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  background-color: var(--black);
 }
 
 /* (опционально) адаптив: на узких экранах складываем в колонку */
-@media (max-width: 900px) {
+/* @media (max-width: 744px) {
   .W_BannerPDF {
     flex-direction: column;
     gap: 32px;
@@ -182,4 +223,4 @@
   .M_BannerPDFForm {
     width: min(520px, 100%);
   }
-}
+} */

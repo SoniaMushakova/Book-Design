@@ -1,0 +1,14 @@
+<a class="UpButton" href="#" aria-label="Наверх">
+  <img src="../images/Up_Button.svg" alt="" />
+</a>
+
+<script>
+  ;(function () {
+    const btn = document.querySelector('.UpButton')
+    if (!btn) return
+    btn.addEventListener('click', (e) => {
+      e.preventDefault()
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    })
+  })()
+</script>
