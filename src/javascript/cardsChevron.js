@@ -1,14 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const section = document.querySelector(".W_Cards");
-  if (!section) return;
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.W_Cards')
+  if (!sections || sections.length === 0) return
 
-  const grid = section.querySelector("#cardsGrid");
-  const btn  = section.querySelector("#cardsChevron");
-  if (!grid || !btn) return;
+  sections.forEach((section) => {
+    const grid = section.querySelector('.C_Card')
+    const btn = section.querySelector('.M_CardsChevron')
+    if (!grid || !btn) return
 
-  btn.addEventListener("click", () => {
-    grid.classList.remove("is-collapsed");
-    section.classList.add("is-expanded");
-    btn.setAttribute("aria-expanded", "true");
-  });
-});
+    btn.addEventListener('click', () => {
+      grid.classList.remove('is-collapsed')
+      section.classList.add('is-expanded')
+      btn.setAttribute('aria-expanded', 'true')
+      // ensure the chevron button is removed from view
+      btn.style.display = 'none'
+      btn.setAttribute('aria-hidden', 'true')
+    })
+  })
+})

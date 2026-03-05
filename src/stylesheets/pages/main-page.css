@@ -168,18 +168,25 @@ picture > img.fullscreen-image {
   max-width: 100%;
   height: auto;
 }
+/* --- БАННЕРЫ --- */
 
-.W_BannerPDF {
-  width: 100%; /* от main-container-lending*/
-  height: auto;
-  padding: 60px 0px;
-  justify-content: space-evenly;
-
+/* 1. Общие правила для обоих баннеров (чтобы контент стоял одинаково) */
+.W_BannerPDF,
+.W_BannerSubscription {
   display: flex;
   align-items: center; /* центр по высоте */
+  justify-content: center; /* центр по ширине */
+  gap: 100px; /* одинаковое расстояние между текстом и формой */
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
+/* 2. Индивидуальные стили первого баннера (PDF) */
+.W_BannerPDF {
+  width: 100%; /* от main-container-lending */
+  height: auto;
+  padding: 60px 20px;
   border-radius: var(--card-border-radius);
-  overflow: hidden; /* важно, чтобы фон и контент обрезались по радиусу */
 
   background-image: url('../../images/mainPage-S-banner-pdf-bg.svg');
   background-size: cover;
@@ -187,77 +194,97 @@ picture > img.fullscreen-image {
   background-repeat: no-repeat;
 }
 
+/* 3. Индивидуальные стили второго баннера (Подписка в конце) */
+.W_BannerSubscription {
+  /* Растягиваем на весь экран независимо от родителя */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+
+  min-height: 100vh; /* высота в один экран */
+  padding: 60px 40px;
+
+  background-color: var(--black);
+}
+
+/* --- ВНУТРЕННОСТИ БАННЕРОВ --- */
+
 /* SVG-текст слева */
 .A_BannerPDFText {
   display: block;
   width: 40%;
-  /* width: var(--column12-5); */
-  /* max-width: min(620px, 45%); */
   height: auto;
   flex: 0 1 auto;
 }
 
-/* правая колонка (поле + кнопка) */
+/* Обертка для SVG, если используется */
+.A_BannerPDFText-wrapper {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Правая колонка (поле + кнопка) */
 .M_BannerPDFForm {
   display: flex;
   flex-direction: column;
   gap: 24px;
   align-items: stretch;
   width: 34%;
-  /* min-width: 280px; */
-  /* width: var(--column12-5); */
-  flex: 0 1 auto; /* базовая ширина колонки */
+  flex: 0 1 auto;
 }
 
-/* “поле ввода” пока как блок */
+/* “Поле ввода” */
 .A_BannerPDFField {
   display: flex;
   align-items: center;
   gap: 10px;
-
   height: 64px;
   padding: 0 28px;
-
   border-radius: 999px;
   background: #f7f0e6; /* подставь свои переменные */
 }
 
-/* префикс tg: */
+/* Префикс tg: */
 .A_BannerPDFPrefix {
   font:
-    500 18px/1.2 'BrutalType',
+    400 18px/1.2 'BrutalType',
     sans-serif;
   opacity: 0.9;
+  color: var(--black-light);
 }
 
-/* в конце главы */
-.W_BannerSubscription {
-  display: flex;
-  align-items: center; /* центр по высоте */
-  justify-content: center; /* центр по ширине */
-  gap: 120px;
-  width: 100%;
-  /* height: auto; */
-  min-height: calc(100vh + 60px);
-  padding: 60px 120px; /* или через justify-content: space-evenly; */
+/* --- АДАПТИВ БАННЕРОВ ДЛЯ МОБИЛЬНЫХ --- */
 
-  overflow: hidden;
-  background-color: var(--black);
-}
-
-/* (опционально) адаптив: на узких экранах складываем в колонку */
-/* @media (max-width: 744px) {
-  .W_BannerPDF {
+@media (max-width: 743px) {
+  /* Перестраиваем оба баннера одинаково */
+  .W_BannerPDF,
+  .W_BannerSubscription {
     flex-direction: column;
     gap: 32px;
     text-align: center;
+    min-height: auto;
   }
 
+  .W_BannerSubscription {
+    padding: 80px 40px;
+    gap: 52px;
+  }
+
+  .W_BannerPDF {
+    padding: 120px 20px;
+    gap: 40px;
+    background-image: url('../../images/mainPage-XS-banner-pdf-bg.svg');
+  }
+
+  /* Растягиваем контент */
   .A_BannerPDFText {
+    width: 100%;
     max-width: 100%;
   }
 
   .M_BannerPDFForm {
-    width: min(520px, 100%);
+    width: 100%; /* Форма занимает всю ширину */
+    max-width: 520px; /* Ограничитель для планшетов */
+    align-items: stretch;
   }
-} */
+}

@@ -28,7 +28,7 @@
 .M_Card {
   display: flex;
   width: 100%;
-  /*max-width: 373px;*/
+  min-width: 0;
   padding: 8px 8px 28px 8px;
   flex-direction: column;
   align-items: flex-start;
@@ -36,6 +36,16 @@
   border-radius: var(--card-border-radius);
   background: var(--black);
   box-shadow: 0 0 4.271px 1.424px rgba(59, 59, 59, 0.2);
+}
+
+.A_CardImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  align-self: stretch;
+  border-radius: var(--card-image-border-radius);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .C_Card.is-collapsed > .M_Card:nth-child(n + 5) {
@@ -53,34 +63,14 @@
   .C_Card {
     grid-template-columns: none;
     grid-auto-flow: column;
-
     grid-auto-columns: 85%;
-
     /* прокрутка + ограничиваем ее контейнером */
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-
-    /* Настраиваем плавное прилипание (снэппинг) */
+    /* плавное прилипание (снэппинг) */
     scroll-snap-type: inline mandatory;
-
-    /* Скрываем визуальный ползунок скроллбара (опционально) */
-    scrollbar-width: none; /* Для Firefox */
+    scrollbar-width: none;
   }
-
-  /* .C_Card {
-    /* Вырываем контейнер из ограничений родителя на всю ширину экрана */
-  /* width: 100vw;
-    margin-left: calc(50% - 50vw); */
-
-  /* Добавляем внутренние отступы, чтобы первая и последняя карточки не прилипали вплотную к рамкам телефона */
-  /* padding-left: 20px;
-    padding-right: 20px;
-  } */
-
-  /* Скрываем скроллбар для Chrome/Safari/Edge */
-  /*.C_Card::-webkit-scrollbar {
-    display: none;
-  } */
 
   .M_Card {
     /* Указываем, какой частью карточка должна прилипать к краю экрана при скролле */
@@ -93,6 +83,17 @@
   }
   .M_CardsChevron {
     display: none;
+  }
+
+  .A_CardImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    align-self: stretch;
+    border-radius: var(--card-image-border-radius);
+
+    object-fit: cover;
+    flex-shrink: 0;
   }
 }
 

@@ -9,7 +9,9 @@
 
   <body class="index">
     <!-- что из хедера оборачивать в nav? какое свойство задать контейнеру nav?-->
-    <navbar></navbar>
+    <div class="header-desktop"><navbar></navbar></div>
+    <div class="header-mobile"><W_navbar-2></W_navbar-2></div>
+
     <main class="main-lending">
       <picture class="fullscreen-image-wrapper">
         <source
@@ -33,7 +35,19 @@
         </section>
       </div>
 
-      <img class="fullscreen-image" src="images/mainPage-S-banner.svg" />
+      <!-- <img class="fullscreen-image" src="images/mainPage-S-banner.svg" /> -->
+      <picture class="fullscreen-image-wrapper">
+        <source
+          media="(min-width: 375px) and (max-width: 743px)"
+          srcset="images/mainPage-XS-banner.svg"
+        />
+
+        <img
+          class="fullscreen-image"
+          src="images/mainPage-S-banner.svg"
+          alt="Разделительный баннер"
+        />
+      </picture>
 
       <div class="main-container-lending">
         <!-- 1 Theory -->
@@ -54,7 +68,7 @@
             <a class="A_Button" href="./pages/Theory.html">Перейти к теории</a>
           </div>
 
-          <!-- Cards -->
+          <!-- Cards 1 -->
           <div class="W_Cards">
             <div class="C_Card is-collapsed" id="cardsGrid">
               <a class="M_Card" href="./pages/Article_1.html">
@@ -198,6 +212,7 @@
               aria-controls="cardsGrid"
               aria-expanded="false"
             >
+              <!-- <button class="M_CardsChevron" aria-expanded="false"> -->
               <span class="cards-chevron-font">Показать все статьи</span>
               <img
                 src="./images/I_CardsChevron.svg"
@@ -227,6 +242,17 @@
         </section>
 
         <section class="W_BannerPDF">
+          <!-- <picture class="A_BannerPDFText-wrapper">
+            <source
+              media="(min-width: 375px) and (max-width: 743.98px)"
+              srcset="images/mainPage-XS-banner-pdf-bg.svg"
+            />
+            <img
+              class="A_BannerPDFText"
+              src="images/mainPage-S-banner-pdf-text.svg"
+              alt="Дарим PDF со всей теорией по дизайну книги"
+            />
+          </picture> -->
           <img
             class="A_BannerPDFText"
             src="images/mainPage-S-banner-pdf-text.svg"
@@ -236,7 +262,7 @@
           <div class="M_BannerPDFForm">
             <!-- пока просто визуальный инпут -->
             <div class="A_BannerPDFField">
-              <span class="A_BannerPDFPrefix">tg:</span>
+              <span class="A_BannerPDFPrefix">@</span>
               <span class="A_BannerPDFPlaceholder"> </span>
             </div>
 
@@ -262,121 +288,119 @@
               >Перейти к практике</a
             >
           </div>
-          <div class="W_Lending">
-            <!-- Cards -->
-            <div class="W_Cards">
-              <div class="C_Card is-collapsed" id="cardsGrid">
-                <a class="M_Card" href="./pages/Article_none.html">
-                  <img
-                    class="A_CardImage"
-                    src="./images/Card_Cover_none.svg"
-                    alt="Card image"
-                    loading="lazy"
-                  />
-                  <div class="W_CardTypography">
-                    <h5 class="card-heading">
-                      <span class="card-heading-number">08</span>
-                      Анализ задачи
-                    </h5>
-                    <p class="card-body">
-                      Шаг, который позволяет ускорить процесс набросков и
-                      быстрее придумать макет
-                    </p>
-                  </div>
-                </a>
-
-                <a class="M_Card" href="./pages/Article_none.html">
-                  <img
-                    class="A_CardImage"
-                    src="./images/Card_Cover_none.svg"
-                    alt="Card image"
-                    loading="lazy"
-                  />
-                  <div class="W_CardTypography">
-                    <h5 class="card-heading">
-                      <span class="card-heading-number">09</span>
-                      Текст
-                    </h5>
-                    <p class="card-body">
-                      Определимся со шрифтом и дизайном основного текстового
-                      блока. Оформим базовыеэлементы навигации – номер страницы
-                      и колонтитул
-                    </p>
-                  </div>
-                </a>
-
-                <a class="M_Card" href="./pages/Article_none.html">
-                  <img
-                    class="A_CardImage"
-                    src="./images/Card_Cover_none.svg"
-                    alt="Card image"
-                    loading="lazy"
-                  />
-                  <div class="W_CardTypography">
-                    <h5 class="card-heading">
-                      <span class="card-heading-number">10</span>
-                      Картинки
-                    </h5>
-                    <p class="card-body">
-                      Узнаем, от чего зависит размер картинки, как ее можно
-                      расположить относительно текста
-                    </p>
-                  </div>
-                </a>
-
-                <a class="M_Card" href="./pages/Article_none.html">
-                  <img
-                    class="A_CardImage"
-                    src="./images/Card_Cover_none.svg"
-                    alt="Card image"
-                    loading="lazy"
-                  />
-                  <div class="W_CardTypography">
-                    <h5 class="card-heading">
-                      <span class="card-heading-number">11</span>
-                      Верстка
-                    </h5>
-                    <p class="card-body">
-                      В этой главе ты познакомишься с эффективным порядком
-                      работы, ускоришь работу при помощи инструментов InDesign
-                    </p>
-                  </div>
-                </a>
-
-                <a class="M_Card" href="./pages/Article_none.html">
-                  <img
-                    class="A_CardImage"
-                    src="./images/Card_Cover_none.svg"
-                    alt="Card image"
-                    loading="lazy"
-                  />
-                  <div class="W_CardTypography">
-                    <h5 class="card-heading">
-                      <span class="card-heading-number">12</span>
-                      Печать
-                    </h5>
-                    <p class="card-body">
-                      Чек-лист ошибок, которые нужно проверить перед печатью.
-                      Узнаем лайфхаки, как ускорить препресс
-                    </p>
-                  </div>
-                </a>
-              </div>
-
-              <button
-                class="M_CardsChevron"
-                id="cardsChevron"
-                aria-controls="cardsGrid"
-                aria-expanded="false"
-              >
-                <span class="cards-chevron-font">Показать все статьи</span>
+          <!-- Cards 2 -->
+          <div class="W_Cards">
+            <div class="C_Card is-collapsed" id="cardsGrid-2">
+              <a class="M_Card" href="./pages/Article_none.html">
                 <img
-                  src="./images/I_CardsChevron.svg"
-                  class="I_NavbarLogo"
-                  aria-hidden="true"
+                  class="A_CardImage"
+                  src="./images/Card_Cover_none.svg"
+                  alt="Card image"
+                  loading="lazy"
                 />
-              </button>
+                <div class="W_CardTypography">
+                  <h5 class="card-heading">
+                    <span class="card-heading-number">08</span>
+                    Анализ задачи
+                  </h5>
+                  <p class="card-body">
+                    Шаг, который позволяет ускорить процесс набросков и быстрее
+                    придумать макет
+                  </p>
+                </div>
+              </a>
+
+              <a class="M_Card" href="./pages/Article_none.html">
+                <img
+                  class="A_CardImage"
+                  src="./images/Card_Cover_none.svg"
+                  alt="Card image"
+                  loading="lazy"
+                />
+                <div class="W_CardTypography">
+                  <h5 class="card-heading">
+                    <span class="card-heading-number">09</span>
+                    Текст
+                  </h5>
+                  <p class="card-body">
+                    Определимся со шрифтом и дизайном основного текстового
+                    блока. Оформим базовыеэлементы навигации – номер страницы и
+                    колонтитул
+                  </p>
+                </div>
+              </a>
+
+              <a class="M_Card" href="./pages/Article_none.html">
+                <img
+                  class="A_CardImage"
+                  src="./images/Card_Cover_none.svg"
+                  alt="Card image"
+                  loading="lazy"
+                />
+                <div class="W_CardTypography">
+                  <h5 class="card-heading">
+                    <span class="card-heading-number">10</span>
+                    Картинки
+                  </h5>
+                  <p class="card-body">
+                    Узнаем, от чего зависит размер картинки, как ее можно
+                    расположить относительно текста
+                  </p>
+                </div>
+              </a>
+
+              <a class="M_Card" href="./pages/Article_none.html">
+                <img
+                  class="A_CardImage"
+                  src="./images/Card_Cover_none.svg"
+                  alt="Card image"
+                  loading="lazy"
+                />
+                <div class="W_CardTypography">
+                  <h5 class="card-heading">
+                    <span class="card-heading-number">11</span>
+                    Верстка
+                  </h5>
+                  <p class="card-body">
+                    В этой главе ты познакомишься с эффективным порядком работы,
+                    ускоришь работу при помощи инструментов InDesign
+                  </p>
+                </div>
+              </a>
+
+              <a class="M_Card" href="./pages/Article_none.html">
+                <img
+                  class="A_CardImage"
+                  src="./images/Card_Cover_none.svg"
+                  alt="Card image"
+                  loading="lazy"
+                />
+                <div class="W_CardTypography">
+                  <h5 class="card-heading">
+                    <span class="card-heading-number">12</span>
+                    Печать
+                  </h5>
+                  <p class="card-body">
+                    Чек-лист ошибок, которые нужно проверить перед печатью.
+                    Узнаем лайфхаки, как ускорить препресс
+                  </p>
+                </div>
+              </a>
             </div>
+
+            <button
+              class="M_CardsChevron"
+              id="cardsChevron-2"
+              aria-controls="cardsGrid-2"
+              aria-expanded="false"
+            >
+              <span class="cards-chevron-font">Показать все статьи</span>
+              <img
+                src="./images/I_CardsChevron.svg"
+                class="I_NavbarLogo"
+                aria-hidden="true"
+              />
+            </button>
           </div>
         </section>
       </div>
@@ -390,7 +414,7 @@
         <div class="M_BannerPDFForm">
           <!-- пока просто визуальный инпут -->
           <div class="A_BannerPDFField">
-            <span class="A_BannerPDFPrefix">tg:</span>
+            <span class="A_BannerPDFPrefix">@</span>
             <span class="A_BannerPDFPlaceholder"> </span>
           </div>
 

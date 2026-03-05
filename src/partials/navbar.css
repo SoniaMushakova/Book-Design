@@ -126,7 +126,15 @@
   gap: 20px;
 }
 
-@media (min-width: 375px) {
+/* --- ЛОГИКА ОТОБРАЖЕНИЯ ХЕДЕРОВ по умолчанию --- */
+.header-desktop {
+  display: block;
+}
+.header-mobile {
+  display: none;
+}
+
+@media (max-width: 743px) {
   /* navbar-сосиска не используется */
   .navbar {
     height: 62px;
@@ -134,10 +142,10 @@
   }
   .W_navbar-2 {
     height: 64px;
-    width: var(--column4-4);
+    width: 100%;
   }
   .navbar-2 {
-    width: 100%;
+    width: var(--column4-4);
   }
 
   .A_Burger_Menu {
@@ -151,6 +159,13 @@
   }
   .W_Menu {
     display: none;
+  }
+
+  .header-desktop {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
   }
 }
 
