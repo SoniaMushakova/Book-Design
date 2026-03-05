@@ -51,7 +51,11 @@
   .A_Button-banner,
   .A_Button {
     width: 100%;
+    height: 48px;
   }
+  /* .A_Button-banner {
+    height: 48px;
+  } */
 }
 
 @media (min-width: 744px) {

@@ -287,4 +287,12 @@ picture > img.fullscreen-image {
     max-width: 520px; /* Ограничитель для планшетов */
     align-items: stretch;
   }
+
+  .A_BannerPDFField {
+    height: 48px;
+  }
+  /* только для обложек в теге picture, потом задам переменной от высоты хедера */
+  .fullscreen-image-wrapper {
+    margin-top: 40px;
+  }
 }
