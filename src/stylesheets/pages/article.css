@@ -6,13 +6,6 @@
   padding: var(--h-2-padding-article, 12px) 0;
   margin-bottom: 20px;
   border-bottom: 1px solid #3b3b3b;
-
-  /* уже есть в typography */
-  /* font-family: 'TT_Mussels', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: var(--font-size-h2);
-    line-height: var(--line-height-h2); */
 }
 
 .A_Header_3 {
@@ -47,5 +40,5 @@
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
-  width: 753px;
+  /* width: 100%; */
 }

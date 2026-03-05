@@ -1,7 +1,7 @@
 /* контейнер без отступов для navbar-2 */
 .W_navbar-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   position: fixed;
@@ -48,7 +48,7 @@
   align-items: center;
   align-self: stretch;
 
-  width: var(--column12-12);
+  /* width: var(--column12-12); */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -199,7 +199,7 @@
   /* navbar-сосиска не используется */
   .navbar {
     height: 62px;
-    width: var(--column4-4);
+    width: var(--column12-12);
   }
   .W_navbar-2 {
     height: 64px;
@@ -208,13 +208,6 @@
   .navbar-2 {
     width: var(--column12-12);
     padding: 0px;
-  }
-
-  .A_Burger_Menu {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    /* написать взаимодействие при клике с телефона/планшета */
   }
   .M_Search {
     display: none;
@@ -247,16 +240,17 @@
   }
   .W_navbar-2 {
     height: 64px;
-    width: var(--column12-12);
+    width: 100%;
   }
   .navbar-2 {
-    width: 100%;
+    width: var(--column12-12);
+    padding: 0px;
   }
 
   /* скрытие элементов */
-  /* .A_Burger_Menu {
+  .A_Burger_Menu {
     display: none;
-  } */
+  }
   .M_Search {
     display: flex;
   }
@@ -280,6 +274,7 @@
   }
   .W_navbar-2 {
     height: 74px;
+    width: 100%;
   }
 }
 @media (min-width: 1728px) {
@@ -288,5 +283,6 @@
   }
   .W_navbar-2 {
     height: 94px;
+    width: 100%;
   }
 }
