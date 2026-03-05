@@ -123,3 +123,21 @@
 .W_Sidebar_Dropdown.open svg path {
   fill: var(--orange);
 }
+
+/* 1. Базовое поведение ссылок в сайдбаре */
+.sidebar-theory a {
+  /* Убираем плавные переходы, если они случайно унаследовались от других ссылок */
+  transition: none;
+}
+
+/* 2. Мгновенный ховер ТОЛЬКО для десктопов (мышки) */
+@media (hover: hover) {
+  .sidebar-theory a:hover {
+    color: var(--orange);
+  }
+}
+
+/* 3. Эффект тапа/нажатия для планшетов и телефонов */
+.sidebar-theory a:active {
+  color: var(--orange);
+}

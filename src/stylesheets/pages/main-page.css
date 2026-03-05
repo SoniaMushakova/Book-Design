@@ -198,7 +198,7 @@ picture > img.fullscreen-image {
 .W_BannerSubscription {
   /* Растягиваем на весь экран независимо от родителя */
   width: 100vw;
-  margin-left: calc(50% - 50vw);
+  /* margin-left: calc(50% - 50vw); */
 
   min-height: 100vh; /* высота в один экран */
   padding: 60px 40px;
@@ -238,7 +238,7 @@ picture > img.fullscreen-image {
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 64px;
+  height: var(--btn-height);
   padding: 0 28px;
   border-radius: 999px;
   background: #f7f0e6; /* подставь свои переменные */
@@ -289,7 +289,7 @@ picture > img.fullscreen-image {
   }
 
   .A_BannerPDFField {
-    height: 48px;
+    height: var(--btn-height);
   }
   /* только для обложек в теге picture, потом задам переменной от высоты хедера */
   .fullscreen-image-wrapper {

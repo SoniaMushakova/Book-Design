@@ -1,15 +1,42 @@
-.A_Button {
-  display: inline-flex;
-  padding: 20px 44px; /* адаптивить через вэриаблс? */
-  justify-content: center;
-  align-items: center;
-  border-radius: 60px; /* поменять на общий??*/
-  background: var(--black);
-  color: var(--white);
-  --btn-hover-bg: var(--orange);
-  font-size: var(--font-size-button);
+/* 1. Задаем глобальную переменную для высоты кнопок (для десктопа по умолчанию) */
+:root {
+  --btn-height: 64px;
 }
 
+/* 2. Общая база для ОБЕИХ кнопок (чтобы не дублировать код) */
+.A_Button,
+.A_Button-banner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--btn-height); /* Обе кнопки строго слушаются одну переменную */
+
+  border-radius: 999px; /* Делаем скругление одинаковым (пилюля) */
+  text-decoration: none;
+  font-size: var(--font-size-button);
+  font-weight: 500;
+  color: var(--white);
+
+  /* Плавный переход для ховера (опционально) */
+  transition: background-color 0.2s ease;
+}
+
+/* 3. Обычная кнопка: ширина по контенту */
+.A_Button {
+  background: var(--black);
+  --btn-hover-bg: var(--orange);
+
+  padding: 0 44px; /* Только боковые отступы! Они задают ширину относительно текста */
+  width: fit-content; /* Ширина строго по размеру контента + паддинги */
+}
+
+/* 4. Кнопка баннера: ширина по родителю */
+.A_Button-banner {
+  width: 100%; /* Всегда занимает 100% ширины своего родительского контейнера */
+  padding: 0 24px; /* Небольшой боковой отступ на случай сужения */
+}
+
+/* Цветовые модификаторы */
 .button-black {
   background: var(--black);
   --btn-hover-bg: var(--orange);
@@ -20,69 +47,47 @@
   --btn-hover-bg: var(--green); /* При наведении станет зеленой */
 }
 
-.A_Button:hover {
+/* Ховеры */
+@media (hover: hover) {
+  .A_Button:hover,
+  .A_Button-banner:hover {
+    background: var(--btn-hover-bg);
+  }
+}
+
+/* Эффект нажатия для мобилок */
+.A_Button:active,
+.A_Button-banner:active {
   background: var(--btn-hover-bg);
-  color: var(--white);
 }
 
-/* кнопка */
-.A_Button-banner {
-  height: 64px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+/* --- АДАПТИВ --- */
 
-  border-radius: 999px;
-  text-decoration: none;
+/* Мобильные экраны */
+@media (max-width: 743px) {
+  :root {
+    /* Меняем переменную, и ОБЕ кнопки синхронно становятся 48px! */
+    --btn-height: 48px;
+  }
 
-  color: var(--white);
-
-  font:
-    600 18px/1.2 'BrutalType',
-    sans-serif;
-}
-
-.A_Button-banner:hover {
-  background: var(--btn-hover-bg);
-  color: var(--white);
-}
-
-@media (min-width: 375px) {
-  .A_Button-banner,
   .A_Button {
+    /* На мобилках обычные кнопки обычно тоже растягивают на всю ширину для удобства нажатия. 
+       Если хочешь оставить ее по контенту и на телефоне — просто удали строчку ниже */
     width: 100%;
-    height: 48px;
   }
-  /* .A_Button-banner {
-    height: 48px;
-  } */
 }
 
+/* Планшеты и Десктоп (если нужно изменить поведение на широких экранах) */
 @media (min-width: 744px) {
-  .A_Button-banner {
-    display: inline-flex;
-    width: auto;
+  :root {
+    --btn-height: 60px;
   }
+
   .A_Button {
-    display: inline-flex;
-    padding: 20px 44px; /* адаптивить через вэриаблс? */
-    width: auto;
+    width: fit-content;
+  }
+
+  .A_Button-banner {
+    width: 100%; /* Остается 100% от родителя (от формы M_BannerPDFForm) */
   }
 }
-@media (min-width: 1376px) {
-}
-
-@media (min-width: 1728px) {
-}
-
-/* 
-  для шеврона у карточек 
-  .button {
-  display: inline-flex;
-  padding: 20px 44px; 
-  justify-content: center;
-  align-items: center;
-  border-radius: 60px;
-  background: var(--black);
-  color: var(--white);
-} */
