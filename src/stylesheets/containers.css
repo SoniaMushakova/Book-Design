@@ -283,7 +283,7 @@
   /* не буду писать ширина 100% так как контент разъезжается */
   /* margin: 98px var(--main-margin); это когда у main не было gap*/
   /* margin: 0px var(--main-margin); */
-  border: 1px solid aquamarine;
+  /* border: 1px solid aquamarine; */
 }
 
 /* основные контейнеры */
