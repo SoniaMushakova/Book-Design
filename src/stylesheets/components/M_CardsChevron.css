@@ -1,6 +1,6 @@
 .M_CardsChevron {
   display: flex;
-  width: 100%;
+  width: 96%;
   padding: 20px 0;
   justify-content: center;
   align-items: center;
@@ -10,6 +10,7 @@
   appearance: none;
   -webkit-appearance: none;
 
-  border-top: 1px solid var(--black-light);
+  /* border-top: 1px solid var(--black-light); */
+  border-top: 1.5px solid #cecece;
   cursor: pointer;
 }

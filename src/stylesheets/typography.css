@@ -101,8 +101,10 @@ h4 {
   font-size: var(--font-size-card-text);
   line-height: var(--line-height-card-text);
   font-family: 'BrutalType';
-  font-weight: 400;
-  color: var(--white);
+  font-weight: 300;
+  /* color: var(--white); */
+  color: var(--grey);
+  /* color: #cfcfcf; */
 }
 
 .cards-chevron-font {

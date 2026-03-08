@@ -1,3 +1,9 @@
+.example {
+  border: 1px solid aquamarine;
+  /* box-sizing: border-box; */
+  display: block;
+}
+
 /* секция целиком с карточками */
 .W_Section {
   display: flex;
@@ -294,5 +300,14 @@ picture > img.fullscreen-image {
   /* только для обложек в теге picture, потом задам переменной от высоты хедера */
   .fullscreen-image-wrapper {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 1376px) {
+  .W_SectionText--theory {
+    padding-right: 0px;
+  }
+  .A_SectionNumber {
+    padding-top: 4px;
   }
 }

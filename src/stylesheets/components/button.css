@@ -1,64 +1,118 @@
-/* 1. Задаем глобальную переменную для высоты кнопок (для десктопа по умолчанию) */
 :root {
   --btn-height: 64px;
 }
 
-/* 2. Общая база для ОБЕИХ кнопок (чтобы не дублировать код) */
 .A_Button,
-.A_Button-banner {
+.A_Button-banner,
+.A_Chips {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: var(--btn-height); /* Обе кнопки строго слушаются одну переменную */
+  height: var(--btn-height);
+  border-radius: 999px;
+}
 
-  border-radius: 999px; /* Делаем скругление одинаковым (пилюля) */
-  text-decoration: none;
+.A_Button,
+.A_Chips {
+  width: fit-content;
+  white-space: nowrap;
+}
+
+/* 3. ИНДИВИДУАЛЬНЫЕ СТИЛИ */
+
+.A_Button {
+  padding: 0 44px;
+
+  font-family: 'Brutal Type', sans-serif;
   font-size: var(--font-size-button);
   font-weight: 500;
+
+  background: var(--black);
+  color: var(--white);
+  --btn-hover-bg: var(--orange);
+
+  transition: background-color 0.2s ease;
+}
+/* Цветовые модификаторы для A_Button-banner */
+/* .button-black {
+  background: var(--black);
+  --btn-hover-bg: var(--orange);
+} */
+
+.A_Button-banner {
+  width: 100%;
+  padding: 0 24px;
   color: var(--white);
 
-  /* Плавный переход для ховера (опционально) */
+  font-size: var(--font-size-button);
+  font-weight: 500;
+
+  background: var(--black);
+  color: var(--white);
+  --btn-hover-bg: var(--orange);
+
   transition: background-color 0.2s ease;
 }
 
-/* 3. Обычная кнопка: ширина по контенту */
-.A_Button {
-  background: var(--black);
-  --btn-hover-bg: var(--orange);
-
-  padding: 0 44px; /* Только боковые отступы! Они задают ширину относительно текста */
-  width: fit-content; /* Ширина строго по размеру контента + паддинги */
-}
-
-/* 4. Кнопка баннера: ширина по родителю */
-.A_Button-banner {
-  width: 100%; /* Всегда занимает 100% ширины своего родительского контейнера */
-  padding: 0 24px; /* Небольшой боковой отступ на случай сужения */
-}
-
-/* Цветовые модификаторы */
-.button-black {
-  background: var(--black);
-  --btn-hover-bg: var(--orange);
-}
-
-.button-orange {
+.A_Button-banner.button-orange {
   background: var(--orange);
-  --btn-hover-bg: var(--green); /* При наведении станет зеленой */
+  --btn-hover-bg: var(--green);
 }
 
-/* Ховеры */
-@media (hover: hover) {
+.A_Chips {
+  padding: 0 32px;
+  background: var(--grey);
+  color: var(--black-light);
+  font-size: var(--font-size-button);
+  line-height: 1;
+  cursor: pointer;
+
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    transform 0.12s ease;
+}
+
+/* --- ХОВЕРЫ И АКТИВНЫЕ СОСТОЯНИЯ --- */
+
+@media (hover: hover) and (pointer: fine) {
   .A_Button:hover,
   .A_Button-banner:hover {
     background: var(--btn-hover-bg);
   }
+  .A_Chips:hover {
+    background: var(--green);
+    color: var(--white);
+  }
 }
 
-/* Эффект нажатия для мобилок */
 .A_Button:active,
 .A_Button-banner:active {
   background: var(--btn-hover-bg);
+}
+
+.A_Chips:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.12);
+  outline-offset: 2px;
+}
+
+.A_Chips--active,
+.A_Chips:active {
+  background: var(--green);
+  color: var(--white);
+  transform: translateY(1px);
+}
+
+/* Контейнер для списка чипсов */
+.ChipsList {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 22px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* --- АДАПТИВ --- */
@@ -66,28 +120,27 @@
 /* Мобильные экраны */
 @media (max-width: 743px) {
   :root {
-    /* Меняем переменную, и ОБЕ кнопки синхронно становятся 48px! */
-    --btn-height: 48px;
+    --btn-height: 48px; /* Все три кнопки синхронно станут 48px */
   }
 
   .A_Button {
-    /* На мобилках обычные кнопки обычно тоже растягивают на всю ширину для удобства нажатия. 
-       Если хочешь оставить ее по контенту и на телефоне — просто удали строчку ниже */
-    width: 100%;
+    width: 100%; /* На мобилке черная кнопка тянется на весь экран. Если чипсы тоже нужно тянуть, добавь сюда .A_Chips */
   }
 }
 
-/* Планшеты и Десктоп (если нужно изменить поведение на широких экранах) */
+/* Планшеты и Десктоп */
 @media (min-width: 744px) {
   :root {
-    --btn-height: 60px;
+    --btn-height: 60px; /* Все три кнопки синхронно станут 60px */
   }
 
   .A_Button {
     width: fit-content;
   }
+}
 
-  .A_Button-banner {
-    width: 100%; /* Остается 100% от родителя (от формы M_BannerPDFForm) */
+@media (min-width: 1728px) {
+  .ChipsList {
+    width: 80%;
   }
 }

@@ -107,6 +107,8 @@ section {
 }
 body {
   line-height: 1;
+  /* в туторе советовали так сделать */
+  /* line-height: 1.5; */
 }
 ol,
 ul {
@@ -137,4 +139,10 @@ a {
   text-decoration: none;
   color: inherit;
   /* cursor: pointer; */
+}
+
+/* чтобы скролл по странице при переходе по ссылке был плавный
+добавила из тутора https://youtu.be/A4Y5VwXGG9g?si=HI5qOdmzbvSpK_Wh&t=452 */
+html {
+  scroll-behavior: smooth;
 }

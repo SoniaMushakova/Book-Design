@@ -6,9 +6,19 @@ import AChips from './javascript/A_Chips.jsx'
 import M_Card from './javascript/M_Card.jsx'
 
 const labels = [
-  'Препресс', 'Композиция', 'Шрифтовая пара', 'Анатомия книги', 'Макет',
-  'Формат', 'Поля', 'Классификация шрифтов', 'План работы над книгой', 'Печать',
-  'Картинки', 'Заголовки', 'Структура книги'
+  'Препресс',
+  'Композиция',
+  'Шрифтовая пара',
+  'Анатомия книги',
+  'Макет',
+  'Формат',
+  'Поля',
+  'Классификация шрифтов',
+  'План работы над книгой',
+  'Печать',
+  'Картинки',
+  'Заголовки',
+  'Структура книги'
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -30,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // render cards 1..6 (variants 0..5) inside a grid container
     root3.render(
       <div className="C_Card">
-        {[0,1,2,3,4,5,6,7].map(i => (
+        {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
           <M_Card key={i} variant={i} />
         ))}
       </div>
@@ -42,11 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const root4 = createRoot(container4)
     root4.render(
       <div className="C_Card">
-        {[8,9,10,11,12,13].map(i => (
+        {[8, 9, 10, 11, 12, 13].map((i) => (
           <M_Card key={i} variant={i} />
         ))}
       </div>
     )
   }
-
 })

@@ -9,54 +9,90 @@
   --grey: #eaeaea;
 
   /* FONT */
-  --font-family-base: 'BrutalType', sans-serif;
+  --font-family-base: 'BrutalType', Arial, sans-serif;
 }
 
 /* FONT*/
+
+/* возможно нужно сделать 2 варианта для адаптивов*/
+:root {
+  --line-height-navbar: 1.3;
+  --line-height-logo-text: 1.3;
+  --line-height-footer: 1.3;
+  --line-height-body: 1.3;
+  --line-height-caption: 1.3;
+
+  --line-height-h1: 1.3;
+  --line-height-h2: 1.3;
+  --line-height-h2-number: var(--line-height-h2);
+  --line-height-subheading: 1.3;
+  --line-height-intro: 1.5;
+  --line-height-h3: 1.3;
+  --line-height-h4: var(--line-height-body);
+
+  --line-height-card-heading: 1.3;
+  --line-height-card-text: 1.3;
+
+  --line-height-info: 1.3;
+  --line-height-button: 1.3;
+
+  --line-height-sidebar-text: 1.3;
+  --line-height-sidebar-number-icon: 1.3;
+}
+@media (max-width: 1376px) {
+  :root {
+    --line-height-h2: 1.1;
+  }
+}
 
 @media (min-width: 375px) {
   :root {
     /* FONT-SIZE */
     --font-size-navbar: 14px;
-    --line-height-navbar: 16px;
     --font-size-logo-text: 14px;
-    --line-height-logo-text: 16px; /* убирается при адаптиве */
     --font-size-footer: 14px;
-    --line-height-footer: 16px; /* нет величины пока что */
     --font-size-body: 16px;
-    --line-height-body: 25px;
     --font-size-caption: 14px;
-    --line-height-caption: 21px;
+
+    /* --line-height-navbar: 16px;
+    --line-height-logo-text: 16px;
+    --line-height-footer: 16px;
+    --line-height-body: 25px;
+    --line-height-caption: 21px; */
 
     --font-size-h1: 40px;
-    --line-height-h1: 42px;
     --font-size-h2: 32px;
-    --line-height-h2: 36px;
     --font-size-h2-number: 32px;
-    --line-height-h2-number: var(--line-height-h2);
     --font-size-subheading: 18px;
-    --line-height-subheading: 24px;
     --font-size-intro: 16px;
-    --line-height-intro: 22px;
     --font-size-h3: 20px;
-    --line-height-h3: 26px; /* странная величина, проверить */
     --font-size-h4: var(--font-size-body);
-    --line-height-h4: var(--line-height-body);
+
+    /* --line-height-h1: 42px;
+    --line-height-h2: 36px;
+    --line-height-h2-number: var(--line-height-h2);
+    --line-height-subheading: 24px;
+    --line-height-intro: 22px;
+    --line-height-h3: 26px;
+    --line-height-h4: var(--line-height-body); */
 
     --font-size-card-heading: 22px;
-    --line-height-card-heading: 26px;
     --font-size-card-text: 14px;
-    --line-height-card-text: 16px;
+
+    /* --line-height-card-heading: 26px;
+    --line-height-card-text: 16px; */
 
     --font-size-info: 16px;
-    --line-height-info: 18px;
-    --font-size-button: 16px; /* еще нигде не применяла */
-    --line-height-button: 18px; /* еще нигде не применяла, проверить, так как странная величина */
+    --font-size-button: 16px;
+
+    /* --line-height-info: 18px;
+    --line-height-button: 18px; */
 
     --font-size-sidebar-text: 14px;
-    --line-height-sidebar-text: 17px;
     --font-size-sidebar-number-icon: 10px;
-    --line-height-sidebar-number-icon: 12px;
+
+    /* --line-height-sidebar-text: 17px;
+    --line-height-sidebar-number-icon: 12px; */
   }
 }
 
@@ -64,44 +100,44 @@
   :root {
     /* FONT-SIZE */
     --font-size-navbar: 14px;
-    --line-height-navbar: 16px;
+    /* --line-height-navbar: 16px; */
     --font-size-logo-text: 16px;
-    --line-height-logo-text: 16px; /* убирается при адаптиве */
+    /* --line-height-logo-text: 16px;  */
     --font-size-footer: 14px;
-    --line-height-footer: 0px; /* нет величины пока что */
+    /* --line-height-footer: 0px; */
     --font-size-body: 18px;
-    --line-height-body: 27px;
+    /* --line-height-body: 27px; */
     --font-size-caption: 14px;
-    --line-height-caption: 21px;
+    /* --line-height-caption: 21px; */
 
     --font-size-h1: 38px;
-    --line-height-h1: 62px;
+    /* --line-height-h1: 62px; */
     --font-size-h2: 38px;
-    --line-height-h2: 52px;
+    /* --line-height-h2: 52px; */
     --font-size-h2-number: 34px;
-    --line-height-h2-number: var(--line-height-h2);
+    /* --line-height-h2-number: var(--line-height-h2); */
     --font-size-subheading: 18px;
-    --line-height-subheading: 32px;
+    /* --line-height-subheading: 32px; */
     --font-size-intro: 18px;
-    --line-height-intro: 29px;
+    /* --line-height-intro: 29px; */
     --font-size-h3: 36px;
-    --line-height-h3: 54px; /* странная величина, проверить */
+    /* --line-height-h3: 54px; */
     --font-size-h4: var(--font-size-body);
-    --line-height-h4: var(--line-height-body);
+    /* --line-height-h4: var(--line-height-body); */
     --font-size-card-heading: 24px;
-    --line-height-card-heading: 27px;
+    /* --line-height-card-heading: 27px; */
     --font-size-card-text: 16px;
-    --line-height-card-text: 22px;
+    /* --line-height-card-text: 22px; */
 
     --font-size-info: 16px;
-    --line-height-info: 18px;
-    --font-size-button: 16px; /* еще нигде не применяла */
-    --line-height-button: 18px; /* еще нигде не применяла, проверить, так как странная величина */
+    /* --line-height-info: 18px; */
+    --font-size-button: 16px;
+    /* --line-height-button: 18px; */
 
     --font-size-sidebar-text: 16px;
-    --line-height-sidebar-text: 17px;
+    /* --line-height-sidebar-text: 17px; */
     --font-size-sidebar-number-icon: 18px;
-    --line-height-sidebar-number-icon: 15px;
+    /* --line-height-sidebar-number-icon: 15px; */
   }
 }
 
@@ -126,14 +162,14 @@
     --font-size-card-text: 16px;
 
     --font-size-info: 16px;
-    --font-size-button: 16px; /* еще нигде не применяла */
+    --font-size-button: 16px;
 
     --font-size-sidebar-text: 16px;
     --font-size-sidebar-number-icon: 18px;
 
     /* LINE HEIGHT */
-    --line-height-navbar: 14px;
-    --line-height-footer: 0px; /* нет величины пока что */
+    /* --line-height-navbar: 14px;
+    --line-height-footer: 0px;
     --line-height-logo-text: 22px;
     --line-height-body: 27px;
     --line-height-caption: 21px;
@@ -143,17 +179,17 @@
     --line-height-h2-number: var(--line-height-h2);
     --line-height-subheading: 32px;
     --line-height-intro: 29px;
-    --line-height-h3: 54px; /* странная величина, проверить */
+    --line-height-h3: 54px; 
     --line-height-h4: var(--line-height-body);
 
     --line-height-card-heading: 27px;
     --line-height-card-text: 22px;
 
     --line-height-info: 18px;
-    --line-height-button: 18px; /* еще нигде не применяла, проверить, так как странная величина */
+    --line-height-button: 18px;
 
     --line-height-sidebar-text: 17px;
-    --line-height-sidebar-number-icon: 15px;
+    --line-height-sidebar-number-icon: 15px; */
   }
 }
 @media (min-width: 1728px) {
@@ -174,7 +210,7 @@
     --font-size-h4: var(--font-size-body);
 
     --font-size-card-heading: 34px;
-    --font-size-card-text: 24px;
+    --font-size-card-text: 20px;
 
     --font-size-info: 32px;
     --font-size-button: 28px; /* еще нигде не применяла */
@@ -183,8 +219,8 @@
     --font-size-sidebar-number-icon: 22px;
 
     /* LINE HEIGHT */
-    --line-height-navbar: 20px;
-    --line-height-footer: 0px; /* нет величины пока что */
+    /* --line-height-navbar: 20px;
+    --line-height-footer: 0px;
     --line-height-body: 38px;
     --line-height-caption: 26px;
 
@@ -200,9 +236,9 @@
     --line-height-card-text: 32px;
 
     --line-height-info: 38px;
-    --line-height-button: 34px; /* еще нигде не применяла, проверить, так как странная величина */
+    --line-height-button: 34px;
 
     --line-height-sidebar-text: 24px;
-    --line-height-sidebar-number-icon: 20px;
+    --line-height-sidebar-number-icon: 20px; */
   }
 }

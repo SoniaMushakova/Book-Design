@@ -1,69 +1,87 @@
+/*-------Заголовки--------*/
 @font-face {
   font-family: 'TT_Mussels';
-  src: url('../fonts/TTMussels-DemiBold.ttf') format('truetype');
+  src: url('../fonts/TTMussels-DemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT_Mussels';
-  src: url('../fonts/TTMussels-Italic.ttf') format('truetype');
+  src: url('../fonts/TTMussels-Italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
 }
 
+/*-------BrutalType--------*/
 @font-face {
   font-family: 'BrutalType';
-  src: url('../fonts/BrutalType-Bold.ttf') format('truetype');
+  src: url('../fonts/BrutalType-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'BrutalType';
-  src: url('../fonts/BrutalType-Medium.ttf') format('truetype');
+  src: url('../fonts/BrutalType-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'BrutalType';
-  src: url('../fonts/BrutalType.ttf') format('truetype');
+  src: url('../fonts/BrutalType.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
+  font-family: 'BrutalType';
+  src: url('../fonts/BrutalType-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BrutalType';
+  src: url('../fonts/BrutalType-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*-------Текст--------*/
+@font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter_18pt-Black.ttf') format('truetype');
+  src: url('../fonts/Inter18pt-Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+  src: url('../fonts/Inter18pt-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter_18pt-ExtraLightItalic.ttf') format('truetype');
+  src: url('../fonts/Inter18pt-ExtraLightItalic.woff2') format('woff2');
   font-weight: 200;
-  font-style: normal;
+  font-style: italic;
 }
 
+/*-------Цифры--------*/
 @font-face {
   font-family: 'GothicA1';
-  src: url('../fonts/GothicA1-Bold.ttf') format('truetype');
+  src: url('../fonts/GothicA1-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'GothicA1';
-  src: url('../fonts/GothicA1-Medium.ttf') format('truetype');
+  src: url('../fonts/GothicA1-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
