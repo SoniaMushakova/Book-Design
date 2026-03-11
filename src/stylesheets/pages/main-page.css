@@ -7,7 +7,7 @@
 /* секция целиком с карточками */
 .W_Section {
   display: flex;
-  width: 100%; /* от main-container-lending*/
+  width: 100%; /* от main-lending*/
   margin: 0px auto;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@
 /* все с кнопкой */
 .W_SectionText {
   display: flex;
-  width: 100%; /* от main-container-lending*/
+  width: 100%; /* от main-lending*/
   justify-content: space-between;
   flex-direction: row;
   align-items: flex-start;
@@ -154,7 +154,7 @@
 
 .fullscreen-image {
   display: block;
-  width: 100%; /* от main-lending*/
+  width: 100%; /* от full-width*/
   max-width: 100%;
   height: auto;
   /* position: relative; */
@@ -189,15 +189,15 @@ picture > img.fullscreen-image {
 
 /* 2. Индивидуальные стили первого баннера (PDF) */
 .W_BannerPDF {
-  width: 100%; /* от main-container-lending */
+  width: 100%; /* от main-lending */
   height: auto;
   padding: 60px 20px;
   border-radius: var(--card-border-radius);
 
   background-image: url('../../images/mainPage-S-banner-pdf-bg.svg');
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 /* 3. Индивидуальные стили второго баннера (Подписка в конце) */
