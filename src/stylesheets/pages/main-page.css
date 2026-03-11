@@ -300,6 +300,20 @@ picture > img.fullscreen-image {
   }
 }
 
+@media (max-width: 1023px) {
+  /* Перестраиваем оба баннера одинаково */
+  .W_BannerSubscription {
+    flex-direction: column;
+  }
+  /* Растягиваем контент */
+  .A_BannerPDFText {
+    width: 60%;
+  }
+  .M_BannerPDFForm {
+    width: 60%; /* Форма занимает всю ширину */
+  }
+}
+
 @media (max-width: 1376px) {
   .W_SectionText--theory {
     padding-right: 0px;
