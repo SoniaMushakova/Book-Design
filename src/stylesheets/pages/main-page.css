@@ -94,7 +94,7 @@
   width: var(--column12-5);
 }
 
-@media (min-width: 375px) and (max-width: 743px) {
+@media (max-width: 743px) {
   .A_SectionNumber {
     justify-content: flex-start;
     align-items: flex-start;
@@ -202,11 +202,8 @@ picture > img.fullscreen-image {
 
 /* 3. Индивидуальные стили второго баннера (Подписка в конце) */
 .W_BannerSubscription {
-  /* Растягиваем на весь экран независимо от родителя */
-  width: 100vw;
-  /* margin-left: calc(50% - 50vw); */
-
-  min-height: 100vh; /* высота в один экран */
+  width: 100%;
+  min-height: 100vh;
   padding: 60px 40px;
 
   background-color: var(--black);
