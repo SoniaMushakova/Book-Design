@@ -11,21 +11,14 @@
 @import 'stylesheets/pages/about-us.css';
 @import 'stylesheets/pages/practice-and-theory.css';
 
-@import 'stylesheets/components/A_CardImage.css';
-@import 'stylesheets/components/A_CardHeading.css';
-@import 'stylesheets/components/A_Chips.css';
-@import 'stylesheets/components/button.css';
+@import 'stylesheets/components/Button.css';
 
 /* captions */
-@import 'stylesheets/components/M_Caption.css';
+@import 'stylesheets/components/Captions.css';
 
 /* cards */
-@import 'stylesheets/components/M_Card.css';
-@import 'stylesheets/components/M_CardsChevron.css';
-@import 'stylesheets/components/C_Card.css';
-
-@import 'stylesheets/components/W_CardTypography.css';
-@import 'stylesheets/components/W_Cards.css';
+@import 'stylesheets/components/CardsChevron.css';
+@import 'stylesheets/components/Cards.css';
 
 /* partials */
 @import 'partials/sidebar.css';

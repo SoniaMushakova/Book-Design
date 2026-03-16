@@ -25,6 +25,7 @@
   width: 100%;
 }
 
+/* сама карточка */
 .M_Card {
   display: flex;
   width: 100%;
@@ -36,6 +37,16 @@
   border-radius: var(--card-border-radius);
   background: var(--black);
   box-shadow: 0 0 4.271px 1.424px rgba(59, 59, 59, 0.2);
+}
+
+.W_CardTypography {
+  display: flex;
+  width: 100%;
+  padding: 0 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
 }
 
 .A_CardImage {
@@ -97,7 +108,6 @@
   }
 }
 
-/* For medium screens (>=745px and <=1024px) show 3 per row => hide from 4th */
 @media (min-width: 744px) {
   .C_Card {
     grid-template-columns: repeat(3, minmax(0, 1fr));

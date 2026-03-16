@@ -1,9 +1,3 @@
-.example {
-  border: 1px solid aquamarine;
-  /* box-sizing: border-box; */
-  display: block;
-}
-
 /* секция целиком с карточками */
 .W_Section {
   display: flex;
@@ -80,10 +74,6 @@
   width: var(--column12-3);
 }
 
-/* FOR THEORY & PRACTICE SECTIONS */
-
-/* FOR INDESIGN SECTION */
-
 .W_SectionText--indesign > img {
   width: var(--column12-6);
   height: auto;
@@ -150,7 +140,7 @@
   }
 }
 
-/* баннеры и фотки */
+/* обложка и "что тебя ждет" на главной */
 
 .fullscreen-image {
   display: block;
@@ -160,22 +150,14 @@
   /* position: relative; */
 }
 
-/* picture:has(img),
-picture > img.fullscreen-image {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-} */
-
 .fullscreen-image-wrapper {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-/* --- БАННЕРЫ --- */
 
+/* --- БАННЕРЫ --- */
 /* 1. Общие правила для обоих баннеров (чтобы контент стоял одинаково) */
 .W_BannerPDF,
 .W_BannerSubscription {
@@ -219,15 +201,23 @@ picture > img.fullscreen-image {
   flex: 0 1 auto;
 }
 
-/* Обертка для SVG, если используется */
-.A_BannerPDFText-wrapper {
+/* дублирует A_BannerPDFText */
+.A_BannerSubscriptionText {
+  display: block;
+  width: 40%;
+  height: auto;
+  flex: 0 1 auto;
+}
+
+/* Обертка для SVG, пока не использую, тк решила не использовать тег picture */
+/* .A_BannerPDFText-wrapper {
   display: block;
   width: 100%;
   height: auto;
-}
+} */
 
 /* Правая колонка (поле + кнопка) */
-.M_BannerPDFForm {
+.M_BannerForm {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -285,7 +275,12 @@ picture > img.fullscreen-image {
     max-width: 100%;
   }
 
-  .M_BannerPDFForm {
+  .A_BannerSubscriptionText {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .M_BannerForm {
     width: 100%; /* Форма занимает всю ширину */
     max-width: 520px; /* Ограничитель для планшетов */
     align-items: stretch;
@@ -301,16 +296,23 @@ picture > img.fullscreen-image {
 }
 
 @media (max-width: 1023px) {
-  /* Перестраиваем оба баннера одинаково */
+  .W_BannerPDF {
+    padding: 60px 50px;
+    gap: 50px;
+  }
   .W_BannerSubscription {
     flex-direction: column;
   }
-  /* Растягиваем контент */
+
   .A_BannerPDFText {
+    width: 50%;
+  }
+  .A_BannerSubscriptionText {
     width: 60%;
   }
-  .M_BannerPDFForm {
-    width: 60%; /* Форма занимает всю ширину */
+
+  .M_BannerForm {
+    width: 60%;
   }
 }
 
