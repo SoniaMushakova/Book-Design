@@ -1,0 +1,41 @@
+.I_InDesignIcon {
+  flex: 0 0 32px;
+  min-width: 32px;
+  min-height: 32px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url('../../images/I_InDesign.svg');
+}
+
+.M_IndesignPlate {
+  display: flex;
+  width: 100%;
+  padding: 22px 30px 22px 18px;
+  align-items: flex-start;
+  gap: 20px;
+
+  /* привести к общему */
+  border-radius: 16px;
+  background: var(--Indesign, rgba(255, 48, 102, 0.1));
+}
+
+/* .M_IndesignPlate .body {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 62ch;
+} */
+
+@media (max-width: 743px) {
+  .M_IndesignPlate {
+    padding: 22px 22px 22px 18px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .M_IndesignPlate .body {
+    max-width: 100%;
+  }
+}

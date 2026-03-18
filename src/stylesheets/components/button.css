@@ -4,7 +4,8 @@
 
 .A_Button,
 .A_Button-banner,
-.A_Chips {
+.A_Chips,
+.M_ArrowsLessons {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -13,12 +14,34 @@
 }
 
 .A_Button,
-.A_Chips {
+.A_Chips,
+.M_ArrowsLessons {
   width: fit-content;
   white-space: nowrap;
 }
 
 /* 3. ИНДИВИДУАЛЬНЫЕ СТИЛИ */
+
+.M_ArrowsLessons {
+  padding: 20px;
+  gap: 16px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: var(--font-size-button);
+  font-weight: 500;
+
+  border: 2px solid var(--black);
+  color: var(--black);
+  --btn-hover-bg: var(--orange);
+}
+
+.W_LessonsNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  /* width: var(--colums); */
+}
 
 .A_Button {
   padding: 0 44px;

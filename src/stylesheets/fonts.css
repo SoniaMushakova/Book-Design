@@ -58,6 +58,22 @@
   font-weight: 900;
   font-style: normal;
 }
+/* для жирных выделений в тексте */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter18pt-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Inter 18pt';
+  src: url('Inter18pt-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+} */
+
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter18pt-Regular.woff2') format('woff2');

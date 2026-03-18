@@ -207,10 +207,13 @@
   width: 100%;
   height: auto;
   gap: 20px;
-  margin: var(--A_pic-Paddings, 40px) auto;
-  /* margin-left: auto;
-    margin-right: auto; */
 }
+
+/* .W_img,
+.W_Article {
+  margin-top: 20px;
+  margin-bottom: 20px;
+} */
 
 .A_Header_2 {
   display: flex;
@@ -254,7 +257,7 @@
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .full-width {
@@ -312,7 +315,10 @@
 
 /* статья с подписями */
 .article-content {
+  display: flex;
+  flex-direction: column;
   width: var(--column12-9); /* 974px */
+  gap: 40px;
 }
 
 @media (max-width: 743px) {
@@ -325,6 +331,7 @@
   }
   .article-content {
     width: 100%; /* 974px */
+    gap: 40px;
   }
   .A_img,
   .W_DoubleImage {
@@ -372,6 +379,7 @@
   /* ИСПРАВЛЕНО: тут сайдбара еще нет, поэтому статья занимает все 12 колонок */
   .article-content {
     width: var(--column12-12);
+    gap: 40px;
   }
 
   .W_Article {
@@ -399,6 +407,7 @@
   .article-content {
     /* Статья ужимается, освобождая место для сайдбара */
     width: var(--column12-9);
+    gap: 40px;
   }
   .W_img {
     flex-direction: row;
@@ -433,6 +442,7 @@
   }
   .article-content {
     width: var(--column12-9);
+    gap: 40px;
   }
   .W_Article {
     width: var(--column12-7);
@@ -462,6 +472,7 @@
   }
   .article-content {
     width: var(--column12-9);
+    gap: 40px;
   }
 }
 

@@ -114,9 +114,30 @@
   border-radius: 10px;
 }
 
+/* Иконки */
+
+.I_NavbarLogo,
+.I_CardsChevron,
+.I_Search {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 .I_NavbarLogo {
   width: 40px;
-  height: auto;
+  height: 40px;
+  background-image: url('../images/Logo-Header.svg');
+}
+.I_CardsChevron {
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/I_CardsChevron.svg');
+}
+.I_Search {
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/I_Search.svg');
 }
 
 .W_NavbarLogo {
@@ -190,9 +211,20 @@
   .logo-text {
     display: none;
   }
+
+  /* Иконки */
+
   .I_NavbarLogo {
     width: 44px;
-    height: auto;
+    height: 44px;
+  }
+  .I_Search {
+    width: 24px;
+    height: 24px;
+  }
+  .I_CardsChevron {
+    width: 44px;
+    height: 44px;
   }
 }
 @media (min-width: 744px) and (max-width: 840px) {
@@ -226,9 +258,20 @@
   .logo-text {
     display: none;
   }
+
+  /* Иконки */
+
   .I_NavbarLogo {
     width: 44px;
-    height: auto;
+    height: 44px;
+  }
+  .I_Search {
+    width: 24px;
+    height: 24px;
+  }
+  .I_CardsChevron {
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -276,6 +319,10 @@
     height: 74px;
     width: 100%;
   }
+  .I_Search {
+    width: 24px;
+    height: 24px;
+  }
 }
 @media (min-width: 1728px) {
   .navbar {
@@ -284,5 +331,9 @@
   .W_navbar-2 {
     height: 94px;
     width: 100%;
+  }
+  .I_Search {
+    width: 24px;
+    height: 24px;
   }
 }
