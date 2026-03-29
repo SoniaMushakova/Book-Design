@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_иллюстрации" data-name="иллюстрации" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.1 35">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #231f20;
+        stroke-width: .25px;
+      }
+
+      .cls-3 {
+        fill: #fff200;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="70.07" y="8.53" width="7.03" height="2.59"/>
+  <rect class="cls-3" x="70.07" y="23.88" width="7.03" height="2.59"/>
+  <rect class="cls-3" x="73.59" y="8.53" width="3.51" height="17.92"/>
+  <polyline class="cls-2" points="0 26.43 76.98 26.43 76.98 8.57 0 8.57"/>
+  <line class="cls-2" x1="0" y1="23.88" x2="76.33" y2="23.88"/>
+  <line class="cls-2" x1="0" y1="21.33" x2="76.33" y2="21.33"/>
+  <line class="cls-2" x1="0" y1="18.78" x2="76.33" y2="18.78"/>
+  <line class="cls-2" x1="0" y1="16.22" x2="76.33" y2="16.22"/>
+  <line class="cls-2" x1="0" y1="13.67" x2="76.33" y2="13.67"/>
+  <rect class="cls-1" x="0" y="8.45" width="77.1" height="18.11"/>
+  <line class="cls-2" x1="0" y1="11.12" x2="76.33" y2="11.12"/>
+</svg>

@@ -1,0 +1,43 @@
+.W_ChapterHeadText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 70%;
+  gap: 24px;
+}
+
+.M_headingInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+
+  gap: 8px;
+}
+
+.A_Info {
+  color: var(--black-light);
+  text-align: center;
+
+  /* info */
+  font-family: 'Brutal Type';
+  font-size: var(--font-size-info);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--line-height-info);
+}
+
+.A_Subheading {
+  align-self: stretch;
+
+  color: var(--black);
+  text-align: center;
+
+  /* subheading */
+  font-family: 'Brutal Type';
+  font-size: var(--font-size-subheading);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--line-height-subheading); /* 131.818% */
+}

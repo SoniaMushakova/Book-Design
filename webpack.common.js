@@ -189,6 +189,12 @@ module.exports = {
         location: 'Up_Button',
         template_filename: '*',
         priority: 'replace'
+      },
+      {
+        path: path.join(__dirname, './src/partials/footer.html'),
+        location: 'footer',
+        template_filename: '*',
+        priority: 'replace'
       }
     ])
   ],

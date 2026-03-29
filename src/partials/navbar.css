@@ -10,8 +10,8 @@
   right: 0;
   z-index: 1000;
 
+  height: 64px;
   width: 100%;
-  /* height: 64px; */
   margin: 0 auto;
 
   background: var(--white);
@@ -26,8 +26,8 @@
   align-self: stretch;
 
   width: var(--column12-12);
+  height: 62px;
   margin: 0 auto;
-  height: 64px;
   padding: 0 32px;
 
   position: fixed;
@@ -116,19 +116,27 @@
 
 /* Иконки */
 
-.I_NavbarLogo,
+.I_Logo,
 .I_CardsChevron,
-.I_Search {
+.I_Search,
+.I_SocialIcons {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-.I_NavbarLogo {
+header .I_Logo {
   width: 40px;
   height: 40px;
   background-image: url('../images/Logo-Header.svg');
 }
+
+footer .I_Logo {
+  width: 70px;
+  height: 70px;
+  background-image: url('../images/Logo-Header.svg');
+}
+
 .I_CardsChevron {
   width: 40px;
   height: 40px;
@@ -176,12 +184,7 @@
 @media (max-width: 743px) {
   /* navbar-сосиска не используется */
   .navbar {
-    height: 62px;
     width: var(--column4-4);
-  }
-  .W_navbar-2 {
-    height: 64px;
-    width: 100%;
   }
   .navbar-2 {
     width: var(--column4-4);
@@ -214,7 +217,7 @@
 
   /* Иконки */
 
-  .I_NavbarLogo {
+  .I_Logo {
     width: 44px;
     height: 44px;
   }
@@ -228,14 +231,9 @@
   }
 }
 @media (min-width: 744px) and (max-width: 840px) {
-  /* navbar-сосиска не используется */
+  /* все что происходит – смена ширины с 4-х на 12 колонок */
   .navbar {
-    height: 62px;
     width: var(--column12-12);
-  }
-  .W_navbar-2 {
-    height: 64px;
-    width: 100%;
   }
   .navbar-2 {
     width: var(--column12-12);
@@ -261,7 +259,7 @@
 
   /* Иконки */
 
-  .I_NavbarLogo {
+  .I_Logo {
     width: 44px;
     height: 44px;
   }
@@ -278,12 +276,7 @@
 @media (min-width: 841px) {
   /* высота навбара */
   .navbar {
-    height: 62px;
     width: var(--column12-12);
-  }
-  .W_navbar-2 {
-    height: 64px;
-    width: 100%;
   }
   .navbar-2 {
     width: var(--column12-12);
@@ -312,12 +305,8 @@
   .W_Menu {
     display: inline-flex;
   }
-  .navbar {
-    height: 62px;
-  }
   .W_navbar-2 {
     height: 74px;
-    width: 100%;
   }
   .I_Search {
     width: 24px;
@@ -326,11 +315,10 @@
 }
 @media (min-width: 1728px) {
   .navbar {
-    height: 104px;
+    height: 84px;
   }
   .W_navbar-2 {
-    height: 94px;
-    width: 100%;
+    height: 84px;
   }
   .I_Search {
     width: 24px;

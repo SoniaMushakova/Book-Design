@@ -48,9 +48,9 @@
 @media (min-width: 375px) {
   :root {
     /* FONT-SIZE */
-    --font-size-navbar: 14px;
-    --font-size-logo-text: 14px;
-    --font-size-footer: 14px;
+    --font-size-navbar: 16px;
+    --font-size-logo-text: 16px;
+    --font-size-footer: 16px;
     --font-size-body: 16px;
     --font-size-caption: 14px;
 
@@ -99,11 +99,11 @@
 @media (min-width: 744px) {
   :root {
     /* FONT-SIZE */
-    --font-size-navbar: 14px;
+    --font-size-navbar: 16px;
     /* --line-height-navbar: 16px; */
     --font-size-logo-text: 16px;
     /* --line-height-logo-text: 16px;  */
-    --font-size-footer: 14px;
+    --font-size-footer: 16px;
     /* --line-height-footer: 0px; */
     --font-size-body: 18px;
     /* --line-height-body: 27px; */
@@ -144,9 +144,9 @@
 @media (min-width: 1376px) {
   :root {
     /* FONT-SIZE */
-    --font-size-navbar: 14px;
+    --font-size-navbar: 16px;
     --font-size-logo-text: 16px;
-    --font-size-footer: 14px;
+    --font-size-footer: 16px;
     --font-size-body: 18px;
     --font-size-caption: 14px;
 
@@ -213,7 +213,7 @@
     --font-size-card-text: 20px;
 
     --font-size-info: 32px;
-    --font-size-button: 28px; /* еще нигде не применяла */
+    --font-size-button: 20px; /* еще нигде не применяла */
 
     --font-size-sidebar-text: 20px;
     --font-size-sidebar-number-icon: 22px;

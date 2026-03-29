@@ -1,0 +1,178 @@
+.W_footer {
+  display: grid;
+  column-gap: 20px; /* 20 px*/
+  row-gap: 48px; /* потом заменить на вариатив, но он не меняется*/
+  grid-template-columns: repeat(12, 1fr);
+
+  width: var(--column12-12);
+  margin: 0 auto;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 32px;
+
+  border-top: 1.5px dotted #d1d1d1;
+}
+
+/* 1 колонка */
+.logo-grid-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+/* 2-3 колонки */
+.nav-grid-area,
+.team-grid-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+/* для 2-3 колонки */
+.footer-links__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+.footer-links__title {
+  /* font-family: var(--font-family-roboto); */
+  /* font-size: 16px; */
+  color: var(--black-light);
+}
+.footer-links__item {
+  gap: 12px;
+}
+footer p {
+  font-size: var(--font-size-footer);
+  line-height: var(--line-height-footer);
+}
+
+/* 4 колонка с соц. сетями и кнопкой обратной связи */
+.social-grid-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.copyright-grid-area {
+  grid-column: -1/1;
+}
+.copyright-grid-area p {
+  color: var(--black-light);
+}
+
+@media (max-width: 743px) {
+  .W_footer {
+    grid-template-columns: repeat(4, 1fr);
+    width: var(--column4-4);
+  }
+  .logo-grid-area {
+    grid-column: -1/1;
+  }
+  .nav-grid-area {
+    grid-column: 1/3;
+  }
+  .team-grid-area {
+    grid-column: 3/5;
+  }
+  .social-grid-area {
+    grid-column: -1/1;
+    flex-direction: row;
+  }
+  .copyright-grid-area {
+    grid-column: -1/1;
+  }
+  .copyright-grid-area p {
+    font-size: 12px;
+  }
+  .social-grid-area {
+    flex-direction: row;
+  }
+}
+@media (min-width: 744px) {
+  .logo-grid-area {
+    grid-column: 1/6;
+    /* grid-column: span 3; */
+  }
+  .nav-grid-area {
+    grid-column: 7/10;
+  }
+  .team-grid-area {
+    grid-column: 10/13;
+  }
+  .social-grid-area {
+    grid-column: -1/1;
+  }
+  .copyright-grid-area {
+    grid-column: -1/1;
+    /* order: 1; чтобы встал последним в сетке */
+  }
+  .copyright-grid-area p {
+    font-size: 14px;
+  }
+  .social-grid-area {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .logo-grid-area {
+    grid-column: 1/4;
+    /* grid-column: span 3; */
+  }
+  .nav-grid-area {
+    grid-column: 5/7;
+  }
+  .team-grid-area {
+    grid-column: 7/9;
+  }
+  .social-grid-area {
+    grid-column: 10/12;
+  }
+  .copyright-grid-area {
+    grid-column: -1/1;
+    /* order: 1; чтобы встал последним в сетке */
+  }
+  .copyright-grid-area p {
+    font-size: 14px;
+  }
+  .social-grid-area {
+    flex-direction: column;
+  }
+}
+
+/* @media (min-width: 1376px){}
+@media (min-width: 1728px){} */
+
+.I_SocialIcons {
+  width: 28px;
+  height: 28px;
+}
+.I_SocialIcons.vk {
+  background-image: url('../images/I_SocialIcons-vk.svg');
+}
+.I_SocialIcons.tg {
+  background-image: url('../images/I_SocialIcons-tg.svg');
+}
+.I_SocialIcons.pin {
+  background-image: url('../images/I_SocialIcons-pin.svg');
+}
+
+.C_Social-list_Icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.M_Social-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}

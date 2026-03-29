@@ -197,6 +197,11 @@
   height: auto;
   max-height: var(--A_pic_height_max, 700px);
 }
+.A_img.small {
+  display: block;
+  height: auto;
+  max-height: var(--A_pic_height_max, 700px);
+}
 
 .W_img {
   display: flex;
@@ -214,6 +219,14 @@
   margin-top: 20px;
   margin-bottom: 20px;
 } */
+/* маленькая картинка сбоку */
+.relative-wrapper {
+  position: relative;
+}
+.side-note-left {
+  position: absolute;
+  left: 10px;
+}
 
 .A_Header_2 {
   display: flex;
@@ -267,8 +280,7 @@
   align-items: start;
 
   width: 100%;
-  /* padding-top: var(--main-gap); */
-  padding-bottom: var(--main-gap);
+  /* padding-bottom: var(--main-gap); */
   gap: var(--main-gap);
 }
 
@@ -278,7 +290,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 
   gap: var(--main-container-gap);
   width: var(--column12-12);
@@ -364,6 +376,16 @@
   .aside-article {
     display: none;
   }
+  .side-note-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .side-note-left .A_img.small {
+    width: 100%;
+  }
 }
 
 @media (min-width: 744px) {
@@ -389,6 +411,7 @@
   .W_DoubleImage {
     width: var(--column12-9);
   }
+  .A_img.small,
   .M_Caption {
     width: var(--column12-3);
     padding-left: 20px;
@@ -397,9 +420,15 @@
     flex-direction: row;
     width: var(--column12-12);
   }
+  .side-note-left {
+    position: absolute;
+    top: 0; /* Выравниваем по верхней границе текста */
+    right: 100%;
+    margin-right: var(--main-gap);
+    width: var(--column12-2);
+  }
 }
 
-/* ИСПРАВЛЕНО: вынесли этот медиазапрос изнутри предыдущего */
 @media (min-width: 1116px) {
   .aside-article {
     display: block; /* Появляется сайдбар! */
@@ -420,6 +449,7 @@
   .W_DoubleImage {
     width: var(--column12-7);
   }
+  .A_img.small,
   .M_Caption {
     width: var(--column12-2);
   }
@@ -451,6 +481,7 @@
   .W_DoubleImage {
     width: var(--column12-7);
   }
+  .A_img.small,
   .M_Caption {
     width: var(--column12-2);
   }

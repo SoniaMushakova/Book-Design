@@ -5,7 +5,8 @@
 .A_Button,
 .A_Button-banner,
 .A_Chips,
-.M_ArrowsLessons {
+.M_ArrowsLessons,
+.A_Button-footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -13,9 +14,22 @@
   border-radius: 999px;
 }
 
+.A_Button-footer {
+  display: flex;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--black);
+}
+
 .A_Button,
 .A_Chips,
-.M_ArrowsLessons {
+.M_ArrowsLessons,
+.A_Button-footer {
   width: fit-content;
   white-space: nowrap;
 }
