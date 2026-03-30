@@ -19,6 +19,9 @@
   --line-height-navbar: 1.3;
   --line-height-logo-text: 1.3;
   --line-height-footer: 1.3;
+  --line-height-footer-L: 1.3;
+  --line-height-footer-M: 1.3;
+  --line-height-footer-S: 1.3;
   --line-height-body: 1.4;
   --line-height-caption: 1.3;
 
@@ -50,7 +53,10 @@
     /* FONT-SIZE */
     --font-size-navbar: 16px;
     --font-size-logo-text: 16px;
-    --font-size-footer: 16px;
+    --font-size-footer-L: 16px;
+    --font-size-footer-M: 15px;
+    --font-size-footer: 14px;
+    --font-size-footer-S: 12px;
     --font-size-body: 16px;
     --font-size-caption: 14px;
 
@@ -100,34 +106,23 @@
   :root {
     /* FONT-SIZE */
     --font-size-navbar: 16px;
-    /* --line-height-navbar: 16px; */
     --font-size-logo-text: 16px;
-    /* --line-height-logo-text: 16px;  */
-    --font-size-footer: 16px;
-    /* --line-height-footer: 0px; */
+    --font-size-footer-L: 18px;
+    --font-size-footer-M: 16px;
+    --font-size-footer: 14px;
+    --font-size-footer-S: 12px;
     --font-size-body: 18px;
-    /* --line-height-body: 27px; */
     --font-size-caption: 14px;
-    /* --line-height-caption: 21px; */
 
     --font-size-h1: 38px;
-    /* --line-height-h1: 62px; */
     --font-size-h2: 38px;
-    /* --line-height-h2: 52px; */
     --font-size-h2-number: 34px;
-    /* --line-height-h2-number: var(--line-height-h2); */
     --font-size-subheading: 18px;
-    /* --line-height-subheading: 32px; */
     --font-size-intro: 18px;
-    /* --line-height-intro: 29px; */
     --font-size-h3: 36px;
-    /* --line-height-h3: 54px; */
     --font-size-h4: var(--font-size-body);
-    /* --line-height-h4: var(--line-height-body); */
     --font-size-card-heading: 24px;
-    /* --line-height-card-heading: 27px; */
     --font-size-card-text: 16px;
-    /* --line-height-card-text: 22px; */
 
     --font-size-info: 16px;
     /* --line-height-info: 18px; */
@@ -146,7 +141,10 @@
     /* FONT-SIZE */
     --font-size-navbar: 16px;
     --font-size-logo-text: 16px;
+    --font-size-footer-L: 18px;
+    --font-size-footer-M: 17px;
     --font-size-footer: 16px;
+    --font-size-footer-S: 14px;
     --font-size-body: 18px;
     --font-size-caption: 14px;
 
@@ -197,7 +195,10 @@
     /* FONT-SIZE */
     --font-size-navbar: 18px;
     --font-size-logo-text: 20px;
+    --font-size-footer-L: 20px;
+    --font-size-footer-M: 19px;
     --font-size-footer: 18px;
+    --font-size-footer-S: 14px;
     --font-size-body: 26px;
     --font-size-caption: 18px;
 

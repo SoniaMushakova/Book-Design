@@ -1,16 +1,15 @@
 .W_footer {
   display: grid;
   column-gap: 20px; /* 20 px*/
-  row-gap: 48px; /* потом заменить на вариатив, но он не меняется*/
+  row-gap: 64px; /* потом заменить на вариатив, но он не меняется*/
   grid-template-columns: repeat(12, 1fr);
 
-  width: var(--column12-12);
+  width: var(--column4-4);
   margin: 0 auto;
   height: auto;
   padding-top: 40px;
   padding-bottom: 32px;
-
-  border-top: 1.5px dotted #d1d1d1;
+  /* box-sizing: border-box; */
 }
 
 /* 1 колонка */
@@ -20,6 +19,11 @@
   align-items: flex-start;
   gap: 16px;
   width: 100%;
+
+  font-size: var(--font-size-footer-L);
+  /* line-height: var(--line-height-footer); */
+  font-family: 'BrutalType';
+  font-weight: 400;
 }
 
 /* 2-3 колонки */
@@ -30,6 +34,11 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
+
+  font-size: var(--font-size-footer);
+  line-height: var(--line-height-footer);
+  font-family: 'BrutalType';
+  font-weight: 400;
 }
 
 /* для 2-3 колонки */
@@ -48,10 +57,10 @@
 .footer-links__item {
   gap: 12px;
 }
-footer p {
+/* footer p {
   font-size: var(--font-size-footer);
   line-height: var(--line-height-footer);
-}
+} */
 
 /* 4 колонка с соц. сетями и кнопкой обратной связи */
 .social-grid-area {
@@ -59,6 +68,13 @@ footer p {
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
+}
+.M_Social-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .copyright-grid-area {
@@ -84,19 +100,20 @@ footer p {
   }
   .social-grid-area {
     grid-column: -1/1;
-    flex-direction: row;
+    flex-direction: column;
   }
   .copyright-grid-area {
     grid-column: -1/1;
   }
-  .copyright-grid-area p {
-    font-size: 12px;
-  }
-  .social-grid-area {
-    flex-direction: row;
-  }
+  /* .logo-grid-area,
+  .social-grid-area p {
+    max-width: 340px;
+  } */
 }
 @media (min-width: 744px) {
+  .W_footer {
+    width: var(--column12-12);
+  }
   .logo-grid-area {
     grid-column: 1/6;
     /* grid-column: span 3; */
@@ -114,11 +131,12 @@ footer p {
     grid-column: -1/1;
     /* order: 1; чтобы встал последним в сетке */
   }
-  .copyright-grid-area p {
-    font-size: 14px;
-  }
   .social-grid-area {
     flex-direction: row;
+  }
+  .logo-grid-area,
+  .social-grid-area p {
+    width: 80%;
   }
 }
 @media (min-width: 1024px) {
@@ -133,22 +151,24 @@ footer p {
     grid-column: 7/9;
   }
   .social-grid-area {
-    grid-column: 10/12;
+    grid-column: 10/13;
   }
   .copyright-grid-area {
     grid-column: -1/1;
     /* order: 1; чтобы встал последним в сетке */
-  }
-  .copyright-grid-area p {
-    font-size: 14px;
   }
   .social-grid-area {
     flex-direction: column;
   }
 }
 
-/* @media (min-width: 1376px){}
-@media (min-width: 1728px){} */
+@media (min-width: 1376px) {
+  .logo-grid-area,
+  .social-grid-area p {
+    width: 80%;
+  }
+}
+/* @media (min-width: 1728px){} */
 
 .I_SocialIcons {
   width: 28px;
@@ -163,16 +183,20 @@ footer p {
 .I_SocialIcons.pin {
   background-image: url('../images/I_SocialIcons-pin.svg');
 }
-
 .C_Social-list_Icons {
   display: flex;
   align-items: center;
   gap: 14px;
 }
-.M_Social-list {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+
+@media (hover: hover) {
+  .A_Button-footer:hover {
+    color: var(--orange);
+    border-color: var(--orange);
+    font-weight: 500;
+  }
+}
+.A_Button-footer:active {
+  color: var(--orange);
+  border-color: var(--orange);
 }

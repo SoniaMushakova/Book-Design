@@ -77,6 +77,23 @@ strong {
 .header {
   font-size: var(--font-size-navbar);
 }
+.footer {
+  font-family: 'BrutalType';
+  font-weight: 500;
+}
+
+.footer-text-large {
+  font-size: var(--font-size-footer-L);
+  line-height: var(--line-height-footer-L);
+}
+.footer-text-medium {
+  font-size: var(--font-size-footer-M);
+  line-height: var(--line-height-footer-M);
+}
+.footer-text-small {
+  font-size: var(--font-size-footer-S);
+  line-height: var(--line-height-footer-S);
+}
 
 /* Cards */
 

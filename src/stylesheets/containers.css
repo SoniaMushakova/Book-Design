@@ -125,6 +125,10 @@
   }
 }
 
+.border {
+  border-top: 1.5px dotted #c2c2c2;
+}
+
 .Q_Arrow {
   align-self: auto;
   color: var(--orange);
