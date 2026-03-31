@@ -227,10 +227,6 @@
 .relative-wrapper {
   position: relative;
 }
-.side-note-left {
-  position: absolute;
-  left: 10px;
-}
 
 .A_Header_2 {
   display: flex;
@@ -380,15 +376,19 @@
   .aside-article {
     display: none;
   }
+
   .side-note-left {
+    position: static; /* Возвращаем в нормальный поток на мобилках */
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-bottom: 24px;
     width: 100%;
   }
-  .side-note-left .A_img.small {
+  .side-note-left .A_img.small,
+  .side-note-left .M_Caption {
     width: 100%;
+    padding-left: 0;
   }
 }
 
@@ -425,10 +425,14 @@
     width: var(--column12-12);
   }
   .side-note-left {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 0; /* Выравниваем по верхней границе текста */
-    right: 100%;
-    margin-right: var(--main-gap);
+    top: 0;
+    left: 100%;
+    right: auto;
+    gap: 16px;
+    margin-left: 40px;
     width: var(--column12-2);
   }
 }

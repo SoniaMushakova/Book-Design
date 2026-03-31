@@ -117,6 +117,7 @@ module.exports = {
       chunks: ['page']
     }),
 
+    // All articles
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -146,7 +147,13 @@ module.exports = {
       filename: './pages/Article_3.html',
       chunks: ['page', 'sidebar']
     }),
-
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_4.html',
+      filename: './pages/Article_4.html',
+      chunks: ['page', 'sidebar']
+    }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
