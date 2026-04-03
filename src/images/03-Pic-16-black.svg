@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 157">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #323232;
+      }
+
+      .cls-2 {
+        fill: #aaa;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-family: Inter-Regular, Inter;
+        font-size: 5.53px;
+        font-variation-settings: 'opsz' 14, 'wght' 400;
+      }
+
+      .cls-5 {
+        stroke: #9a9a9a;
+        stroke-miterlimit: 10;
+        stroke-width: .36px;
+      }
+    </style>
+  </defs>
+  <g id="_фон" data-name="фон">
+    <rect class="cls-1" width="288" height="157"/>
+  </g>
+  <g id="_иллюстрации" data-name="иллюстрации">
+    <g>
+      <path class="cls-3" d="M139.72,13.56c2.44,0,4.41,1.98,4.41,4.41h.46c0-2.69-2.18-4.88-4.88-4.88v.46ZM144.13,46.56c0,2.44-1.98,4.41-4.41,4.41v.46c2.69,0,4.88-2.18,4.88-4.88h-.46ZM139.72,50.97h-.72v.46h.72v-.46ZM144.13,17.98v28.58h.46v-28.58h-.46ZM139,13.56h.72v-.46h-.72v.46Z"/>
+      <path class="cls-3" d="M139.72,58.74c2.44,0,4.41,1.98,4.41,4.41h.46c0-2.69-2.18-4.88-4.88-4.88v.46ZM144.13,91.74c0,2.44-1.98,4.41-4.41,4.41v.46c2.69,0,4.88-2.18,4.88-4.88h-.46ZM139.72,96.15h-.72v.46h.72v-.46ZM144.13,63.16v28.58h.46v-28.58h-.46ZM139,58.74h.72v-.46h-.72v.46Z"/>
+      <path class="cls-3" d="M139.72,103.77c2.44,0,4.41,1.98,4.41,4.41h.46c0-2.69-2.18-4.88-4.88-4.88v.46ZM144.13,136.77c0,2.44-1.98,4.41-4.41,4.41v.46c2.69,0,4.88-2.18,4.88-4.88h-.46ZM139.72,141.18h-.72v.46h.72v-.46ZM144.13,108.18v28.58h.46v-28.58h-.46ZM139,103.77h.72v-.46h-.72v.46Z"/>
+      <rect class="cls-1" x="89.19" y="137.25" width="16.15" height="12.39"/>
+      <text class="cls-4" transform="translate(151.3 34.21)"><tspan x="0" y="0">Первая страница</tspan></text>
+      <text class="cls-4" transform="translate(151.3 79.19)"><tspan x="0" y="0">Все развороты книги</tspan></text>
+      <text class="cls-4" transform="translate(151.3 124.54)"><tspan x="0" y="0">Последняя страница</tspan></text>
+      <polygon class="cls-2" points="119.23 17.25 122.86 13.42 115.6 13.42 119.23 17.25"/>
+      <g>
+        <rect class="cls-5" x="109.61" y="19.67" width="19.23" height="25.39"/>
+        <line class="cls-5" x1="109.61" y1="15.54" x2="109.61" y2="48.51"/>
+      </g>
+      <g>
+        <rect class="cls-5" x="109.61" y="63.93" width="19.23" height="25.39"/>
+        <rect class="cls-5" x="90.39" y="64.02" width="19.23" height="25.39"/>
+        <line class="cls-5" x1="109.61" y1="59.8" x2="109.61" y2="92.77"/>
+      </g>
+      <g>
+        <rect class="cls-5" x="90.39" y="108.19" width="19.23" height="25.39" transform="translate(200 241.76) rotate(180)"/>
+        <line class="cls-5" x1="109.61" y1="104.05" x2="109.61" y2="137.02"/>
+      </g>
+    </g>
+  </g>
+</svg>

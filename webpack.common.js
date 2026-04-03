@@ -157,6 +157,27 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
+      template: './src/pages/Article_5.html',
+      filename: './pages/Article_5.html',
+      chunks: ['page', 'sidebar']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_6.html',
+      filename: './pages/Article_6.html',
+      chunks: ['page', 'sidebar']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_7.html',
+      filename: './pages/Article_7.html',
+      chunks: ['page', 'sidebar']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
       template: './src/pages/Article_none.html',
       filename: './pages/Article_none.html',
       chunks: ['page', 'sidebar']

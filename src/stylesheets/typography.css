@@ -184,6 +184,23 @@ h2*/
   color: var(--black-light);
 }
 
+/* списки */
+ul.body {
+  list-style-type: none;
+  padding-left: 54px;
+}
+
+ul.body li {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+ul.body li::before {
+  content: '—';
+  position: absolute;
+  left: -44px;
+}
+
 @media (min-width: 375px) {
 }
 @media (min-width: 744px) {

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 157">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #323232;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Inter-Regular, Inter;
+        font-size: 11.4px;
+        font-variation-settings: 'opsz' 14, 'wght' 400;
+      }
+    </style>
+  </defs>
+  <g id="_фон" data-name="фон">
+    <rect class="cls-1" width="288" height="157"/>
+  </g>
+  <g id="_иллюстрации" data-name="иллюстрации">
+    <text class="cls-2" transform="translate(102.49 78.5)"><tspan x="0" y="0">Тут будет фото</tspan></text>
+  </g>
+</svg>

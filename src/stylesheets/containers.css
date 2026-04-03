@@ -388,6 +388,7 @@
   .side-note-left .A_img.small,
   .side-note-left .M_Caption {
     width: 100%;
+    max-width: var(--column4-2);
     padding-left: 0;
   }
 }
@@ -427,12 +428,13 @@
   .side-note-left {
     display: flex;
     flex-direction: column;
+    /* flex-direction: column-reverse; */
     position: absolute;
     top: 0;
     left: 100%;
     right: auto;
     gap: 16px;
-    margin-left: 40px;
+    margin-left: 20px;
     width: var(--column12-2);
   }
 }

@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 185">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 4.11px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22 {
+        fill: #231f20;
+      }
+
+      .cls-2 {
+        font-family: GolosText-Regular, 'Golos Text';
+      }
+
+      .cls-23, .cls-24, .cls-25 {
+        letter-spacing: .02em;
+      }
+
+      .cls-23, .cls-26 {
+        font-family: Inter-Regular, Inter;
+        font-variation-settings: 'opsz' 14, 'wght' 400;
+      }
+
+      .cls-27 {
+        letter-spacing: .17em;
+      }
+
+      .cls-28 {
+        letter-spacing: .17em;
+      }
+
+      .cls-29 {
+        letter-spacing: .14em;
+      }
+
+      .cls-30 {
+        letter-spacing: .14em;
+      }
+
+      .cls-31 {
+        letter-spacing: 0em;
+      }
+
+      .cls-32 {
+        letter-spacing: 0em;
+      }
+
+      .cls-33 {
+        letter-spacing: 0em;
+      }
+
+      .cls-34 {
+        letter-spacing: 0em;
+      }
+
+      .cls-35 {
+        letter-spacing: 0em;
+      }
+
+      .cls-24, .cls-36 {
+        font-family: Inter-Bold, Inter;
+        font-variation-settings: 'opsz' 14, 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-37 {
+        letter-spacing: 0em;
+      }
+
+      .cls-38 {
+        letter-spacing: 0em;
+      }
+
+      .cls-39 {
+        letter-spacing: 0em;
+      }
+
+      .cls-40 {
+        letter-spacing: 0em;
+      }
+
+      .cls-41 {
+        letter-spacing: 0em;
+      }
+
+      .cls-42 {
+        fill: #fff;
+      }
+
+      .cls-43 {
+        letter-spacing: 0em;
+      }
+
+      .cls-44 {
+        letter-spacing: 0em;
+      }
+
+      .cls-45 {
+        letter-spacing: 0em;
+      }
+
+      .cls-46 {
+        letter-spacing: 0em;
+      }
+
+      .cls-47 {
+        letter-spacing: 0em;
+      }
+
+      .cls-48 {
+        letter-spacing: 0em;
+      }
+
+      .cls-49 {
+        letter-spacing: 0em;
+      }
+
+      .cls-50 {
+        letter-spacing: 0em;
+      }
+
+      .cls-51 {
+        letter-spacing: 0em;
+      }
+
+      .cls-52 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        font-size: 4.77px;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+        font-family: PTSans-Regular, 'PT Sans';
+      }
+
+      .cls-5 {
+        font-size: 4.74px;
+      }
+
+      .cls-6 {
+        font-size: 6.27px;
+      }
+
+      .cls-7 {
+        font-size: 6.28px;
+      }
+
+      .cls-8 {
+        font-size: 6.29px;
+      }
+
+      .cls-9 {
+        font-size: 6.29px;
+      }
+
+      .cls-10 {
+        font-size: 6.32px;
+      }
+
+      .cls-11, .cls-16 {
+        font-size: 6.32px;
+      }
+
+      .cls-53 {
+        letter-spacing: 0em;
+      }
+
+      .cls-54 {
+        letter-spacing: 0em;
+      }
+
+      .cls-55 {
+        letter-spacing: 0em;
+      }
+
+      .cls-56 {
+        letter-spacing: 0em;
+      }
+
+      .cls-57 {
+        letter-spacing: 0em;
+      }
+
+      .cls-58 {
+        letter-spacing: 0em;
+      }
+
+      .cls-59 {
+        letter-spacing: 0em;
+      }
+
+      .cls-60 {
+        letter-spacing: 0em;
+      }
+
+      .cls-61 {
+        letter-spacing: 0em;
+      }
+
+      .cls-62 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        font-size: 6.29px;
+      }
+
+      .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22 {
+        font-family: Baskerville, Baskerville;
+      }
+
+      .cls-13 {
+        font-size: 6.27px;
+      }
+
+      .cls-14 {
+        font-size: 6.28px;
+      }
+
+      .cls-15 {
+        font-size: 6.31px;
+      }
+
+      .cls-17 {
+        font-size: 6.3px;
+      }
+
+      .cls-18 {
+        font-size: 6.3px;
+      }
+
+      .cls-19 {
+        font-size: 6.28px;
+      }
+
+      .cls-20 {
+        font-size: 6.27px;
+      }
+
+      .cls-21 {
+        font-size: 4.79px;
+      }
+
+      .cls-22 {
+        font-size: 4.75px;
+      }
+
+      .cls-63 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-64 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-65 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-66 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-67 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-68 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-69 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-70 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-71 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-72 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-73 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-74 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-75 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-76 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-77 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-78 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-79 {
+        letter-spacing: -.13em;
+      }
+
+      .cls-80 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-81 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-82 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-83 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-84 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-85 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-86 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-87 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-88 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-89 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-90 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-91 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-92 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-93 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-94 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-95 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-96 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-97 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-98 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-99 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-100 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-101 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-102 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-103 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-104 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-105 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-106 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-107 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-108 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-109 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-110 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-111 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-112 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-113 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-114 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-115 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-116 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-117 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-118 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-119 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-120 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-121 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-122 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-123 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-124 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-125 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-126 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-127 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-128 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-129 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-130 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-131 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-132 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-133 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-134 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-135 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-136 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-137 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-138 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-139 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-140 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-141 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-142 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-143 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-144 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-145 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-146 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-147 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-148 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-149 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-150 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-151 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-152 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-153 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-154 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-155 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-156 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-157 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-158 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-159 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-160 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-161 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-162 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-163 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-164 {
+        letter-spacing: 0em;
+      }
+
+      .cls-165 {
+        letter-spacing: 0em;
+      }
+
+      .cls-166 {
+        letter-spacing: 0em;
+      }
+
+      .cls-167 {
+        letter-spacing: 0em;
+      }
+
+      .cls-168 {
+        letter-spacing: 0em;
+      }
+
+      .cls-169 {
+        letter-spacing: 0em;
+      }
+
+      .cls-170 {
+        letter-spacing: 0em;
+      }
+
+      .cls-171 {
+        letter-spacing: 0em;
+      }
+
+      .cls-172 {
+        letter-spacing: 0em;
+      }
+
+      .cls-173 {
+        letter-spacing: 0em;
+      }
+
+      .cls-174 {
+        letter-spacing: 0em;
+      }
+
+      .cls-175 {
+        letter-spacing: 0em;
+      }
+
+      .cls-176 {
+        letter-spacing: 0em;
+      }
+
+      .cls-177 {
+        letter-spacing: 0em;
+      }
+
+      .cls-178 {
+        letter-spacing: 0em;
+      }
+
+      .cls-179 {
+        letter-spacing: 0em;
+      }
+
+      .cls-180 {
+        letter-spacing: 0em;
+      }
+
+      .cls-181 {
+        letter-spacing: 0em;
+      }
+
+      .cls-182 {
+        letter-spacing: 0em;
+      }
+
+      .cls-183 {
+        letter-spacing: 0em;
+      }
+
+      .cls-184 {
+        letter-spacing: 0em;
+      }
+
+      .cls-185 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-186 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-187 {
+        letter-spacing: 0em;
+      }
+
+      .cls-188 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-189 {
+        letter-spacing: 0em;
+      }
+
+      .cls-190 {
+        letter-spacing: 0em;
+      }
+
+      .cls-191 {
+        letter-spacing: 0em;
+      }
+
+      .cls-192 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-193 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-194 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-195 {
+        letter-spacing: 0em;
+      }
+
+      .cls-196 {
+        letter-spacing: 0em;
+      }
+
+      .cls-197 {
+        letter-spacing: 0em;
+      }
+
+      .cls-198 {
+        letter-spacing: 0em;
+      }
+
+      .cls-199 {
+        letter-spacing: 0em;
+      }
+
+      .cls-200 {
+        letter-spacing: 0em;
+      }
+
+      .cls-201 {
+        letter-spacing: 0em;
+      }
+
+      .cls-202 {
+        letter-spacing: 0em;
+      }
+
+      .cls-203 {
+        letter-spacing: 0em;
+      }
+
+      .cls-204 {
+        letter-spacing: 0em;
+      }
+
+      .cls-205 {
+        letter-spacing: 0em;
+      }
+
+      .cls-206 {
+        letter-spacing: 0em;
+      }
+
+      .cls-207 {
+        letter-spacing: 0em;
+      }
+
+      .cls-208 {
+        letter-spacing: 0em;
+      }
+
+      .cls-209 {
+        letter-spacing: 0em;
+      }
+
+      .cls-210 {
+        letter-spacing: 0em;
+      }
+
+      .cls-211 {
+        letter-spacing: 0em;
+      }
+
+      .cls-212 {
+        letter-spacing: 0em;
+      }
+
+      .cls-213 {
+        letter-spacing: 0em;
+      }
+
+      .cls-214 {
+        letter-spacing: 0em;
+      }
+
+      .cls-215 {
+        letter-spacing: 0em;
+      }
+
+      .cls-216 {
+        letter-spacing: 0em;
+      }
+
+      .cls-217 {
+        letter-spacing: 0em;
+      }
+
+      .cls-218 {
+        letter-spacing: 0em;
+      }
+
+      .cls-219 {
+        letter-spacing: 0em;
+      }
+
+      .cls-220 {
+        letter-spacing: 0em;
+      }
+
+      .cls-221 {
+        letter-spacing: 0em;
+      }
+
+      .cls-222 {
+        letter-spacing: 0em;
+      }
+
+      .cls-223 {
+        letter-spacing: 0em;
+      }
+
+      .cls-224 {
+        letter-spacing: 0em;
+      }
+
+      .cls-225 {
+        letter-spacing: 0em;
+      }
+
+      .cls-226 {
+        letter-spacing: 0em;
+      }
+
+      .cls-227 {
+        letter-spacing: 0em;
+      }
+
+      .cls-228 {
+        letter-spacing: 0em;
+      }
+
+      .cls-229 {
+        letter-spacing: .08em;
+      }
+
+      .cls-230 {
+        letter-spacing: .07em;
+      }
+
+      .cls-231 {
+        letter-spacing: .07em;
+      }
+
+      .cls-232 {
+        letter-spacing: .09em;
+      }
+
+      .cls-233 {
+        letter-spacing: .08em;
+      }
+
+      .cls-234 {
+        letter-spacing: .09em;
+      }
+
+      .cls-235 {
+        letter-spacing: .09em;
+      }
+
+      .cls-236 {
+        letter-spacing: .07em;
+      }
+
+      .cls-237 {
+        letter-spacing: .06em;
+      }
+
+      .cls-238 {
+        letter-spacing: .06em;
+      }
+
+      .cls-239 {
+        letter-spacing: .07em;
+      }
+
+      .cls-240 {
+        letter-spacing: .07em;
+      }
+
+      .cls-241 {
+        letter-spacing: .07em;
+      }
+
+      .cls-242 {
+        letter-spacing: .07em;
+      }
+
+      .cls-243 {
+        letter-spacing: .06em;
+      }
+
+      .cls-244 {
+        letter-spacing: .07em;
+      }
+
+      .cls-245 {
+        letter-spacing: .07em;
+      }
+
+      .cls-246 {
+        letter-spacing: .06em;
+      }
+
+      .cls-247 {
+        letter-spacing: .08em;
+      }
+
+      .cls-248 {
+        letter-spacing: .07em;
+      }
+
+      .cls-249 {
+        letter-spacing: .08em;
+      }
+
+      .cls-250 {
+        letter-spacing: .08em;
+      }
+
+      .cls-251 {
+        letter-spacing: .08em;
+      }
+
+      .cls-252 {
+        letter-spacing: .07em;
+      }
+
+      .cls-253 {
+        letter-spacing: .07em;
+      }
+
+      .cls-254 {
+        letter-spacing: .02em;
+      }
+
+      .cls-255 {
+        letter-spacing: .02em;
+      }
+
+      .cls-256 {
+        letter-spacing: .02em;
+      }
+
+      .cls-257 {
+        letter-spacing: .02em;
+      }
+
+      .cls-258 {
+        letter-spacing: .02em;
+      }
+
+      .cls-259 {
+        letter-spacing: .02em;
+      }
+
+      .cls-260 {
+        letter-spacing: .02em;
+      }
+
+      .cls-261 {
+        letter-spacing: .02em;
+      }
+
+      .cls-262 {
+        letter-spacing: .02em;
+      }
+
+      .cls-263 {
+        letter-spacing: .02em;
+      }
+
+      .cls-264 {
+        letter-spacing: .01em;
+      }
+
+      .cls-265 {
+        letter-spacing: .02em;
+      }
+
+      .cls-266 {
+        letter-spacing: .02em;
+      }
+
+      .cls-267 {
+        letter-spacing: .02em;
+      }
+
+      .cls-268 {
+        letter-spacing: .01em;
+      }
+
+      .cls-269 {
+        letter-spacing: .01em;
+      }
+
+      .cls-270 {
+        letter-spacing: .01em;
+      }
+
+      .cls-271 {
+        letter-spacing: .01em;
+      }
+
+      .cls-272 {
+        letter-spacing: .01em;
+      }
+
+      .cls-273 {
+        letter-spacing: .05em;
+      }
+
+      .cls-274 {
+        letter-spacing: .05em;
+      }
+
+      .cls-275 {
+        letter-spacing: .05em;
+      }
+
+      .cls-276 {
+        letter-spacing: .05em;
+      }
+
+      .cls-277 {
+        letter-spacing: .05em;
+      }
+
+      .cls-278 {
+        letter-spacing: .05em;
+      }
+
+      .cls-279 {
+        letter-spacing: .05em;
+      }
+
+      .cls-280 {
+        letter-spacing: .05em;
+      }
+
+      .cls-281 {
+        letter-spacing: .05em;
+      }
+
+      .cls-282 {
+        letter-spacing: .04em;
+      }
+
+      .cls-283 {
+        letter-spacing: .04em;
+      }
+
+      .cls-284 {
+        letter-spacing: .04em;
+      }
+
+      .cls-285 {
+        letter-spacing: .04em;
+      }
+
+      .cls-286 {
+        letter-spacing: .05em;
+      }
+
+      .cls-287 {
+        letter-spacing: .03em;
+      }
+
+      .cls-288 {
+        letter-spacing: .03em;
+      }
+
+      .cls-289 {
+        letter-spacing: .03em;
+      }
+
+      .cls-290 {
+        letter-spacing: .03em;
+      }
+
+      .cls-291 {
+        letter-spacing: .03em;
+      }
+
+      .cls-292 {
+        letter-spacing: .03em;
+      }
+
+      .cls-293 {
+        letter-spacing: 0em;
+      }
+
+      .cls-294 {
+        letter-spacing: 0em;
+      }
+
+      .cls-295 {
+        letter-spacing: 0em;
+      }
+
+      .cls-296 {
+        letter-spacing: 0em;
+      }
+
+      .cls-297 {
+        letter-spacing: 0em;
+      }
+
+      .cls-298 {
+        letter-spacing: 0em;
+      }
+
+      .cls-299 {
+        letter-spacing: 0em;
+      }
+
+      .cls-300 {
+        letter-spacing: .01em;
+      }
+
+      .cls-301 {
+        letter-spacing: .01em;
+      }
+
+      .cls-302 {
+        letter-spacing: .01em;
+      }
+
+      .cls-303 {
+        letter-spacing: .01em;
+      }
+
+      .cls-304 {
+        letter-spacing: .01em;
+      }
+
+      .cls-305 {
+        letter-spacing: .01em;
+      }
+
+      .cls-306 {
+        letter-spacing: .01em;
+      }
+
+      .cls-307 {
+        letter-spacing: .01em;
+      }
+
+      .cls-308 {
+        letter-spacing: 0em;
+      }
+
+      .cls-309 {
+        letter-spacing: 0em;
+      }
+
+      .cls-310 {
+        letter-spacing: 0em;
+      }
+
+      .cls-311 {
+        letter-spacing: .01em;
+      }
+
+      .cls-312 {
+        letter-spacing: .01em;
+      }
+
+      .cls-313 {
+        letter-spacing: .01em;
+      }
+
+      .cls-314 {
+        letter-spacing: 0em;
+      }
+
+      .cls-315 {
+        letter-spacing: 0em;
+      }
+
+      .cls-316 {
+        letter-spacing: 0em;
+      }
+
+      .cls-317 {
+        letter-spacing: 0em;
+      }
+
+      .cls-318 {
+        letter-spacing: 0em;
+      }
+
+      .cls-319 {
+        letter-spacing: 0em;
+      }
+
+      .cls-320 {
+        letter-spacing: 0em;
+      }
+
+      .cls-321 {
+        letter-spacing: 0em;
+      }
+
+      .cls-322 {
+        letter-spacing: 0em;
+      }
+
+      .cls-323 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="_фон" data-name="фон">
+    <rect class="cls-42" x="-2" y="-1" width="324" height="187"/>
+  </g>
+  <g id="_иллюстрации" data-name="иллюстрации">
+    <text class="cls-1" transform="translate(13.78 98.64)"><tspan class="cls-36"><tspan class="cls-25" x="0" y="0">Акцидентный </tspan><tspan class="cls-321" x="30.92" y="0">→→</tspan></tspan><tspan class="cls-26"><tspan class="cls-25" x=".16" y="4.93">Bas</tspan><tspan x="7.57" y="4.93">k</tspan><tspan class="cls-25" x="9.83" y="4.93">e</tspan><tspan class="cls-275" x="12.3" y="4.93">r</tspan><tspan class="cls-25" x="14.05" y="4.93">vil</tspan><tspan class="cls-321" x="18.6" y="4.93">l</tspan><tspan class="cls-261" x="19.63" y="4.93">e </tspan><tspan class="cls-315" x="23.35" y="4.93">R</tspan><tspan class="cls-261" x="26.03" y="4.93">egula</tspan><tspan x="37.09" y="4.93">r</tspan></tspan><tspan class="cls-26"><tspan x="9.85" y="9.86">(10 / 12pt)</tspan></tspan></text>
+    <text class="cls-1" transform="translate(21.42 37.3)"><tspan class="cls-24"><tspan x="0" y="0">Текстовый</tspan></tspan><tspan class="cls-23"><tspan x="-5.42" y="4.93">PT Sans Regular </tspan></tspan><tspan class="cls-26"><tspan x="1.64" y="9.86">(10 / 12pt) </tspan></tspan></text>
+    <text class="cls-2" transform="translate(48.5 32.63)"><tspan x="0" y="0"> </tspan></text>
+    <path class="cls-3" d="M35.38,18.94h-4.16c-.06.8-.11,1.67-.17,2.59-.06.93-.14,1.85-.26,2.78-.11.93-.27,1.82-.46,2.67-.19.85-.44,1.6-.73,2.25-.3.65-.66,1.17-1.09,1.56s-.94.59-1.53.59c-.36,0-.68-.02-.95-.06-.27-.04-.51-.11-.72-.2l.34-1.92c.23.08.48.11.75.11.38,0,.73-.16,1.03-.49.31-.32.57-.94.8-1.85s.42-2.17.57-3.77.26-3.7.32-6.28h8.54v14.34h-2.29v-12.33Z"/>
+    <path class="cls-3" d="M33.22,78.65c-.34,0-.63.02-.84.06s-.39.09-.51.16c-.12.07-.2.15-.25.26s-.07.22-.07.34c.14.83.21,1.92.21,3.27,0,.6-.01,1.25-.04,1.96-.03.71-.1,1.43-.22,2.15s-.29,1.43-.52,2.11-.55,1.29-.95,1.81c-.4.52-.9.95-1.49,1.27s-1.31.48-2.16.48c-.42,0-.81-.05-1.15-.15s-.63-.23-.87-.39c-.24-.16-.43-.34-.55-.55-.13-.21-.19-.42-.19-.64,0-.33.12-.61.36-.84.24-.22.53-.34.88-.34.37,0,.67.1.92.31.25.21.37.46.37.76,0,.25-.05.45-.14.59s-.14.25-.14.34c0,.15.06.25.18.31.12.06.27.09.44.09.4,0,.76-.15,1.08-.46.32-.3.59-.71.83-1.21.24-.5.43-1.07.59-1.72.15-.65.28-1.32.38-2s.17-1.36.21-2.04c.04-.68.06-1.3.06-1.86,0-.93-.02-1.67-.07-2.21s-.14-.96-.28-1.24c-.14-.28-.34-.46-.6-.53s-.61-.11-1.03-.11h-.19v-.79h13.6v.79h-.12c-.56,0-1,.04-1.32.13-.32.09-.55.23-.7.44-.15.21-.24.49-.27.83-.03.35-.04.8-.04,1.34v5.74c0,.83,0,1.49.03,1.97.02.49.04.82.06.99.06.34.23.61.52.8.29.19.78.28,1.48.28h.36v.79h-7.5v-.79h.48c.74,0,1.25-.1,1.53-.31.29-.21.45-.51.5-.9.03-.39.05-1.34.05-2.84v-5.74c0-.53,0-.97-.03-1.32s-.09-.63-.21-.84c-.12-.21-.31-.36-.58-.45-.26-.09-.64-.13-1.12-.13h-.98Z"/>
+    <text class="cls-11" transform="translate(179.61 20.92)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-11" transform="translate(179.62 36.09)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-4" transform="translate(155.81 74.02) scale(1 1.32)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-11" transform="translate(157.44 74.02)"><tspan x="0" y="0">—</tspan></text>
+    <text class="cls-4" transform="translate(162.72 74.02) scale(1 1.32)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-11" transform="translate(164.36 74.02)"><tspan class="cls-217" x="0" y="0">э</tspan><tspan class="cls-166" x="2.9" y="0">т</tspan><tspan class="cls-318" x="5.37" y="0">о</tspan><tspan class="cls-279" x="8.81" y="0"> </tspan><tspan class="cls-169" x="10.83" y="0">т</tspan><tspan class="cls-225" x="13.3" y="0">о</tspan><tspan class="cls-73" x="16.68" y="0">,</tspan><tspan x="17.42" y="0"> </tspan></text>
+    <text class="cls-11" transform="translate(179.6 96.77)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-11" transform="translate(179.62 104.36)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-11" transform="translate(179.6 134.71)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-11" transform="translate(179.6 142.29)"><tspan x="0" y="0">-</tspan></text>
+    <g>
+      <text class="cls-11" transform="translate(67.03 20.92)"><tspan class="cls-294" x="0" y="0">Чаще</tspan><tspan class="cls-236" x="15.06" y="0"> </tspan><tspan class="cls-295" x="17.19" y="0">в</tspan><tspan class="cls-113" x="20.38" y="0">с</tspan><tspan class="cls-295" x="23.12" y="0">е</tspan><tspan class="cls-186" x="26.36" y="0">г</tspan><tspan class="cls-294" x="28.62" y="0">о</tspan><tspan class="cls-239" x="32.04" y="0"> </tspan><tspan class="cls-186" x="34.18" y="0">эт</tspan><tspan class="cls-294" x="39.49" y="0">о</tspan><tspan class="cls-239" x="42.91" y="0"> </tspan><tspan class="cls-294" x="45.05" y="0">ма</tspan><tspan class="cls-168" x="52.32" y="0">к</tspan><tspan class="cls-293" x="55.31" y="0">симально</tspan><tspan class="cls-239" x="81.99" y="0"> </tspan><tspan class="cls-294" x="84.13" y="0">«не</tspan><tspan class="cls-286" x="93.87" y="0"> </tspan><tspan class="cls-294" x="95.85" y="0">диза</tspan><tspan x="108.77" y="0">й</tspan></text>
+      <text class="cls-11" transform="translate(67.03 28.5)"><tspan class="cls-290" x="0" y="0">н</tspan><tspan class="cls-289" x="3.59" y="0">е</tspan><tspan class="cls-290" x="6.99" y="0">р</tspan><tspan class="cls-289" x="10.58" y="0">с</tspan><tspan class="cls-291" x="13.62" y="0">к</tspan><tspan class="cls-289" x="16.82" y="0">и</tspan><tspan class="cls-291" x="20.45" y="0">й</tspan><tspan class="cls-289" x="24.08" y="0">»</tspan><tspan class="cls-139" x="27.28" y="0">,</tspan><tspan class="cls-27" x="28.21" y="0"> </tspan><tspan class="cls-290" x="30.98" y="0">с</tspan><tspan class="cls-289" x="34" y="0">п</tspan><tspan class="cls-292" x="37.57" y="0">о</tspan><tspan class="cls-265" x="41.13" y="0">к</tspan><tspan class="cls-289" x="44.26" y="0">о</tspan><tspan class="cls-290" x="47.83" y="0">йн</tspan><tspan class="cls-289" x="55.05" y="0">ы</tspan><tspan class="cls-290" x="59.41" y="0">й</tspan><tspan class="cls-27" x="63.04" y="0"> </tspan><tspan class="cls-292" x="65.81" y="0">п</tspan><tspan class="cls-289" x="69.37" y="0">о</tspan><tspan class="cls-28" x="72.94" y="0"> </tspan><tspan class="cls-289" x="75.71" y="0">о</tspan><tspan class="cls-290" x="79.28" y="0">ф</tspan><tspan class="cls-289" x="83.75" y="0">о</tspan><tspan class="cls-290" x="87.32" y="0">р</tspan><tspan class="cls-289" x="90.92" y="0">м</tspan><tspan class="cls-290" x="95.18" y="0">л</tspan><tspan class="cls-289" x="98.54" y="0">е</tspan><tspan class="cls-290" x="101.93" y="0">н</tspan><tspan class="cls-288" x="105.52" y="0">и</tspan><tspan class="cls-32" x="109.16" y="0">ю </tspan></text>
+      <text class="cls-11" transform="translate(67.03 36.09)"><tspan class="cls-176" x="0" y="0">б</tspan><tspan x="3.36" y="0">лок</tspan><tspan class="cls-70" x="12.95" y="0">.</tspan><tspan class="cls-282" x="13.81" y="0"> </tspan><tspan class="cls-85" x="15.73" y="0">Ц</tspan><tspan class="cls-94" x="19.94" y="0">е</tspan><tspan x="23.02" y="0">ль</tspan></text>
+      <text class="cls-5" transform="translate(96.14 36.09) scale(1 1.33)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-11" transform="translate(97.59 36.09)"><tspan x="0" y="0">—</tspan></text>
+      <text class="cls-5" transform="translate(102.77 36.09) scale(1 1.33)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-11" transform="translate(104.22 36.09)"><tspan class="cls-89" x="0" y="0">с</tspan><tspan x="2.7" y="0">д</tspan><tspan class="cls-85" x="6.12" y="0">е</tspan><tspan x="9.19" y="0">лат</tspan><tspan class="cls-154" x="18.02" y="0">ь</tspan><tspan class="cls-282" x="20.73" y="0"> </tspan><tspan class="cls-34" x="22.65" y="0">е</tspan><tspan class="cls-114" x="25.86" y="0">г</tspan><tspan class="cls-61" x="28.1" y="0">о</tspan><tspan class="cls-283" x="31.49" y="0"> </tspan><tspan x="33.41" y="0">непримеча</tspan><tspan class="cls-114" x="63.81" y="0">т</tspan><tspan class="cls-85" x="66.22" y="0">е</tspan><tspan x="69.3" y="0">ль</tspan></text>
+      <text class="cls-7" transform="translate(67.03 43.68)"><tspan class="cls-200" x="0" y="0">ным</tspan><tspan class="cls-65" x="11.41" y="0">,</tspan><tspan class="cls-107" x="12.09" y="0"> </tspan><tspan class="cls-198" x="13.62" y="0">ч</tspan><tspan class="cls-87" x="16.64" y="0">т</tspan><tspan class="cls-198" x="18.97" y="0">обы</tspan><tspan class="cls-107" x="29.67" y="0"> </tspan><tspan class="cls-200" x="31.2" y="0">моз</tspan><tspan class="cls-147" x="41.21" y="0">г</tspan><tspan class="cls-107" x="43.28" y="0"> </tspan><tspan class="cls-198" x="44.81" y="0">фок</tspan><tspan class="cls-111" x="55.27" y="0">у</tspan><tspan class="cls-200" x="58.1" y="0">сировался</tspan><tspan class="cls-107" x="85.82" y="0"> </tspan><tspan class="cls-200" x="87.35" y="0">на</tspan><tspan class="cls-107" x="93.74" y="0"> </tspan><tspan class="cls-200" x="95.27" y="0">смы</tspan><tspan class="cls-151" x="106.12" y="0">с</tspan><tspan class="cls-198" x="108.74" y="0">л</tspan><tspan class="cls-54" x="111.84" y="0">е </tspan></text>
+      <text class="cls-11" transform="translate(67.03 51.26)"><tspan class="cls-89" x="0" y="0">с</tspan><tspan x="2.7" y="0">лов</tspan><tspan class="cls-71" x="12.42" y="0">,</tspan><tspan class="cls-280" x="13.17" y="0"> </tspan><tspan x="15.18" y="0">а</tspan><tspan class="cls-280" x="18.32" y="0"> </tspan><tspan x="20.34" y="0">не</tspan><tspan class="cls-280" x="26.96" y="0"> </tspan><tspan x="28.98" y="0">на</tspan><tspan class="cls-280" x="35.53" y="0"> </tspan><tspan x="37.54" y="0">и</tspan><tspan class="cls-161" x="40.99" y="0">х</tspan><tspan class="cls-280" x="44.09" y="0"> </tspan><tspan class="cls-34" x="46.1" y="0">форме</tspan><tspan class="cls-71" x="64.5" y="0">.</tspan><tspan class="cls-280" x="65.36" y="0"> </tspan><tspan class="cls-61" x="67.38" y="0">Обычно</tspan><tspan class="cls-287" x="89.16" y="0"> </tspan><tspan x="91.02" y="0">для</tspan><tspan class="cls-280" x="100.62" y="0"> </tspan><tspan x="102.64" y="0">не</tspan><tspan class="cls-114" x="109.26" y="0">г</tspan><tspan x="111.5" y="0">о </tspan></text>
+      <text class="cls-9" transform="translate(67.03 58.85)"><tspan class="cls-214" x="0" y="0">бе</tspan><tspan class="cls-123" x="6.48" y="0">р</tspan><tspan class="cls-165" x="9.76" y="0">у</tspan><tspan class="cls-158" x="12.65" y="0">т</tspan><tspan class="cls-144" x="14.91" y="0"> </tspan><tspan class="cls-175" x="16.32" y="0">та</tspan><tspan class="cls-164" x="21.86" y="0">к</tspan><tspan class="cls-102" x="24.82" y="0"> </tspan><tspan class="cls-214" x="26.37" y="0">н</tspan><tspan class="cls-175" x="29.72" y="0">а</tspan><tspan class="cls-214" x="32.8" y="0">з</tspan><tspan class="cls-165" x="35.53" y="0">ы</tspan><tspan class="cls-214" x="39.64" y="0">в</tspan><tspan class="cls-175" x="42.74" y="0">а</tspan><tspan class="cls-208" x="45.82" y="0">е</tspan><tspan class="cls-175" x="48.97" y="0">мый</tspan><tspan class="cls-102" x="60.49" y="0"> </tspan><tspan class="cls-164" x="62.05" y="0">«н</tspan><tspan class="cls-175" x="68.36" y="0">а</tspan><tspan class="cls-214" x="71.44" y="0">бо</tspan><tspan class="cls-175" x="78.09" y="0">р</tspan><tspan class="cls-208" x="81.46" y="0">н</tspan><tspan class="cls-175" x="84.81" y="0">ый</tspan><tspan class="cls-214" x="92.32" y="0">»</tspan><tspan class="cls-101" x="95.28" y="0"> </tspan><tspan class="cls-208" x="96.83" y="0">ш</tspan><tspan class="cls-175" x="101.42" y="0">ри</tspan><tspan class="cls-110" x="108.17" y="0">ф</tspan><tspan class="cls-64" x="112.31" y="0">т</tspan><tspan class="cls-76" x="114.27" y="0">,</tspan><tspan x="115.01" y="0"> </tspan></text>
+      <text class="cls-11" transform="translate(67.03 66.43)"><tspan class="cls-154" x="0" y="0">у</tspan><tspan class="cls-254" x="2.72" y="0"> </tspan><tspan class="cls-188" x="4.55" y="0">к</tspan><tspan class="cls-114" x="7.5" y="0">от</tspan><tspan x="13.21" y="0">оро</tspan><tspan class="cls-133" x="23.41" y="0">г</tspan><tspan class="cls-61" x="25.64" y="0">о</tspan><tspan class="cls-254" x="29.03" y="0"> </tspan><tspan x="30.85" y="0">не</tspan><tspan class="cls-163" x="37.48" y="0">т</tspan><tspan class="cls-257" x="39.79" y="0"> </tspan><tspan x="41.62" y="0">ярки</tspan><tspan class="cls-161" x="54.52" y="0">х</tspan><tspan class="cls-257" x="57.61" y="0"> </tspan><tspan class="cls-133" x="59.43" y="0">о</tspan><tspan class="cls-104" x="62.72" y="0">т</tspan><tspan x="65.1" y="0">личи</tspan><tspan class="cls-112" x="78.29" y="0">т</tspan><tspan class="cls-85" x="80.7" y="0">е</tspan><tspan x="83.77" y="0">льны</tspan><tspan class="cls-91" x="97.47" y="0">х</tspan><tspan class="cls-254" x="100.56" y="0"> </tspan><tspan x="102.38" y="0">че</tspan><tspan class="cls-112" x="108.69" y="0">р</tspan><tspan class="cls-71" x="112.02" y="0">т.</tspan><tspan class="cls-34" x="114.91" y="0"> </tspan></text>
+      <text class="cls-11" transform="translate(67.03 74.02)"><tspan class="cls-318" x="0" y="0">Обычно</tspan><tspan class="cls-229" x="22.13" y="0"> </tspan><tspan class="cls-46" x="24.29" y="0">б</tspan><tspan class="cls-310" x="27.69" y="0">лок</tspan><tspan class="cls-229" x="37.45" y="0"> </tspan><tspan class="cls-318" x="39.62" y="0">основно</tspan><tspan class="cls-169" x="63.01" y="0">г</tspan><tspan class="cls-314" x="65.31" y="0">о</tspan><tspan class="cls-281" x="68.75" y="0"> </tspan><tspan class="cls-166" x="70.77" y="0">т</tspan><tspan class="cls-310" x="73.24" y="0">е</tspan><tspan class="cls-221" x="76.51" y="0">к</tspan><tspan class="cls-169" x="79.52" y="0">с</tspan><tspan class="cls-310" x="82.34" y="0">т</tspan><tspan x="84.9" y="0">а</tspan></text>
+      <text class="cls-11" transform="translate(67.03 81.6)"><tspan class="cls-319" x="0" y="0">с</tspan><tspan class="cls-230" x="2.91" y="0"> </tspan><tspan class="cls-319" x="5.07" y="0">че</tspan><tspan class="cls-218" x="11.49" y="0">г</tspan><tspan class="cls-309" x="13.78" y="0">о</tspan><tspan class="cls-230" x="17.23" y="0"> </tspan><tspan class="cls-218" x="19.39" y="0">ст</tspan><tspan class="cls-309" x="24.66" y="0">ои</tspan><tspan class="cls-83" x="31.61" y="0">т</tspan><tspan class="cls-230" x="33.98" y="0"> </tspan><tspan class="cls-319" x="36.15" y="0">начат</tspan><tspan class="cls-160" x="51.72" y="0">ь</tspan><tspan class="cls-273" x="54.49" y="0"> </tspan><tspan class="cls-319" x="56.49" y="0">дизайнит</tspan><tspan class="cls-160" x="82.57" y="0">ь</tspan><tspan class="cls-230" x="85.34" y="0"> </tspan><tspan class="cls-319" x="87.5" y="0">книг</tspan><tspan class="cls-141" x="99.95" y="0">у</tspan><tspan class="cls-68" x="102.55" y="0">,</tspan><tspan class="cls-278" x="103.34" y="0"> </tspan><tspan class="cls-319" x="105.36" y="0">та</tspan><tspan x="111.12" y="0">к </tspan></text>
+      <text class="cls-11" transform="translate(67.03 89.19)"><tspan x="0" y="0">как</tspan><tspan class="cls-240" x="9.18" y="0"> </tspan><tspan class="cls-62" x="11.29" y="0">к</tspan><tspan class="cls-248" x="14.31" y="0"> </tspan><tspan class="cls-62" x="16.42" y="0">нем</tspan><tspan class="cls-155" x="27.13" y="0">у</tspan><tspan class="cls-248" x="29.85" y="0"> </tspan><tspan x="31.96" y="0">проще</tspan><tspan class="cls-248" x="50.12" y="0"> </tspan><tspan class="cls-62" x="52.23" y="0">в</tspan><tspan class="cls-84" x="55.39" y="0">с</tspan><tspan x="58.1" y="0">е</tspan><tspan class="cls-116" x="61.31" y="0">г</tspan><tspan x="63.55" y="0">о</tspan><tspan class="cls-248" x="66.94" y="0"> </tspan><tspan class="cls-81" x="69.05" y="0">с</tspan><tspan x="71.76" y="0">форм</tspan><tspan class="cls-128" x="86.95" y="0">у</tspan><tspan class="cls-62" x="89.81" y="0">лироват</tspan><tspan class="cls-152" x="112.05" y="0">ь</tspan><tspan class="cls-35" x="114.77" y="0"> </tspan></text>
+      <text class="cls-11" transform="translate(67.03 96.77)"><tspan class="cls-317" x="0" y="0">требования</tspan><tspan class="cls-67" x="32.64" y="0">.</tspan><tspan class="cls-231" x="33.56" y="0"> </tspan><tspan class="cls-317" x="35.72" y="0">Э</tspan><tspan class="cls-215" x="39.42" y="0">т</tspan><tspan class="cls-308" x="41.89" y="0">о</tspan><tspan class="cls-231" x="45.33" y="0"> </tspan><tspan class="cls-215" x="47.49" y="0">о</tspan><tspan class="cls-317" x="50.83" y="0">тп</tspan><tspan class="cls-322" x="56.84" y="0">р</tspan><tspan class="cls-308" x="60.31" y="0">авная</tspan><tspan class="cls-274" x="76.43" y="0"> </tspan><tspan class="cls-215" x="78.44" y="0">т</tspan><tspan class="cls-308" x="80.91" y="0">о</tspan><tspan class="cls-322" x="84.35" y="0">ч</tspan><tspan class="cls-317" x="87.5" y="0">ка</tspan><tspan class="cls-231" x="93.77" y="0"> </tspan><tspan class="cls-308" x="95.93" y="0">в</tspan><tspan class="cls-231" x="99.14" y="0"> </tspan><tspan class="cls-226" x="101.29" y="0">к</tspan><tspan class="cls-317" x="104.3" y="0">о</tspan><tspan x="107.75" y="0">м</tspan></text>
+      <text class="cls-11" transform="translate(67.03 104.36)"><tspan x="0" y="0">позиции</tspan><tspan class="cls-77" x="23.38" y="0">,</tspan><tspan class="cls-185" x="24.12" y="0"> </tspan><tspan class="cls-137" x="25.73" y="0">о</tspan><tspan class="cls-150" x="29.02" y="0">т</tspan><tspan class="cls-185" x="31.34" y="0" xml:space="preserve"> к</tspan><tspan class="cls-133" x="35.91" y="0">о</tspan><tspan class="cls-114" x="39.2" y="0">т</tspan><tspan x="41.61" y="0">орой</tspan><tspan class="cls-185" x="55.26" y="0"> </tspan><tspan class="cls-126" x="56.88" y="0">у</tspan><tspan x="59.74" y="0">добно</tspan><tspan class="cls-185" x="76.74" y="0"> </tspan><tspan x="78.36" y="0">выбират</tspan><tspan class="cls-153" x="101.59" y="0">ь</tspan><tspan class="cls-142" x="104.31" y="0"> </tspan><tspan x="105.76" y="0">ди</tspan></text>
+      <text class="cls-10" transform="translate(67.03 111.95)"><tspan class="cls-222" x="0" y="0">з</tspan><tspan x="2.78" y="0">ай</tspan><tspan class="cls-222" x="9.36" y="0">н</tspan><tspan class="cls-157" x="12.76" y="0"> </tspan><tspan x="14.2" y="0">для</tspan><tspan class="cls-130" x="23.8" y="0"> </tspan><tspan class="cls-222" x="25.4" y="0">о</tspan><tspan class="cls-117" x="28.77" y="0">с</tspan><tspan x="31.52" y="0">таль</tspan><tspan class="cls-222" x="43.26" y="0">н</tspan><tspan x="46.67" y="0">ы</tspan><tspan class="cls-162" x="50.84" y="0">х</tspan><tspan class="cls-135" x="53.91" y="0"> </tspan><tspan class="cls-209" x="55.51" y="0">э</tspan><tspan x="58.4" y="0">л</tspan><tspan class="cls-222" x="61.58" y="0">е</tspan><tspan x="64.78" y="0">м</tspan><tspan class="cls-222" x="68.85" y="0">ен</tspan><tspan class="cls-117" x="75.46" y="0">т</tspan><tspan class="cls-222" x="77.86" y="0">ов</tspan><tspan class="cls-135" x="84.38" y="0"> </tspan><tspan x="85.98" y="0">ра</tspan><tspan class="cls-222" x="92.53" y="0">зво</tspan><tspan x="101.84" y="0">р</tspan><tspan class="cls-117" x="105.25" y="0">о</tspan><tspan x="108.53" y="0">та</tspan><tspan class="cls-74" x="114.17" y="0">.</tspan><tspan x="115.04" y="0"> </tspan></text>
+      <text class="cls-11" transform="translate(67.03 119.53)"><tspan x="0" y="0">Чем</tspan><tspan class="cls-242" x="11.11" y="0"> </tspan><tspan class="cls-33" x="13.22" y="0">б</tspan><tspan class="cls-170" x="16.61" y="0">о</tspan><tspan class="cls-60" x="19.96" y="0">льше</tspan><tspan class="cls-285" x="33.94" y="0"> </tspan><tspan class="cls-115" x="35.9" y="0">т</tspan><tspan x="38.31" y="0">е</tspan><tspan class="cls-192" x="41.53" y="0">к</tspan><tspan class="cls-115" x="44.48" y="0">с</tspan><tspan class="cls-149" x="47.24" y="0">т</tspan><tspan class="cls-241" x="49.56" y="0"> </tspan><tspan x="51.67" y="0">по</tspan><tspan class="cls-242" x="58.44" y="0"> </tspan><tspan class="cls-33" x="60.54" y="0">о</tspan><tspan class="cls-132" x="63.93" y="0">б</tspan><tspan class="cls-192" x="67.22" y="0">ъ</tspan><tspan x="70.29" y="0">ем</tspan><tspan class="cls-78" x="77.58" y="0">у</tspan><tspan class="cls-75" x="80.13" y="0">,</tspan><tspan class="cls-284" x="80.88" y="0"> </tspan><tspan class="cls-115" x="82.84" y="0">т</tspan><tspan x="85.25" y="0">ем</tspan><tspan class="cls-241" x="92.54" y="0"> </tspan><tspan x="94.64" y="0">важн</tspan><tspan class="cls-206" x="108.51" y="0">е</tspan><tspan x="111.66" y="0">е </tspan></text>
+      <text class="cls-8" transform="translate(67.03 127.12)"><tspan class="cls-213" x="0" y="0">п</tspan><tspan class="cls-127" x="3.32" y="0">о</tspan><tspan class="cls-213" x="6.61" y="0">добрат</tspan><tspan class="cls-145" x="25.5" y="0">ь</tspan><tspan class="cls-103" x="28.15" y="0"> </tspan><tspan class="cls-213" x="29.7" y="0">ем</tspan><tspan class="cls-143" x="36.86" y="0">у</tspan><tspan class="cls-100" x="39.52" y="0"> </tspan><tspan class="cls-98" x="41.07" y="0">у</tspan><tspan class="cls-213" x="43.87" y="0">добный</tspan><tspan class="cls-148" x="64.72" y="0"> </tspan><tspan class="cls-213" x="66.11" y="0">для</tspan><tspan class="cls-103" x="75.53" y="0"> </tspan><tspan class="cls-213" x="77.08" y="0">ч</tspan><tspan class="cls-109" x="80.11" y="0">т</tspan><tspan class="cls-213" x="82.46" y="0">ения</tspan><tspan class="cls-100" x="95.29" y="0"> </tspan><tspan class="cls-213" x="96.85" y="0">шри</tspan><tspan class="cls-109" x="108.17" y="0">ф</tspan><tspan class="cls-63" x="112.3" y="0">т</tspan><tspan class="cls-72" x="114.27" y="0">,</tspan><tspan class="cls-56" x="115.01" y="0"> </tspan></text>
+      <text class="cls-11" transform="translate(67.03 134.71)"><tspan x="0" y="0">к</tspan><tspan class="cls-307" x="3.02" y="0">е</tspan><tspan class="cls-191" x="6.3" y="0">г</tspan><tspan class="cls-304" x="8.58" y="0">л</tspan><tspan class="cls-106" x="11.83" y="0">ь</tspan><tspan class="cls-251" x="14.62" y="0"> </tspan><tspan class="cls-304" x="16.8" y="0">и</tspan><tspan class="cls-247" x="20.33" y="0"> </tspan><tspan class="cls-304" x="22.5" y="0">и</tspan><tspan class="cls-307" x="26.03" y="0">н</tspan><tspan class="cls-177" x="29.51" y="0">т</tspan><tspan class="cls-307" x="32" y="0">е</tspan><tspan class="cls-296" x="35.28" y="0">р</tspan><tspan class="cls-304" x="38.73" y="0">ли</tspan><tspan class="cls-307" x="45.51" y="0">н</tspan><tspan class="cls-304" x="49" y="0">ья</tspan><tspan class="cls-307" x="55.09" y="0">ж</tspan><tspan class="cls-69" x="59.32" y="0">,</tspan><tspan class="cls-277" x="60.14" y="0"> </tspan><tspan class="cls-304" x="62.15" y="0">дли</tspan><tspan class="cls-307" x="72.43" y="0">н</tspan><tspan class="cls-90" x="75.91" y="0">у</tspan><tspan class="cls-251" x="78.71" y="0"> </tspan><tspan class="cls-184" x="80.89" y="0">с</tspan><tspan class="cls-313" x="83.71" y="0">тр</tspan><tspan class="cls-301" x="89.8" y="0">ок</tspan><tspan class="cls-313" x="96.35" y="0">и</tspan><tspan class="cls-69" x="99.87" y="0">.</tspan><tspan class="cls-250" x="100.81" y="0"> </tspan><tspan class="cls-304" x="102.99" y="0">М</tspan><tspan x="108.07" y="0">о</tspan></text>
+      <text class="cls-11" transform="translate(67.03 142.29)"><tspan class="cls-323" x="0" y="0">ж</tspan><tspan class="cls-270" x="4.22" y="0">еш</tspan><tspan class="cls-125" x="12.26" y="0">ь</tspan><tspan class="cls-235" x="15.07" y="0"> </tspan><tspan class="cls-264" x="17.33" y="0">п</tspan><tspan class="cls-320" x="20.81" y="0">о</tspan><tspan class="cls-264" x="24.26" y="0">д</tspan><tspan class="cls-272" x="27.77" y="0">об</tspan><tspan class="cls-264" x="34.72" y="0">рат</tspan><tspan class="cls-124" x="44.07" y="0">ь</tspan><tspan class="cls-234" x="46.89" y="0"> </tspan><tspan class="cls-272" x="49.15" y="0">н</tspan><tspan class="cls-297" x="52.65" y="0">е</tspan><tspan class="cls-272" x="55.89" y="0">о</tspan><tspan class="cls-167" x="59.36" y="0">бх</tspan><tspan class="cls-316" x="65.93" y="0">о</tspan><tspan class="cls-264" x="69.38" y="0">димые</tspan><tspan class="cls-235" x="88.18" y="0"> </tspan><tspan class="cls-264" x="90.45" y="0">парам</tspan><tspan x="108.07" y="0">е</tspan></text>
+      <text class="cls-11" transform="translate(67.03 149.88)"><tspan x="0" y="0">тры</tspan><tspan class="cls-298" x="10.1" y="0"> </tspan><tspan x="11.81" y="0">в</tspan><tspan class="cls-299" x="14.97" y="0"> </tspan><tspan class="cls-122" x="16.68" y="0">г</tspan><tspan x="18.89" y="0">лаве</tspan><tspan class="cls-299" x="31.57" y="0"> </tspan><tspan class="cls-61" x="33.28" y="0">«</tspan><tspan class="cls-79" x="36.3" y="0">Т</tspan><tspan x="39" y="0">е</tspan><tspan class="cls-188" x="42.21" y="0">к</tspan><tspan class="cls-112" x="45.17" y="0">с</tspan><tspan x="47.92" y="0">т»</tspan><tspan class="cls-70" x="53.45" y="0">.</tspan><tspan class="cls-299" x="54.32" y="0"> </tspan><tspan class="cls-61" x="56.03" y="0">Е</tspan><tspan class="cls-89" x="59.42" y="0">с</tspan><tspan x="62.12" y="0">ли</tspan><tspan class="cls-298" x="68.75" y="0"> </tspan><tspan x="70.47" y="0">в</tspan><tspan class="cls-299" x="73.62" y="0"> </tspan><tspan class="cls-61" x="75.33" y="0">вашей</tspan><tspan class="cls-298" x="92.94" y="0"> </tspan><tspan x="94.65" y="0">книж</tspan><tspan class="cls-188" x="108.7" y="0">к</tspan><tspan class="cls-34" x="111.66" y="0">е </tspan></text>
+      <text class="cls-6" transform="translate(67.03 157.46)"><tspan class="cls-159" x="0" y="0">т</tspan><tspan class="cls-201" x="2.33" y="0">е</tspan><tspan class="cls-93" x="5.46" y="0">к</tspan><tspan class="cls-159" x="8.32" y="0">с</tspan><tspan class="cls-146" x="10.99" y="0">т</tspan><tspan class="cls-105" x="13.22" y="0"> </tspan><tspan class="cls-93" x="14.75" y="0">к</tspan><tspan class="cls-190" x="17.62" y="0">ор</tspan><tspan class="cls-159" x="24.26" y="0">о</tspan><tspan class="cls-190" x="27.46" y="0">ткий</tspan><tspan class="cls-66" x="39.58" y="0">,</tspan><tspan class="cls-108" x="40.25" y="0"> </tspan><tspan class="cls-201" x="41.78" y="0">м</tspan><tspan class="cls-131" x="45.77" y="0">о</tspan><tspan class="cls-201" x="49.03" y="0">жно</tspan><tspan class="cls-140" x="59.74" y="0"> </tspan><tspan class="cls-190" x="61.12" y="0">дат</tspan><tspan class="cls-138" x="69.94" y="0">ь</tspan><tspan class="cls-108" x="72.57" y="0"> </tspan><tspan class="cls-190" x="74.1" y="0">в</tspan><tspan class="cls-134" x="77.18" y="0">о</tspan><tspan class="cls-190" x="80.44" y="0">лю</tspan><tspan class="cls-108" x="87.99" y="0"> </tspan><tspan class="cls-201" x="89.52" y="0">фантази</tspan><tspan class="cls-53" x="111.68" y="0">и </tspan></text>
+      <text class="cls-11" transform="translate(67.03 165.05)"><tspan x="0" y="0">и брат</tspan><tspan class="cls-156" x="17.59" y="0">ь</tspan><tspan x="20.3" y="0" xml:space="preserve"> н</tspan><tspan class="cls-133" x="25.41" y="0">е</tspan><tspan class="cls-126" x="28.52" y="0">у</tspan><tspan class="cls-34" x="31.38" y="0">добные</tspan><tspan class="cls-88" x="52.37" y="0"> </tspan><tspan x="53.91" y="0">для ч</tspan><tspan class="cls-133" x="68.3" y="0">т</tspan><tspan x="70.71" y="0">ения шри</tspan><tspan class="cls-121" x="97" y="0">ф</tspan><tspan x="101.19" y="0">ты.</tspan></text>
+    </g>
+    <text class="cls-12" transform="translate(301.6 20.78)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-16" transform="translate(188.71 51.12)"><tspan x="0" y="0">а</tspan></text>
+    <text class="cls-16" transform="translate(191.67 51.12)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-16" transform="translate(293.78 58.71)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-16" transform="translate(295.5 58.71)"><tspan x="0" y="0">ко</tspan></text>
+    <text class="cls-16" transform="translate(301.59 58.71)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-22" transform="translate(283.55 73.88) scale(1 1.33)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-16" transform="translate(285.05 73.88)"><tspan class="cls-43" x="0" y="0">это</tspan><tspan class="cls-244" x="8.8" y="0"> </tspan><tspan class="cls-43" x="10.79" y="0">то</tspan><tspan x="16.86" y="0">, </tspan></text>
+    <text class="cls-16" transform="translate(188.71 81.46)"><tspan x="0" y="0">с</tspan></text>
+    <text class="cls-16" transform="translate(191.42 81.46)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-15" transform="translate(283.73 96.64)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-15" transform="translate(285.19 96.64)"><tspan class="cls-227" x="0" y="0">к</tspan><tspan class="cls-223" x="2.91" y="0">о</tspan><tspan class="cls-227" x="6.06" y="0">м</tspan><tspan class="cls-223" x="9.83" y="0">п</tspan><tspan x="13.29" y="0">о</tspan></text>
+    <text class="cls-15" transform="translate(301.6 96.64)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-16" transform="translate(301.59 119.39)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-16" transform="translate(301.59 126.98)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-13" transform="translate(288.04 142.15)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-13" transform="translate(289.43 142.15)"><tspan class="cls-207" x="0" y="0">глав</tspan><tspan x="11.4" y="0">е </tspan></text>
+    <text class="cls-18" transform="translate(301.6 149.74)"><tspan x="0" y="0">-</tspan></text>
+    <text class="cls-19" transform="translate(279.33 157.32)"><tspan class="cls-199" x="0" y="0">брать</tspan><tspan class="cls-96" x="14.78" y="0"> </tspan><tspan class="cls-212" x="16.22" y="0">н</tspan><tspan x="19.61" y="0">е</tspan></text>
+    <text class="cls-19" transform="translate(301.61 157.32)"><tspan x="0" y="0">-</tspan></text>
+    <g>
+      <text class="cls-12" transform="translate(188.71 20.78)"><tspan class="cls-174" x="0" y="0">Чаще</tspan><tspan class="cls-92" x="14.5" y="0"> </tspan><tspan class="cls-174" x="15.96" y="0">всег</tspan><tspan class="cls-172" x="26.67" y="0">о</tspan><tspan class="cls-92" x="29.78" y="0"> </tspan><tspan class="cls-174" x="31.24" y="0">эт</tspan><tspan class="cls-172" x="36.72" y="0">о</tspan><tspan class="cls-92" x="39.83" y="0"> </tspan><tspan class="cls-174" x="41.29" y="0">максимальн</tspan><tspan class="cls-172" x="73.03" y="0">о</tspan><tspan class="cls-92" x="76.14" y="0"> </tspan><tspan class="cls-174" x="77.6" y="0">«н</tspan><tspan class="cls-57" x="83.92" y="0">е</tspan></text>
+      <text class="cls-12" transform="translate(275.24 20.78)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-12" transform="translate(276.69 20.78)"><tspan class="cls-174" x="0" y="0">дизайне</tspan><tspan x="21.69" y="0">р</tspan></text>
+      <text class="cls-16" transform="translate(188.71 28.36)"><tspan class="cls-302" x="0" y="0">с</tspan><tspan class="cls-269" x="2.78" y="0">кий»,</tspan><tspan class="cls-249" x="17.59" y="0"> </tspan><tspan class="cls-311" x="19.67" y="0">с</tspan><tspan class="cls-269" x="22.44" y="0">покойн</tspan><tspan class="cls-303" x="42.58" y="0">ы</tspan><tspan class="cls-268" x="47.12" y="0">й</tspan><tspan class="cls-249" x="50.66" y="0"> </tspan><tspan class="cls-269" x="52.74" y="0">по</tspan><tspan class="cls-249" x="59.53" y="0"> </tspan><tspan class="cls-269" x="61.61" y="0">офор</tspan><tspan class="cls-311" x="75.03" y="0">м</tspan><tspan class="cls-269" x="78.9" y="0">лению</tspan><tspan class="cls-249" x="97.07" y="0"> </tspan><tspan class="cls-269" x="99.15" y="0">бл</tspan><tspan class="cls-302" x="105.8" y="0">о</tspan><tspan class="cls-269" x="109.04" y="0">к</tspan><tspan x="112.05" y="0">. </tspan></text>
+      <text class="cls-16" transform="translate(188.71 35.95)"><tspan class="cls-300" x="0" y="0">Ц</tspan><tspan class="cls-305" x="5.14" y="0">е</tspan><tspan class="cls-300" x="7.98" y="0">л</tspan><tspan x="11.38" y="0">ь</tspan></text>
+      <text class="cls-21" transform="translate(203.2 35.95) scale(1 1.32)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-16" transform="translate(204.75 35.95)"><tspan x="0" y="0">—</tspan></text>
+      <text class="cls-21" transform="translate(211.21 35.95) scale(1 1.32)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-16" transform="translate(212.76 35.95)"><tspan class="cls-300" x="0" y="0">сд</tspan><tspan class="cls-305" x="6.24" y="0">е</tspan><tspan class="cls-300" x="9.08" y="0">л</tspan><tspan class="cls-312" x="12.48" y="0">а</tspan><tspan class="cls-300" x="15.52" y="0">ть</tspan><tspan class="cls-253" x="21.42" y="0"> </tspan><tspan class="cls-305" x="23.46" y="0">е</tspan><tspan class="cls-300" x="26.3" y="0">го</tspan><tspan class="cls-252" x="32.18" y="0"> </tspan><tspan class="cls-305" x="34.22" y="0">неп</tspan><tspan class="cls-306" x="44.14" y="0">р</tspan><tspan class="cls-305" x="47.5" y="0">и</tspan><tspan class="cls-306" x="51.04" y="0">м</tspan><tspan class="cls-305" x="54.9" y="0">еча</tspan><tspan class="cls-306" x="64.18" y="0">т</tspan><tspan class="cls-305" x="67.12" y="0">е</tspan><tspan class="cls-300" x="69.96" y="0">ль</tspan><tspan class="cls-312" x="76.31" y="0">н</tspan><tspan class="cls-300" x="79.85" y="0">ым</tspan><tspan x="88.25" y="0">, </tspan></text>
+      <text class="cls-17" transform="translate(188.71 43.53)"><tspan class="cls-183" x="0" y="0">ч</tspan><tspan class="cls-171" x="3.28" y="0">тобы</tspan><tspan class="cls-119" x="16.77" y="0"> </tspan><tspan class="cls-171" x="18.23" y="0">мо</tspan><tspan class="cls-180" x="25.1" y="0">з</tspan><tspan class="cls-178" x="27.61" y="0">г</tspan><tspan class="cls-119" x="30.14" y="0"> </tspan><tspan class="cls-180" x="31.61" y="0">ф</tspan><tspan class="cls-178" x="35.04" y="0">о</tspan><tspan class="cls-180" x="38.16" y="0">ку</tspan><tspan class="cls-171" x="43.92" y="0">с</tspan><tspan class="cls-180" x="46.58" y="0">и</tspan><tspan class="cls-178" x="50" y="0">ров</tspan><tspan class="cls-180" x="59.2" y="0">ал</tspan><tspan class="cls-171" x="65.42" y="0">с</tspan><tspan class="cls-180" x="68.08" y="0">я</tspan><tspan class="cls-119" x="71.17" y="0"> </tspan><tspan class="cls-183" x="72.64" y="0">на</tspan><tspan class="cls-119" x="78.99" y="0"> </tspan><tspan class="cls-180" x="80.46" y="0">с</tspan><tspan class="cls-178" x="83.12" y="0">мыс</tspan><tspan class="cls-180" x="93.94" y="0">ле</tspan><tspan class="cls-119" x="99.96" y="0"> </tspan><tspan class="cls-171" x="101.43" y="0">с</tspan><tspan class="cls-180" x="104.09" y="0">л</tspan><tspan class="cls-178" x="107.38" y="0">ов</tspan><tspan x="113.33" y="0">, </tspan></text>
+      <text class="cls-16" transform="translate(193.55 51.12)"><tspan x="0" y="0">не</tspan><tspan class="cls-276" x="6.23" y="0"> </tspan><tspan x="8.11" y="0">на</tspan><tspan class="cls-276" x="14.54" y="0"> </tspan><tspan x="16.42" y="0">их</tspan><tspan class="cls-276" x="22.91" y="0"> </tspan><tspan x="24.8" y="0">форме.</tspan><tspan class="cls-276" x="42.86" y="0"> </tspan><tspan x="44.75" y="0">Обычно</tspan><tspan class="cls-276" x="67.52" y="0"> </tspan><tspan x="69.4" y="0">для</tspan><tspan class="cls-276" x="79.26" y="0"> </tspan><tspan x="81.14" y="0">него</tspan><tspan class="cls-276" x="93.1" y="0"> </tspan><tspan x="94.99" y="0">берут </tspan></text>
+      <text class="cls-16" transform="translate(188.71 58.71)"><tspan x="0" y="0">так</tspan><tspan class="cls-254" x="8.77" y="0"> </tspan><tspan x="10.49" y="0">называемый</tspan><tspan class="cls-260" x="44.25" y="0"> </tspan><tspan class="cls-34" x="45.96" y="0">«наборный»</tspan><tspan class="cls-266" x="79.32" y="0"> </tspan><tspan class="cls-61" x="81.02" y="0">шрифт,</tspan><tspan class="cls-259" x="100.44" y="0"> </tspan><tspan x="102.15" y="0">у</tspan></text>
+      <text class="cls-16" transform="translate(188.71 66.29)"><tspan class="cls-255" x="0" y="0">торого</tspan><tspan class="cls-30" x="19.06" y="0"> </tspan><tspan class="cls-262" x="21.51" y="0">не</tspan><tspan class="cls-255" x="28.03" y="0">т</tspan><tspan class="cls-29" x="31.04" y="0"> </tspan><tspan class="cls-263" x="33.49" y="0">я</tspan><tspan class="cls-255" x="36.76" y="0">рк</tspan><tspan class="cls-262" x="43.26" y="0">и</tspan><tspan class="cls-256" x="46.87" y="0">х</tspan><tspan class="cls-29" x="50.04" y="0"> </tspan><tspan class="cls-258" x="52.49" y="0">отл</tspan><tspan class="cls-263" x="62.27" y="0">ичи</tspan><tspan class="cls-255" x="72.95" y="0">т</tspan><tspan class="cls-263" x="75.96" y="0">е</tspan><tspan class="cls-255" x="78.88" y="0">ль</tspan><tspan class="cls-262" x="85.36" y="0">н</tspan><tspan class="cls-256" x="88.97" y="0">ых</tspan><tspan class="cls-29" x="96.74" y="0"> </tspan><tspan class="cls-262" x="99.19" y="0">че</tspan><tspan class="cls-255" x="105.56" y="0">рт</tspan><tspan x="112.01" y="0">. </tspan></text>
+      <text class="cls-16" transform="translate(188.71 73.88)"><tspan class="cls-43" x="0" y="0">Обычно</tspan><tspan class="cls-244" x="22.88" y="0"> </tspan><tspan class="cls-43" x="24.87" y="0">блок</tspan><tspan class="cls-246" x="37.53" y="0"> </tspan><tspan class="cls-43" x="39.52" y="0">основного</tspan><tspan class="cls-246" x="67.41" y="0"> </tspan><tspan class="cls-45" x="69.4" y="0">текст</tspan><tspan x="83.65" y="0">а</tspan></text>
+      <text class="cls-22" transform="translate(275.68 73.88) scale(1 1.33)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-16" transform="translate(277.19 73.88)"><tspan x="0" y="0">—</tspan></text>
+      <text class="cls-16" transform="translate(193.42 81.46)"><tspan class="cls-51" x="0" y="0">че</tspan><tspan class="cls-41" x="6.11" y="0">го</tspan><tspan class="cls-237" x="11.86" y="0"> </tspan><tspan class="cls-39" x="13.84" y="0">сто</tspan><tspan class="cls-48" x="22.6" y="0">и</tspan><tspan class="cls-39" x="26.08" y="0">т</tspan><tspan class="cls-237" x="28.96" y="0"> </tspan><tspan class="cls-51" x="30.94" y="0">нача</tspan><tspan class="cls-39" x="43.7" y="0">ть</tspan><tspan class="cls-237" x="49.47" y="0"> </tspan><tspan class="cls-39" x="51.46" y="0">д</tspan><tspan class="cls-51" x="54.87" y="0">изайни</tspan><tspan class="cls-39" x="74.31" y="0">ть</tspan><tspan class="cls-237" x="80.08" y="0"> </tspan><tspan class="cls-51" x="82.06" y="0">кни</tspan><tspan class="cls-37" x="91.96" y="0">г</tspan><tspan class="cls-51" x="94.54" y="0">у,</tspan><tspan class="cls-238" x="99.04" y="0"> </tspan><tspan class="cls-39" x="101.03" y="0">т</tspan><tspan class="cls-51" x="103.91" y="0">а</tspan><tspan x="106.89" y="0">к </tspan></text>
+      <text class="cls-16" transform="translate(188.71 89.05)"><tspan class="cls-272" x="0" y="0">как</tspan><tspan class="cls-233" x="9.09" y="0"> </tspan><tspan x="11.2" y="0">к</tspan></text>
+      <text class="cls-16" transform="translate(203.08 89.05)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-16" transform="translate(205.23 89.05)"><tspan class="cls-272" x="0" y="0">не</tspan><tspan class="cls-268" x="6.41" y="0">м</tspan><tspan class="cls-271" x="10.28" y="0">у</tspan><tspan class="cls-233" x="13.27" y="0"> </tspan><tspan class="cls-272" x="15.39" y="0">проще</tspan><tspan class="cls-233" x="33.22" y="0"> </tspan><tspan class="cls-269" x="35.34" y="0">вс</tspan><tspan class="cls-272" x="41.08" y="0">е</tspan><tspan class="cls-269" x="43.93" y="0">г</tspan><tspan class="cls-272" x="46.59" y="0">о</tspan><tspan class="cls-232" x="49.84" y="0"> </tspan><tspan class="cls-270" x="51.96" y="0">сфор</tspan><tspan class="cls-269" x="64.94" y="0">м</tspan><tspan class="cls-272" x="68.81" y="0">улиро</tspan><tspan class="cls-268" x="85.4" y="0">в</tspan><tspan class="cls-271" x="88.36" y="0">а</tspan><tspan class="cls-268" x="91.41" y="0">т</tspan><tspan class="cls-58" x="94.37" y="0">ь </tspan></text>
+      <text class="cls-15" transform="translate(188.71 96.64)"><tspan class="cls-227" x="0" y="0">т</tspan><tspan class="cls-220" x="2.86" y="0">р</tspan><tspan class="cls-227" x="6.14" y="0">е</tspan><tspan class="cls-223" x="8.89" y="0">бо</tspan><tspan class="cls-227" x="15.19" y="0">в</tspan><tspan class="cls-223" x="18.05" y="0">ани</tspan><tspan class="cls-227" x="27.9" y="0">я</tspan><tspan class="cls-223" x="31.01" y="0">.</tspan><tspan class="cls-136" x="32.58" y="0"> </tspan><tspan class="cls-227" x="34.07" y="0">Эт</tspan><tspan class="cls-219" x="41.45" y="0">о</tspan><tspan class="cls-136" x="44.6" y="0"> </tspan><tspan class="cls-223" x="46.09" y="0">о</tspan><tspan class="cls-228" x="49.24" y="0">т</tspan><tspan class="cls-223" x="52.1" y="0">пр</tspan><tspan class="cls-227" x="58.83" y="0">ав</tspan><tspan class="cls-223" x="64.63" y="0">н</tspan><tspan class="cls-227" x="68.08" y="0">ая</tspan><tspan class="cls-136" x="74.14" y="0"> </tspan><tspan class="cls-227" x="75.63" y="0">т</tspan><tspan class="cls-223" x="78.49" y="0">оч</tspan><tspan class="cls-224" x="84.94" y="0">ка</tspan><tspan class="cls-129" x="90.8" y="0"> </tspan><tspan class="cls-59" x="92.29" y="0">в</tspan></text>
+      <text class="cls-20" transform="translate(188.71 104.22)"><tspan class="cls-197" x="0" y="0">зиции,</tspan><tspan class="cls-82" x="17.5" y="0"> </tspan><tspan class="cls-197" x="18.94" y="0">от</tspan><tspan class="cls-86" x="24.81" y="0"> </tspan><tspan class="cls-197" x="26.24" y="0">ко</tspan><tspan class="cls-193" x="32.18" y="0">т</tspan><tspan class="cls-203" x="34.97" y="0">орой</tspan><tspan class="cls-86" x="47.72" y="0"> </tspan><tspan class="cls-203" x="49.15" y="0">удобно</tspan><tspan class="cls-86" x="67.91" y="0"> </tspan><tspan class="cls-204" x="69.34" y="0">вы</tspan><tspan class="cls-203" x="76.5" y="0">бира</tspan><tspan class="cls-204" x="89.06" y="0">ть</tspan><tspan class="cls-86" x="94.65" y="0"> </tspan><tspan class="cls-204" x="96.08" y="0">д</tspan><tspan class="cls-197" x="99.39" y="0">изай</tspan><tspan class="cls-55" x="111.51" y="0">н </tspan></text>
+      <text class="cls-16" transform="translate(188.71 111.81)"><tspan class="cls-50" x="0" y="0">для</tspan><tspan class="cls-245" x="9.89" y="0"> </tspan><tspan class="cls-44" x="11.89" y="0">о</tspan><tspan class="cls-50" x="15.06" y="0">ст</tspan><tspan class="cls-47" x="20.67" y="0">а</tspan><tspan class="cls-50" x="23.65" y="0">ль</tspan><tspan class="cls-44" x="29.89" y="0">н</tspan><tspan class="cls-49" x="33.37" y="0">ы</tspan><tspan class="cls-44" x="37.84" y="0">х</tspan><tspan class="cls-243" x="40.89" y="0"> </tspan><tspan class="cls-49" x="42.88" y="0">элем</tspan><tspan class="cls-44" x="55.52" y="0">ен</tspan><tspan class="cls-49" x="61.79" y="0">т</tspan><tspan class="cls-44" x="64.68" y="0">о</tspan><tspan class="cls-49" x="67.86" y="0">в</tspan><tspan class="cls-243" x="70.75" y="0"> </tspan><tspan class="cls-44" x="72.74" y="0">раз</tspan><tspan class="cls-49" x="81.6" y="0">в</tspan><tspan class="cls-44" x="84.49" y="0">оро</tspan><tspan class="cls-49" x="94.16" y="0">т</tspan><tspan class="cls-44" x="97.05" y="0">а.</tspan><tspan class="cls-245" x="101.63" y="0"> </tspan><tspan class="cls-50" x="103.62" y="0">Че</tspan><tspan x="110.7" y="0">м </tspan></text>
+      <text class="cls-16" transform="translate(188.71 119.39)"><tspan x="0" y="0">больше</tspan><tspan class="cls-40" x="20.02" y="0"> </tspan><tspan class="cls-34" x="21.61" y="0">текст</tspan><tspan class="cls-52" x="35.76" y="0"> </tspan><tspan x="37.35" y="0">по</tspan><tspan class="cls-40" x="43.98" y="0"> </tspan><tspan x="45.56" y="0">объему,</tspan><tspan class="cls-38" x="66.42" y="0"> </tspan><tspan x="68.01" y="0">тем</tspan><tspan class="cls-40" x="77.45" y="0"> </tspan><tspan x="79.03" y="0">важнее подо</tspan></text>
+      <text class="cls-16" transform="translate(188.71 126.98)"><tspan x="0" y="0">брать</tspan><tspan class="cls-260" x="15.18" y="0"> </tspan><tspan x="16.88" y="0">ему</tspan><tspan class="cls-260" x="26.34" y="0"> </tspan><tspan class="cls-34" x="28.05" y="0">удобный</tspan><tspan class="cls-260" x="52.06" y="0"> </tspan><tspan x="53.77" y="0">для</tspan><tspan class="cls-260" x="63.62" y="0"> </tspan><tspan x="65.33" y="0">чтения</tspan><tspan class="cls-267" x="84.34" y="0"> </tspan><tspan class="cls-61" x="86.04" y="0">шрифт,</tspan><tspan class="cls-266" x="105.46" y="0"> </tspan><tspan x="107.16" y="0">ке</tspan></text>
+      <text class="cls-14" transform="translate(188.71 134.57)"><tspan class="cls-196" x="0" y="0">гль</tspan><tspan class="cls-99" x="8.55" y="0"> </tspan><tspan x="9.99" y="0">и</tspan></text>
+      <text class="cls-14" transform="translate(202.07 134.57)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-14" transform="translate(203.5 134.57)"><tspan class="cls-216" x="0" y="0">ин</tspan><tspan class="cls-196" x="6.78" y="0">терл</tspan><tspan class="cls-216" x="18.73" y="0">ин</tspan><tspan class="cls-196" x="25.5" y="0">ь</tspan><tspan class="cls-216" x="28.31" y="0">яж</tspan><tspan class="cls-196" x="35.5" y="0">,</tspan><tspan class="cls-97" x="37.01" y="0"> </tspan><tspan class="cls-196" x="38.45" y="0">дл</tspan><tspan class="cls-216" x="45.02" y="0">ин</tspan><tspan class="cls-187" x="51.79" y="0">у</tspan><tspan class="cls-97" x="54.62" y="0"> </tspan><tspan class="cls-196" x="56.05" y="0">строк</tspan><tspan class="cls-211" x="70.62" y="0">и</tspan><tspan class="cls-196" x="74.01" y="0">.</tspan><tspan class="cls-99" x="75.53" y="0"> </tspan><tspan class="cls-196" x="76.96" y="0">Мо</tspan><tspan class="cls-216" x="85.81" y="0">ж</tspan><tspan class="cls-196" x="89.94" y="0">е</tspan><tspan class="cls-216" x="92.63" y="0">ш</tspan><tspan x="97.28" y="0">ь </tspan></text>
+      <text class="cls-13" transform="translate(188.71 142.15)"><tspan class="cls-195" x="0" y="0">по</tspan><tspan class="cls-207" x="6.46" y="0">д</tspan><tspan class="cls-189" x="9.77" y="0">обр</tspan><tspan class="cls-194" x="19.14" y="0">ать</tspan><tspan class="cls-80" x="27.6" y="0"> </tspan><tspan class="cls-189" x="29.03" y="0">н</tspan><tspan class="cls-207" x="32.41" y="0">е</tspan><tspan class="cls-189" x="35.09" y="0">обхо</tspan><tspan class="cls-194" x="47.27" y="0">д</tspan><tspan class="cls-195" x="50.58" y="0">и</tspan><tspan class="cls-207" x="53.96" y="0">мые</tspan><tspan class="cls-80" x="64.71" y="0"> </tspan><tspan class="cls-195" x="66.14" y="0">п</tspan><tspan class="cls-194" x="69.52" y="0">а</tspan><tspan class="cls-195" x="72.39" y="0">р</tspan><tspan class="cls-194" x="75.6" y="0">амет</tspan><tspan class="cls-195" x="87.65" y="0">р</tspan><tspan class="cls-207" x="90.86" y="0">ы</tspan><tspan class="cls-80" x="95.23" y="0"> </tspan><tspan class="cls-31" x="96.66" y="0">в</tspan></text>
+      <text class="cls-18" transform="translate(188.71 149.74)"><tspan class="cls-181" x="0" y="0">«Т</tspan><tspan class="cls-173" x="7.29" y="0">екст</tspan><tspan class="cls-181" x="18.39" y="0">»</tspan><tspan class="cls-179" x="21.32" y="0">.</tspan><tspan class="cls-120" x="22.86" y="0"> </tspan><tspan class="cls-173" x="24.33" y="0">Есл</tspan><tspan class="cls-181" x="34.17" y="0">и</tspan><tspan class="cls-118" x="37.6" y="0"> </tspan><tspan x="39.06" y="0">в</tspan></text>
+      <text class="cls-18" transform="translate(230.57 149.74)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-18" transform="translate(232.03 149.74)"><tspan class="cls-173" x="0" y="0">в</tspan><tspan class="cls-182" x="2.83" y="0">а</tspan><tspan class="cls-173" x="5.76" y="0">ше</tspan><tspan class="cls-181" x="13.16" y="0">й</tspan><tspan class="cls-118" x="16.58" y="0"> </tspan><tspan class="cls-179" x="18.05" y="0">к</tspan><tspan class="cls-181" x="20.93" y="0">ниж</tspan><tspan class="cls-173" x="31.96" y="0">ке</tspan><tspan class="cls-118" x="37.57" y="0"> </tspan><tspan class="cls-173" x="39.03" y="0">текст</tspan><tspan class="cls-118" x="52.97" y="0"> </tspan><tspan class="cls-173" x="54.43" y="0">коро</tspan><tspan x="66.8" y="0">т</tspan></text>
+      <text class="cls-19" transform="translate(188.71 157.32)"><tspan class="cls-199" x="0" y="0">к</tspan><tspan class="cls-212" x="2.85" y="0">ий,</tspan><tspan class="cls-95" x="11.15" y="0"> </tspan><tspan class="cls-199" x="12.58" y="0">мо</tspan><tspan class="cls-210" x="19.37" y="0">жн</tspan><tspan class="cls-202" x="26.9" y="0">о</tspan><tspan class="cls-95" x="29.98" y="0"> </tspan><tspan class="cls-199" x="31.42" y="0">д</tspan><tspan class="cls-212" x="34.74" y="0">а</tspan><tspan class="cls-199" x="37.63" y="0">ть</tspan><tspan class="cls-96" x="43.23" y="0"> </tspan><tspan class="cls-199" x="44.67" y="0">волю</tspan><tspan class="cls-95" x="58.45" y="0"> </tspan><tspan class="cls-202" x="59.88" y="0">ф</tspan><tspan class="cls-205" x="63.27" y="0">ан</tspan><tspan class="cls-199" x="69.55" y="0">т</tspan><tspan class="cls-212" x="72.35" y="0">азии</tspan><tspan class="cls-95" x="84.5" y="0"> </tspan><tspan x="85.94" y="0">и</tspan></text>
+      <text class="cls-19" transform="translate(277.93 157.32)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-16" transform="translate(188.71 164.91)"><tspan x="0" y="0">удобные для чтения шрифты.</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_иллюстрации" data-name="иллюстрации" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.1 35">
+<svg id="_иллюстрации" data-name="иллюстрации" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.1 21">
   <defs>
     <style>
       .cls-1, .cls-2 {
@@ -16,15 +16,15 @@
       }
     </style>
   </defs>
-  <rect class="cls-3" x="70.07" y="8.53" width="7.03" height="2.59"/>
-  <rect class="cls-3" x="70.07" y="23.88" width="7.03" height="2.59"/>
-  <rect class="cls-3" x="73.59" y="8.53" width="3.51" height="17.92"/>
-  <polyline class="cls-2" points="0 26.43 76.98 26.43 76.98 8.57 0 8.57"/>
-  <line class="cls-2" x1="0" y1="23.88" x2="76.33" y2="23.88"/>
-  <line class="cls-2" x1="0" y1="21.33" x2="76.33" y2="21.33"/>
-  <line class="cls-2" x1="0" y1="18.78" x2="76.33" y2="18.78"/>
-  <line class="cls-2" x1="0" y1="16.22" x2="76.33" y2="16.22"/>
-  <line class="cls-2" x1="0" y1="13.67" x2="76.33" y2="13.67"/>
-  <rect class="cls-1" x="0" y="8.45" width="77.1" height="18.11"/>
-  <line class="cls-2" x1="0" y1="11.12" x2="76.33" y2="11.12"/>
+  <rect class="cls-3" x="70.07" y="1.53" width="7.03" height="2.59"/>
+  <rect class="cls-3" x="70.07" y="16.88" width="7.03" height="2.59"/>
+  <rect class="cls-3" x="73.59" y="1.53" width="3.51" height="17.92"/>
+  <polyline class="cls-2" points="0 19.43 76.98 19.43 76.98 1.57 0 1.57"/>
+  <line class="cls-2" x1="0" y1="16.88" x2="76.33" y2="16.88"/>
+  <line class="cls-2" x1="0" y1="14.33" x2="76.33" y2="14.33"/>
+  <line class="cls-2" x1="0" y1="11.78" x2="76.33" y2="11.78"/>
+  <line class="cls-2" x1="0" y1="9.22" x2="76.33" y2="9.22"/>
+  <line class="cls-2" x1="0" y1="6.67" x2="76.33" y2="6.67"/>
+  <rect class="cls-1" x="0" y="1.45" width="77.1" height="18.11"/>
+  <line class="cls-2" x1="0" y1="4.12" x2="76.33" y2="4.12"/>
 </svg>

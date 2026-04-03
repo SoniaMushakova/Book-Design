@@ -55,6 +55,7 @@
   align-items: center;
   align-self: stretch;
   /* width: var(--colums); */
+  margin-top: 100px;
 }
 
 .A_Button {

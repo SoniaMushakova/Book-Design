@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_иллюстрации" data-name="иллюстрации" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.1 21">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .51px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #231f20;
+      }
+
+      .cls-2 {
+        stroke-width: .25px;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M77.1,4.15H1.37C-.25,4.15-.22,1.6,1.37,1.6h75.73"/>
+  <path class="cls-2" d="M77.1,9.27H1.37c-1.62,0-1.59-2.55,0-2.55h75.73"/>
+  <path class="cls-2" d="M77.1,14.39H1.37c-1.62,0-1.59-2.55,0-2.55h75.73"/>
+  <path class="cls-2" d="M77.1,19.51H1.37c-1.62,0-1.59-2.55,0-2.55h75.73"/>
+  <line class="cls-1" x1="73.59" y1=".6" x2="73.59" y2="20.4"/>
+</svg>
