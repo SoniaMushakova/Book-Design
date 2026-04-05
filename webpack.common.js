@@ -15,7 +15,8 @@ module.exports = {
     A_Chips: './src/javascript/A_Chips.jsx',
     A_CardText: './src/javascript/A_CardText.jsx',
     cardsChevron: './src/javascript/cardsChevron.js',
-    sidebar: './src/javascript/sidebar.js'
+    sidebar: './src/javascript/sidebar.js',
+    mobileMenu: './src/javascript/mobileMenu.js'
   },
   output: {
     filename: '[name].js',
@@ -78,7 +79,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['page', 'index', 'A_CardText', 'cardsChevron'] // было index
+      chunks: ['page', 'index', 'A_CardText', 'cardsChevron', 'mobileMenu'] // было index
     }),
 
     // Internal pages
@@ -87,7 +88,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/page.html',
       filename: './pages/page.html',
-      chunks: ['page', 'M_Card']
+      chunks: ['page', 'M_Card', 'mobileMenu']
     }),
 
     // Theory page
@@ -96,7 +97,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/Theory.html',
       filename: './pages/Theory.html',
-      chunks: ['page', 'index', 'A_CardText']
+      chunks: ['page', 'index', 'A_CardText', 'mobileMenu']
     }),
 
     // Practice page
@@ -105,7 +106,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/Practice.html',
       filename: './pages/Practice.html',
-      chunks: ['page', 'index', 'A_CardText']
+      chunks: ['page', 'index', 'A_CardText', 'mobileMenu']
     }),
 
     // About Us page
@@ -114,7 +115,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/About_Us.html',
       filename: './pages/About_Us.html',
-      chunks: ['page']
+      chunks: ['page', 'mobileMenu']
     }),
 
     // All articles
@@ -123,7 +124,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/Main.html',
       filename: './pages/Main.html',
-      chunks: ['page']
+      chunks: ['page', 'mobileMenu']
     }),
 
     new HtmlWebpackPlugin({
@@ -131,56 +132,56 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/Article_1.html',
       filename: './pages/Article_1.html',
-      chunks: ['page', 'sidebar']
+      chunks: ['page', 'sidebar', 'mobileMenu']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/pages/Article_2.html',
       filename: './pages/Article_2.html',
-      chunks: ['page', 'sidebar']
+      chunks: ['page', 'sidebar', 'mobileMenu']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/pages/Article_3.html',
       filename: './pages/Article_3.html',
-      chunks: ['page', 'sidebar']
+      chunks: ['page', 'sidebar', 'mobileMenu']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/pages/Article_4.html',
       filename: './pages/Article_4.html',
-      chunks: ['page', 'sidebar']
+      chunks: ['page', 'sidebar', 'mobileMenu']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/pages/Article_5.html',
       filename: './pages/Article_5.html',
-      chunks: ['page', 'sidebar']
+      chunks: ['page', 'sidebar', 'mobileMenu']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/pages/Article_6.html',
       filename: './pages/Article_6.html',
-      chunks: ['page', 'sidebar']
+      chunks: ['page', 'sidebar', 'mobileMenu']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/pages/Article_7.html',
       filename: './pages/Article_7.html',
-      chunks: ['page', 'sidebar']
+      chunks: ['page', 'sidebar', 'mobileMenu']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/pages/Article_none.html',
       filename: './pages/Article_none.html',
-      chunks: ['page', 'sidebar']
+      chunks: ['page', 'sidebar', 'mobileMenu']
     }),
 
     // Partials
