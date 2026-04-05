@@ -63,7 +63,7 @@
   display: none;
 }
 
-@media (min-width: 375px) and (max-width: 743px) {
+@media (max-width: 743px) {
   /* .C_Card {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   } */
@@ -81,6 +81,13 @@
     /* плавное прилипание (снэппинг) */
     scroll-snap-type: inline mandatory;
     scrollbar-width: none;
+  }
+
+  .theory-practice-cards .C_Card {
+    grid-template-columns: none;
+    grid-auto-flow: row;
+    grid-auto-columns: 100%;
+    row-gap: 24px;
   }
 
   .M_Card {

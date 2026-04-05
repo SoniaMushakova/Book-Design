@@ -41,3 +41,9 @@
   font-weight: 400;
   line-height: var(--line-height-subheading); /* 131.818% */
 }
+
+@media (max-width: 743px) {
+  .W_ChapterHeadText {
+    width: 100%;
+  }
+}

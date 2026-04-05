@@ -334,7 +334,8 @@ footer .I_Logo {
   top: 64px;
   left: 0;
   right: 0;
-  background: var(--white);
+  background: var(--black);
+  /* color: var(--white); */
   z-index: 998;
   padding: 12px 20px 20px;
   gap: 4px;
@@ -358,7 +359,7 @@ footer .I_Logo {
 
 .A_mobileMenuItem {
   font-size: 16px;
-  color: var(--black);
+  color: var(--white);
   text-decoration: none;
   padding: 14px 0;
 }

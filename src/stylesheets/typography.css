@@ -36,6 +36,10 @@ h4 {
   font-weight: 600;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .logo-text {
   color: var(--black);
   font-family: 'TT_Mussels';
