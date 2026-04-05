@@ -25,7 +25,7 @@
 }
 
 /* ЛЕЙАУТЫ */
-@media (min-width: 375px) {
+@media (min-width: 320px) {
   :root {
     /* контент */
     /* --main-container */
@@ -47,6 +47,7 @@
     --column4-3: calc(var(--column4-1) * 3 + var(--column-gap) * 2);
     --column4-4: calc(var(--column4-1) * 4 + var(--column-gap) * 3);
   }
+
   @media (min-width: 744px) {
     /* оставляю 12 колонок */
     :root {
@@ -381,16 +382,21 @@
     position: static; /* Возвращаем в нормальный поток на мобилках */
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     gap: 12px;
     margin-bottom: 24px;
     width: 100%;
   }
-  .side-note-left .A_img.small,
+  .relative-wrapper {
+    width: 100%;
+    /* display: flex; */
+  }
+  /* .side-note-left .A_img.small,
   .side-note-left .M_Caption {
     width: 100%;
     max-width: var(--column4-2);
     padding-left: 0;
-  }
+  } */
 }
 
 @media (min-width: 744px) {

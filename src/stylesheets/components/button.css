@@ -57,6 +57,19 @@
   /* width: var(--colums); */
   margin-top: 100px;
 }
+@media (max-width: 743px) {
+  .W_LessonsNav {
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .M_ArrowsLessons {
+    width: 100%;
+    padding: 20px;
+    gap: 16px;
+  }
+}
 
 .A_Button {
   padding: 0 44px;

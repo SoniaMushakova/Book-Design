@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_иллюстрации" data-name="иллюстрации" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 116">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #a7a9ac;
+        stroke-width: .23px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: Inter-Medium, Inter;
+        font-variation-settings: 'opsz' 14, 'wght' 500;
+      }
+
+      .cls-2, .cls-3 {
+        font-weight: 500;
+      }
+
+      .cls-2, .cls-5 {
+        font-size: 5.57px;
+      }
+
+      .cls-3 {
+        font-family: Lato-Medium, Lato;
+        font-size: 9.02px;
+      }
+
+      .cls-6 {
+        fill: #00b262;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: .14px;
+      }
+
+      .cls-5 {
+        font-family: GolosText-Bold, 'Golos Text';
+        font-weight: 700;
+      }
+
+      .cls-10 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+
+      .cls-16 {
+        fill: #f37021;
+      }
+
+      .cls-17 {
+        letter-spacing: .02em;
+      }
+
+      .cls-18 {
+        letter-spacing: 0em;
+      }
+
+      .cls-19 {
+        fill: #a7a9ac;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-6" x="36.04" y="2" width="35.89" height="50.64"/>
+    <rect class="cls-1" x=".41" y="2.14" width="35.53" height="50.4"/>
+    <text class="cls-3" transform="translate(49.06 21.52)"><tspan x="0" y="0">❶</tspan></text>
+    <text class="cls-2" transform="translate(46.13 31.37)"><tspan x="0" y="0">ти</tspan><tspan class="cls-17" x="6.02" y="0">т</tspan><tspan class="cls-11" x="8.81" y="0">у</tspan><tspan x="11.9" y="0">л</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-6" x="83.06" y="2" width="35.76" height="50.64"/>
+    <rect class="cls-6" x="118.82" y="2" width="35.76" height="50.64"/>
+    <text class="cls-3" transform="translate(131.71 21.64)"><tspan x="0" y="0">❸</tspan></text>
+    <text class="cls-2" transform="translate(123.49 31.48)"><tspan x="0" y="0">с</tspan><tspan class="cls-13" x="3.21" y="0">о</tspan><tspan class="cls-12" x="6.55" y="0">д</tspan><tspan x="10.02" y="0">е</tspan><tspan class="cls-11" x="13.29" y="0">р</tspan><tspan class="cls-14" x="16.63" y="0">ж</tspan><tspan class="cls-7" x="21.19" y="0">а-</tspan></text>
+    <text class="cls-5" transform="translate(149.9 31.48)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-2" transform="translate(131.66 38.69)"><tspan x="0" y="0">ние</tspan></text>
+    <text class="cls-3" transform="translate(95.95 21.64)"><tspan x="0" y="0">❷</tspan></text>
+    <text class="cls-2" transform="translate(86.8 31.48)"><tspan x="0" y="0">вы</tspan><tspan class="cls-11" x="7.39" y="0">х</tspan><tspan class="cls-13" x="10.39" y="0">о</tspan><tspan x="13.73" y="0">дные</tspan></text>
+    <text class="cls-5" transform="translate(115.08 31.48)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-2" transform="translate(90.42 38.69)"><tspan class="cls-18" x="0" y="0">д</tspan><tspan class="cls-8" x="3.53" y="0">анные</tspan></text>
+    <text class="cls-2" transform="translate(94.89 45.9)"><tspan x="0" y="0">(ч.1)</tspan></text>
+    <line class="cls-9" x1="118.85" y1="2" x2="118.85" y2="52.64"/>
+  </g>
+  <g>
+    <rect class="cls-16" x="165.71" y="2" width="35.76" height="50.63"/>
+    <rect class="cls-16" x="201.47" y="2" width="35.76" height="50.63"/>
+    <line class="cls-9" x1="201.5" y1="2" x2="201.5" y2="52.64"/>
+    <text class="cls-3" transform="translate(178.59 21.59)"><tspan x="0" y="0">❺</tspan></text>
+    <text class="cls-2" transform="translate(175.82 31.43)"><tspan x="0" y="0">шмуц</tspan></text>
+  </g>
+  <g>
+    <g>
+      <rect class="cls-4" x="283.95" y="2.12" width="35.53" height="50.4"/>
+      <path class="cls-19" d="M319.36,2.23v50.17h-35.29V2.23h35.29M319.59,2h-35.76v50.64h35.76V2h0Z"/>
+    </g>
+    <rect class="cls-16" x="248.07" y="2" width="35.76" height="50.64"/>
+    <text class="cls-3" transform="translate(260.96 21.63)"><tspan x="0" y="0">❻</tspan></text>
+    <text class="cls-2" transform="translate(251.38 31.47)"><tspan x="0" y="0">сп</tspan><tspan class="cls-10" x="6.53" y="0">у</tspan><tspan x="9.63" y="0">с</tspan><tspan class="cls-11" x="12.84" y="0">к</tspan><tspan x="15.82" y="0">овая </tspan></text>
+    <text class="cls-2" transform="translate(256.1 38.68)"><tspan x="0" y="0">п</tspan><tspan class="cls-15" x="3.32" y="0">о</tspan><tspan x="6.63" y="0">лоса</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-16" x=".51" y="63.77" width="35.76" height="50.64"/>
+    <rect class="cls-16" x="36.27" y="63.77" width="35.76" height="50.64"/>
+    <line class="cls-9" x1="36.3" y1="63.77" x2="36.3" y2="114.41"/>
+    <text class="cls-3" transform="translate(6.9 82.39)"><tspan x="0" y="0">❼-❾</tspan></text>
+    <text class="cls-2" transform="translate(6.92 92.23)"><tspan x="0" y="0">типовые </tspan></text>
+    <text class="cls-2" transform="translate(3.57 99.44)"><tspan x="0" y="0">развор</tspan><tspan class="cls-14" x="19.36" y="0">о</tspan><tspan class="cls-8" x="22.68" y="0">ты </tspan></text>
+    <text class="cls-5" transform="translate(32.73 99.44)"><tspan x="0" y="0"> </tspan></text>
+  </g>
+  <g>
+    <rect class="cls-6" x="165.52" y="63.78" width="35.76" height="50.63"/>
+    <rect class="cls-1" x="201.39" y="63.89" width="35.53" height="50.4"/>
+    <text class="cls-3" transform="translate(178.4 83.34)"><tspan x="0" y="0">❷</tspan></text>
+    <text class="cls-2" transform="translate(169.26 93.19)"><tspan x="0" y="0">вы</tspan><tspan class="cls-11" x="7.39" y="0">х</tspan><tspan class="cls-13" x="10.39" y="0">о</tspan><tspan x="13.73" y="0">дные </tspan></text>
+    <text class="cls-2" transform="translate(172.88 100.4)"><tspan class="cls-18" x="0" y="0">д</tspan><tspan class="cls-8" x="3.53" y="0">анные</tspan></text>
+    <text class="cls-5" transform="translate(193.92 100.4)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-2" transform="translate(177.09 107.61)"><tspan x="0" y="0">(ч.2)</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-6" x="83.15" y="63.77" width="35.76" height="50.64"/>
+    <rect class="cls-6" x="118.91" y="63.77" width="35.76" height="50.64"/>
+    <line class="cls-9" x1="118.94" y1="63.77" x2="118.94" y2="114.41"/>
+    <text class="cls-3" transform="translate(96.04 82.51)"><tspan x="0" y="0">❹</tspan></text>
+    <text class="cls-2" transform="translate(84.61 92.35)"><tspan x="0" y="0">справочная</tspan></text>
+    <text class="cls-2" transform="translate(89.22 99.57)"><tspan x="0" y="0">информ.</tspan></text>
+  </g>
+</svg>

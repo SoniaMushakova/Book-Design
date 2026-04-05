@@ -230,6 +230,7 @@ footer .I_Logo {
     height: 44px;
   }
 }
+
 @media (min-width: 744px) and (max-width: 840px) {
   /* все что происходит – смена ширины с 4-х на 12 колонок */
   .navbar {
