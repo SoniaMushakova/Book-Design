@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_иллюстрации" data-name="иллюстрации" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90.16">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        font-family: PTSerif-Regular, 'PT Serif';
+        font-size: 14.19px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #231f20;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-4 {
+        font-family: GolosText-Regular, 'Golos Text';
+        font-size: 10.92px;
+      }
+
+      .cls-8 {
+        letter-spacing: .11em;
+      }
+
+      .cls-9 {
+        letter-spacing: .11em;
+      }
+
+      .cls-10 {
+        letter-spacing: .12em;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(36.32 16.6)"><tspan x="0" y="0">ЗАГОЛОВОК</tspan></text>
+  <text class="cls-1" transform="translate(183.83 16.54)"><tspan class="cls-8" x="0" y="0">ЗАГОЛОВО</tspan><tspan x="86.78" y="0">К</tspan></text>
+  <text class="cls-2" transform="translate(212.78 59.39)"><tspan x="0" y="0"> </tspan></text>
+  <g>
+    <text class="cls-2" transform="translate(30.58 56.39)"><tspan class="cls-8" x="0" y="0">ЗАГОЛОВО</tspan><tspan x="86.78" y="0">К</tspan></text>
+    <text class="cls-2" transform="translate(22.21 72.77)"><tspan class="cls-8" x="0" y="0">В</tspan><tspan class="cls-7" x="10.29" y="0"> </tspan><tspan class="cls-8" x="13.11" y="0">ДВЕ</tspan><tspan class="cls-7" x="44.5" y="0"> </tspan><tspan class="cls-9" x="47.32" y="0">СТРОК</tspan><tspan class="cls-5" x="101.19" y="0">И</tspan></text>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(182.98 56.39)"><tspan class="cls-10" x="0" y="0">ЗАГОЛОВО</tspan><tspan x="88.48" y="0">К</tspan></text>
+    <text class="cls-1" transform="translate(280.63 56.39)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-1" transform="translate(172.6 76.05)"><tspan x="0" y="0">В</tspan></text>
+    <text class="cls-3" transform="translate(183.11 76.05)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-1" transform="translate(188.33 76.05)"><tspan class="cls-10" x="0" y="0">ДВ</tspan><tspan class="cls-6" x="22" y="0">Е</tspan></text>
+    <text class="cls-3" transform="translate(220.36 76.05)"><tspan x="0" y="0"> </tspan></text>
+    <text class="cls-1" transform="translate(225.59 76.05)"><tspan class="cls-10" x="0" y="0">СТРОК</tspan><tspan x="54.93" y="0">И</tspan></text>
+  </g>
+  <text class="cls-4" transform="translate(158.19 15.24) rotate(-90)"><tspan x="0" y="0">↓</tspan></text>
+  <text class="cls-4" transform="translate(158.19 60.24) rotate(-90)"><tspan x="0" y="0">↓</tspan></text>
+</svg>
