@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_иллюстрации" data-name="иллюстрации" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77 54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #808285;
+        stroke-width: .25px;
+      }
+
+      .cls-2 {
+        fill: #41ad49;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" y=".05" width="77" height="53.91"/>
+  <g>
+    <rect class="cls-2" x="9.02" y="5.24" width="58.96" height="1.55"/>
+    <rect class="cls-2" x="9.02" y="47.54" width="58.96" height="1.55"/>
+    <rect class="cls-2" x="4.77" y="9.18" width="1.55" height="36"/>
+    <rect class="cls-2" x="70.68" y="9.18" width="1.55" height="36"/>
+  </g>
+</svg>

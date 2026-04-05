@@ -384,12 +384,19 @@
     flex-direction: column;
     /* justify-content: center; */
     gap: 12px;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
     width: 100%;
   }
+  .side-note-left.row {
+    flex-direction: row;
+  }
+
   .relative-wrapper {
     width: 100%;
-    /* display: flex; */
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
   }
   /* .side-note-left .A_img.small,
   .side-note-left .M_Caption {
