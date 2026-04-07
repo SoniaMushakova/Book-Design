@@ -126,8 +126,8 @@
   background-size: contain;
 }
 header .I_Logo {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-image: url('../images/Logo-Header.svg');
 }
 
@@ -241,7 +241,7 @@ footer .I_Logo {
     padding: 0px;
   }
   .M_Search {
-    display: none;
+    display: flex;
   }
   .W_Menu {
     display: none;

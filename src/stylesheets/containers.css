@@ -327,6 +327,9 @@
 
   width: var(--column12-3); /* 311px */
   top: var(--safe-place-under-header-for-sticky);
+  max-height: calc(100vh - var(--safe-place-under-header-for-sticky));
+  overflow-y: auto;
+  padding-bottom: 120px;
 }
 
 /* статья с подписями */
