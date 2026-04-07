@@ -229,6 +229,16 @@ ul.body li::before {
   color: var(--orange);
 }
 
+.a-orange {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+/* .a-orange:hover {
+  color: #ff9456;
+  font-weight: 700;
+} */
+
 .number {
   font-size: calc(var(--font-size-body) * 0.8);
   font-weight: 900;

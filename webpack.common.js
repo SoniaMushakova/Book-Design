@@ -179,6 +179,41 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
+      template: './src/pages/Article_8.html',
+      filename: './pages/Article_8.html',
+      chunks: ['page', 'sidebar', 'mobileMenu']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_9.html',
+      filename: './pages/Article_9.html',
+      chunks: ['page', 'sidebar', 'mobileMenu']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_10.html',
+      filename: './pages/Article_10.html',
+      chunks: ['page', 'sidebar', 'mobileMenu']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_11.html',
+      filename: './pages/Article_11.html',
+      chunks: ['page', 'sidebar', 'mobileMenu']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/Article_12.html',
+      filename: './pages/Article_12.html',
+      chunks: ['page', 'sidebar', 'mobileMenu']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
       template: './src/pages/Article_none.html',
       filename: './pages/Article_none.html',
       chunks: ['page', 'sidebar', 'mobileMenu']

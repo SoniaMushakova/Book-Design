@@ -16969,7 +16969,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_javascript_A_Chips_jsx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
         key: i,
         text: t,
-        href: "pages/Main.html#chip-".concat(i)
+        href: "pages/Article_3.html#chip-".concat(i)
       });
     })));
   }

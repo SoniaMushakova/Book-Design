@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     root2.render(
       <div className="ChipsList">
         {labels.map((t, i) => (
-          <AChips key={i} text={t} href={`pages/Main.html#chip-${i}`} />
+          <AChips key={i} text={t} href={`pages/Article_3.html#chip-${i}`} />
         ))}
       </div>
     )

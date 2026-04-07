@@ -7,15 +7,6 @@
   gap: 24px;
 }
 
-.M_headingInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: stretch;
-
-  gap: 8px;
-}
-
 .A_Info {
   color: var(--black-light);
   text-align: center;

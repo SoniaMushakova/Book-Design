@@ -131,6 +131,9 @@
   .A_Button-banner:hover {
     background: var(--btn-hover-bg);
   }
+  .M_SectionChoise--theory .A_Button:hover {
+    background: var(--green);
+  }
   .A_Chips:hover {
     background: var(--green);
     color: var(--white);

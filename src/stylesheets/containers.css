@@ -187,7 +187,9 @@
   align-items: flex-start;
   gap: 12px;
 }
-
+.about-us .M_Caption {
+  gap: 6px;
+}
 .M_Caption-mobile {
   display: flex;
   /* width: 200px; */
@@ -404,6 +406,12 @@
     max-width: var(--column4-2);
     padding-left: 0;
   } */
+  .about-us .relative-wrapper {
+    flex-direction: column-reverse;
+  }
+  .about-us .M_Caption {
+    width: var(--column4-3);
+  }
 }
 
 @media (min-width: 744px) {
