@@ -7,8 +7,8 @@
 
 .M_SectionChoise {
   display: flex;
-  padding: 52px 40px 60px;
-  /* height: 160px; */
+  /* padding: 52px 40px 60px; */
+  padding: 100px 52px 100px;
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -24,4 +24,10 @@
 }
 .M_SectionChoise h2 {
   color: var(--white);
+}
+
+@media (max-width: 743px) {
+  .C_TwoSections {
+    flex-direction: column;
+  }
 }

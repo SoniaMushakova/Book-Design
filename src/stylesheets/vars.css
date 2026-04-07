@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width: 375px) {
+@media (max-width: 743px) {
   :root {
     /* FONT-SIZE */
     --font-size-navbar: 16px;
@@ -193,8 +193,8 @@
 @media (min-width: 1728px) {
   :root {
     /* FONT-SIZE */
-    --font-size-navbar: 18px;
-    --font-size-logo-text: 20px;
+    --font-size-navbar: 22px;
+    --font-size-logo-text: 24px;
     --font-size-footer-L: 20px;
     --font-size-footer-M: 19px;
     --font-size-footer: 18px;

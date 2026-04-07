@@ -249,6 +249,12 @@ module.exports = {
         priority: 'replace'
       },
       {
+        path: path.join(__dirname, './src/partials/sidebar-practice.html'),
+        location: 'sidebar-practice',
+        template_filename: '*',
+        priority: 'replace'
+      },
+      {
         path: path.join(__dirname, './src/partials/Up_Button.html'),
         location: 'Up_Button',
         template_filename: '*',

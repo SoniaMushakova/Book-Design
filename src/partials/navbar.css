@@ -325,6 +325,13 @@ footer .I_Logo {
     width: 24px;
     height: 24px;
   }
+  .M_Search {
+    width: 360px;
+  }
+  header .I_Logo {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .O_mobileMenu {
