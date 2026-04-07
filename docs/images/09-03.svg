@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_иллюстрации" data-name="иллюстрации" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 351.83 108">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: PTSerif-Regular, 'PT Serif';
+        font-size: 16px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        fill: #fcbd86;
+      }
+
+      .cls-2 {
+        font-family: PTSans-Regular, 'PT Sans';
+        font-size: 5px;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #010101;
+        stroke-width: .5px;
+      }
+
+      .cls-5 {
+        fill: #bada8a;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" y="30.66" width="286.3" height="15.78"/>
+  <rect class="cls-3" x=".5" y="55.13" width="285.8" height="23.97"/>
+  <text class="cls-1" transform="translate(17.46 30.49)"><tspan x="0" y="0">Строка образуется строчными </tspan><tspan x="0" y="24">буквами, поэтому строчные </tspan><tspan x="0" y="48">буквы так и называются</tspan></text>
+  <path class="cls-4" d="M.5,30.66h286.3"/>
+  <path class="cls-4" d="M.5,54.63h286.3"/>
+  <path class="cls-4" d="M.5,46.45h286.3"/>
+  <path class="cls-4" d="M.5,78.6h286.3"/>
+  <text class="cls-2" transform="translate(289.39 30.16)"><tspan x="0" y="0">Базовая линия шрифта</tspan></text>
+  <text class="cls-2" transform="translate(245.32 69.13)"><tspan x="0" y="0">Интерлиньяж</tspan></text>
+  <text class="cls-2" transform="translate(244.94 39.98)"><tspan x="0" y="0">Межстрочник</tspan></text>
+  <text class="cls-2" transform="translate(289.39 46.5)"><tspan x="0" y="0">х-height</tspan></text>
+  <text class="cls-2" transform="translate(289.39 79.6)"><tspan x="0" y="0">Базовая линия шрифта</tspan></text>
+  <text class="cls-2" transform="translate(289.39 58.29)"><tspan x="0" y="0">Базовая линия шрифта</tspan></text>
+</svg>
