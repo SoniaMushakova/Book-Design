@@ -115,7 +115,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/About_Us.html',
       filename: './pages/About_Us.html',
-      chunks: ['page', 'mobileMenu']
+      chunks: ['page', 'mobileMenu', 'sidebar']
     }),
 
     // All articles
@@ -254,6 +254,13 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       },
+      {
+        path: path.join(__dirname, './src/partials/sidebar-all-chapters.html'),
+        location: 'sidebar-all-chapters',
+        template_filename: '*',
+        priority: 'replace'
+      },
+
       {
         path: path.join(__dirname, './src/partials/Up_Button.html'),
         location: 'Up_Button',

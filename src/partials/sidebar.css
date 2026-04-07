@@ -126,19 +126,25 @@
 }
 
 /* 1. Базовое поведение ссылок в сайдбаре */
-.sidebar-theory a {
+.sidebar-theory a,
+.sidebar-practice a,
+.sidebar-all-chapters a {
   /* Убираем плавные переходы, если они случайно унаследовались от других ссылок */
   transition: none;
 }
 
 /* 2. Мгновенный ховер ТОЛЬКО для десктопов (мышки) */
 @media (hover: hover) {
-  .sidebar-theory a:hover {
+  .sidebar-theory a:hover,
+  .sidebar-practice a:hover,
+  .sidebar-all-chapters a:hover {
     color: var(--orange);
   }
 }
 
 /* 3. Эффект тапа/нажатия для планшетов и телефонов */
-.sidebar-theory a:active {
+.sidebar-theory a:active,
+.sidebar-practice a:active,
+.sidebar-all-chapters a:active {
   color: var(--orange);
 }
