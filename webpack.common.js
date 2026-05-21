@@ -16,7 +16,8 @@ module.exports = {
     A_CardText: './src/javascript/A_CardText.jsx',
     cardsChevron: './src/javascript/cardsChevron.js',
     sidebar: './src/javascript/sidebar.js',
-    mobileMenu: './src/javascript/mobileMenu.js'
+    mobileMenu: './src/javascript/mobileMenu.js',
+    W_FontTester: './src/javascript/W_FontTester.jsx'
   },
   output: {
     filename: '[name].js',
@@ -126,7 +127,6 @@ module.exports = {
       filename: './pages/Main.html',
       chunks: ['page', 'mobileMenu']
     }),
-
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -174,7 +174,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/Article_7.html',
       filename: './pages/Article_7.html',
-      chunks: ['page', 'sidebar', 'mobileMenu']
+      chunks: ['page', 'sidebar', 'mobileMenu', 'W_FontTester']
     }),
     new HtmlWebpackPlugin({
       hash: true,
@@ -218,7 +218,6 @@ module.exports = {
       filename: './pages/Article_none.html',
       chunks: ['page', 'sidebar', 'mobileMenu']
     }),
-
     // Partials
     new HtmlWebpackPartialsPlugin([
       // analytics

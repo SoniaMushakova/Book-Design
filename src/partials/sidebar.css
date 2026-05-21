@@ -60,6 +60,7 @@
   width: 100%;
   padding: var(--M_Sidebar_1_Padding, 10px);
   gap: var(--M_Sidebar_1_Gap, 16px);
+  cursor: pointer;
 }
 
 /* контейнер для подглав */

@@ -26,3 +26,5 @@
 @import 'partials/navbar.css';
 @import 'partials/UpButton.css';
 @import 'partials/footer.css';
+
+@import 'stylesheets/components/FontTester.css';
