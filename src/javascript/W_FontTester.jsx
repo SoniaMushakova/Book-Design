@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { createRoot } from 'react-dom/client'
+import { createPortal } from 'react-dom'
 
 const TABS = ['Заголовок', 'Текст']
 
@@ -157,37 +158,70 @@ function W_FontTester() {
         )}
       </div>
 
-      <div className={`M_FontTesterControls${
-          sheetVisible ? ' M_FontTesterControls--sheet-active' : ''
-        }`}>
-        <div className="M_FontTesterTabs">
-          {TABS.map((t) => (
-            <button
-              key={t}
-              className={
-                'A_FontTesterTab' +
-                (tab === t ? ' A_FontTesterTab--active' : '')
-              }
-              onClick={() => setTab(t)}
-            >
-              {t}
-            </button>
-          ))}
+      {sheetVisible &&
+        createPortal(
+          <div className="M_FontTesterControls M_FontTesterControls--sheet-active">
+            <div className="M_FontTesterTabs">
+              {TABS.map((t) => (
+                <button
+                  key={t}
+                  className={
+                    'A_FontTesterTab' +
+                    (tab === t ? ' A_FontTesterTab--active' : '')
+                  }
+                  onClick={() => setTab(t)}
+                >
+                  {t}
+                </button>
+              ))}
+            </div>
+            <div className="M_FontTesterSliders">
+              {SLIDERS[tab].map((s) => (
+                <M_FontTesterSlider
+                  key={s.key}
+                  label={s.label}
+                  min={s.min}
+                  max={s.max}
+                  step={s.step}
+                  value={current[s.key]}
+                  onChange={(val) => updateCurrent(s.key, val)}
+                />
+              ))}
+            </div>
+          </div>,
+          document.body
+        )}
+      {!sheetVisible && (
+        <div className="M_FontTesterControls">
+          <div className="M_FontTesterTabs">
+            {TABS.map((t) => (
+              <button
+                key={t}
+                className={
+                  'A_FontTesterTab' +
+                  (tab === t ? ' A_FontTesterTab--active' : '')
+                }
+                onClick={() => setTab(t)}
+              >
+                {t}
+              </button>
+            ))}
+          </div>
+          <div className="M_FontTesterSliders">
+            {SLIDERS[tab].map((s) => (
+              <M_FontTesterSlider
+                key={s.key}
+                label={s.label}
+                min={s.min}
+                max={s.max}
+                step={s.step}
+                value={current[s.key]}
+                onChange={(val) => updateCurrent(s.key, val)}
+              />
+            ))}
+          </div>
         </div>
-        <div className="M_FontTesterSliders">
-          {SLIDERS[tab].map((s) => (
-            <M_FontTesterSlider
-              key={s.key}
-              label={s.label}
-              min={s.min}
-              max={s.max}
-              step={s.step}
-              value={current[s.key]}
-              onChange={(val) => updateCurrent(s.key, val)}
-            />
-          ))}
-        </div>
-      </div>
+      )}
     </div>
   )
 }

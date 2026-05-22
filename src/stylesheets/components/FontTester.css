@@ -178,7 +178,8 @@
   .W_FontTester {
     flex-direction: column;
     border-radius: 0;
-    padding-bottom: 220px;
+    /* padding-bottom: 220px; */
+    padding-bottom: 40px;
   }
 
   .M_FontTesterControls {
