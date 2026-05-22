@@ -178,9 +178,24 @@
   .W_FontTester {
     flex-direction: column;
     border-radius: 0;
+    padding-bottom: 220px;
   }
 
   .M_FontTesterControls {
     width: 100%;
+  }
+
+  .M_FontTesterControls--sheet-active {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--white);
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+    padding: 16px 24px;
+    z-index: 100;
   }
 }

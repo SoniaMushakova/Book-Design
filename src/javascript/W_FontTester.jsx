@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { createRoot } from 'react-dom/client'
 
 const TABS = ['Заголовок', 'Текст']
@@ -96,10 +96,34 @@ function W_FontTester() {
   }
 
   const [touched, setTouched] = useState(false)
+  const [sheetVisible, setSheetVisible] = useState(false)
+  const wrapperRef = useRef(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!wrapperRef.current || window.innerWidth > 743) {
+        setSheetVisible(false)
+        return
+      }
+      const rect = wrapperRef.current.getBoundingClientRect()
+      // Показываем: верх элемента вошёл в экран
+      // Скрываем: низ элемента ушёл на 100px выше верха экрана
+      setSheetVisible(rect.top < window.innerHeight && rect.bottom > -100)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('resize', handleScroll, { passive: true })
+    handleScroll()
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleScroll)
+    }
+  }, [])
+
   const error = touched ? getError(tab, current) : null
   const success = touched && !error
   return (
     <div
+      ref={wrapperRef}
       className={
         'W_FontTester' +
         (error
@@ -116,14 +140,13 @@ function W_FontTester() {
         </p>
         <div className="M_FontTesterCard">
           <p className="A_FontTesterCardHeading" style={headingStyle}>
-            Догнали и перегнали Америку
-            <br />в производстве книжек
+            Догнали и перегнали Америку в производстве книжек
           </p>
           <p className="A_FontTesterCardBody" style={textStyle}>
-            Было ли дело в том, что Америка перестала производить книги совсем?
-            Наши источники гласят, что нет. Дело в исключительном интересе
-            дизайнеров к книжному искусству в странах СНГ. Все более интересные
-            исследования выпускают студенты и начинающие дизайнеры.
+            Было ли дело в том, что Америка перестала производить книги совсем?
+            Наши источники гласят, что нет. Дело в исключительном интересе
+            дизайнеров к книжному искусству в странах СНГ. Все более интересные
+            исследования выпускают студенты и начинающие дизайнеры.
           </p>
         </div>
         {error && <p className="A_FontTesterError">{error}</p>}
@@ -134,7 +157,9 @@ function W_FontTester() {
         )}
       </div>
 
-      <div className="M_FontTesterControls">
+      <div className={`M_FontTesterControls${
+          sheetVisible ? ' M_FontTesterControls--sheet-active' : ''
+        }`}>
         <div className="M_FontTesterTabs">
           {TABS.map((t) => (
             <button

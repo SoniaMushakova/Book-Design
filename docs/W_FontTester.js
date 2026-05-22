@@ -16792,9 +16792,38 @@ function W_FontTester() {
     _useState8 = _slicedToArray(_useState7, 2),
     touched = _useState8[0],
     setTouched = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState0 = _slicedToArray(_useState9, 2),
+    sheetVisible = _useState0[0],
+    setSheetVisible = _useState0[1];
+  var wrapperRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var handleScroll = function handleScroll() {
+      if (!wrapperRef.current || window.innerWidth > 743) {
+        setSheetVisible(false);
+        return;
+      }
+      var rect = wrapperRef.current.getBoundingClientRect();
+      // Показываем: верх элемента вошёл в экран
+      // Скрываем: низ элемента ушёл на 100px выше верха экрана
+      setSheetVisible(rect.top < window.innerHeight && rect.bottom > -100);
+    };
+    window.addEventListener('scroll', handleScroll, {
+      passive: true
+    });
+    window.addEventListener('resize', handleScroll, {
+      passive: true
+    });
+    handleScroll();
+    return function () {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
+  }, []);
   var error = touched ? getError(tab, current) : null;
   var success = touched && !error;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    ref: wrapperRef,
     className: 'W_FontTester' + (error ? ' W_FontTester--error' : success ? ' W_FontTester--success' : '')
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "M_FontTesterContent"
@@ -16807,10 +16836,10 @@ function W_FontTester() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "A_FontTesterCardHeading",
     style: headingStyle
-  }, "\u0414\u043E\u0433\u043D\u0430\u043B\u0438 \u0438 \u043F\u0435\u0440\u0435\u0433\u043D\u0430\u043B\u0438 \u0410\u043C\u0435\u0440\u0438\u043A\u0443", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "\u0432 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435 \u043A\u043D\u0438\u0436\u0435\u043A"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  }, "\u0414\u043E\u0433\u043D\u0430\u043B\u0438 \u0438 \u043F\u0435\u0440\u0435\u0433\u043D\u0430\u043B\u0438 \u0410\u043C\u0435\u0440\u0438\u043A\u0443 \u0432\xA0\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435 \u043A\u043D\u0438\u0436\u0435\u043A"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "A_FontTesterCardBody",
     style: textStyle
-  }, "\u0411\u044B\u043B\u043E \u043B\u0438 \u0434\u0435\u043B\u043E \u0432 \u0442\u043E\u043C, \u0447\u0442\u043E \u0410\u043C\u0435\u0440\u0438\u043A\u0430 \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u043B\u0430 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u044C \u043A\u043D\u0438\u0433\u0438 \u0441\u043E\u0432\u0441\u0435\u043C? \u041D\u0430\u0448\u0438 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0438 \u0433\u043B\u0430\u0441\u044F\u0442, \u0447\u0442\u043E \u043D\u0435\u0442. \u0414\u0435\u043B\u043E \u0432 \u0438\u0441\u043A\u043B\u044E\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u043C \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0435 \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u043E\u0432 \u043A \u043A\u043D\u0438\u0436\u043D\u043E\u043C\u0443 \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0443 \u0432 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u0421\u041D\u0413. \u0412\u0441\u0435 \u0431\u043E\u043B\u0435\u0435 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0435 \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u044B\u043F\u0443\u0441\u043A\u0430\u044E\u0442 \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u044B \u0438 \u043D\u0430\u0447\u0438\u043D\u0430\u044E\u0449\u0438\u0435 \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u044B.")), error && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  }, "\u0411\u044B\u043B\u043E \u043B\u0438\xA0\u0434\u0435\u043B\u043E \u0432\xA0\u0442\u043E\u043C, \u0447\u0442\u043E\xA0\u0410\u043C\u0435\u0440\u0438\u043A\u0430 \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u043B\u0430 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u044C \u043A\u043D\u0438\u0433\u0438 \u0441\u043E\u0432\u0441\u0435\u043C? \u041D\u0430\u0448\u0438 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0438 \u0433\u043B\u0430\u0441\u044F\u0442, \u0447\u0442\u043E\xA0\u043D\u0435\u0442. \u0414\u0435\u043B\u043E \u0432\xA0\u0438\u0441\u043A\u043B\u044E\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u043C \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0435 \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u043E\u0432 \u043A\xA0\u043A\u043D\u0438\u0436\u043D\u043E\u043C\u0443 \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0443 \u0432\xA0\u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u0421\u041D\u0413. \u0412\u0441\u0435 \u0431\u043E\u043B\u0435\u0435 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0435 \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u044B\u043F\u0443\u0441\u043A\u0430\u044E\u0442 \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u044B \u0438\xA0\u043D\u0430\u0447\u0438\u043D\u0430\u044E\u0449\u0438\u0435 \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u044B.")), error && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "A_FontTesterError"
   }, error), success && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "A_FontTesterError",
@@ -16818,7 +16847,7 @@ function W_FontTester() {
       color: 'var(--green)'
     }
   }, "\u041E\u0442\u0432\u0435\u0442 \u0432\u0435\u0440\u043D\u044B\u0439")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "M_FontTesterControls"
+    className: "M_FontTesterControls".concat(sheetVisible ? ' M_FontTesterControls--sheet-active' : '')
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "M_FontTesterTabs"
   }, TABS.map(function (t) {
