@@ -186,6 +186,10 @@
     width: 100%;
   }
 
+  .M_FontTesterControls--sheet-hidden {
+    display: none;
+  }
+
   .M_FontTesterControls--sheet-active {
     position: fixed;
     bottom: 0;

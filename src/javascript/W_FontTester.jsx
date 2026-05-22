@@ -98,18 +98,21 @@ function W_FontTester() {
 
   const [touched, setTouched] = useState(false)
   const [sheetVisible, setSheetVisible] = useState(false)
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 743)
   const wrapperRef = useRef(null)
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!wrapperRef.current || window.innerWidth > 743) {
+      const mobile = window.innerWidth <= 743
+      setIsMobile(mobile)
+      if (!wrapperRef.current || !mobile) {
         setSheetVisible(false)
         return
       }
       const rect = wrapperRef.current.getBoundingClientRect()
       // Показываем: верх элемента вошёл в экран
-      // Скрываем: низ элемента ушёл на 100px выше верха экрана
-      setSheetVisible(rect.top < window.innerHeight && rect.bottom > -100)
+      // Скрываем: низ элемента ушёл на 10px выше верха экрана
+      setSheetVisible(rect.top < window.innerHeight && rect.bottom > -10)
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     window.addEventListener('resize', handleScroll, { passive: true })
@@ -158,9 +161,14 @@ function W_FontTester() {
         )}
       </div>
 
-      {sheetVisible &&
+      {isMobile ? (
         createPortal(
-          <div className="M_FontTesterControls M_FontTesterControls--sheet-active">
+          <div
+            className={
+              'M_FontTesterControls M_FontTesterControls--sheet-active' +
+              (sheetVisible ? '' : ' M_FontTesterControls--sheet-hidden')
+            }
+          >
             <div className="M_FontTesterTabs">
               {TABS.map((t) => (
                 <button
@@ -190,8 +198,8 @@ function W_FontTester() {
             </div>
           </div>,
           document.body
-        )}
-      {!sheetVisible && (
+        )
+      ) : (
         <div className="M_FontTesterControls">
           <div className="M_FontTesterTabs">
             {TABS.map((t) => (

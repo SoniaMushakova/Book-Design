@@ -16798,17 +16798,25 @@ function W_FontTester() {
     _useState0 = _slicedToArray(_useState9, 2),
     sheetVisible = _useState0[0],
     setSheetVisible = _useState0[1];
+  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(function () {
+      return window.innerWidth <= 743;
+    }),
+    _useState10 = _slicedToArray(_useState1, 2),
+    isMobile = _useState10[0],
+    setIsMobile = _useState10[1];
   var wrapperRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var handleScroll = function handleScroll() {
-      if (!wrapperRef.current || window.innerWidth > 743) {
+      var mobile = window.innerWidth <= 743;
+      setIsMobile(mobile);
+      if (!wrapperRef.current || !mobile) {
         setSheetVisible(false);
         return;
       }
       var rect = wrapperRef.current.getBoundingClientRect();
       // Показываем: верх элемента вошёл в экран
-      // Скрываем: низ элемента ушёл на 100px выше верха экрана
-      setSheetVisible(rect.top < window.innerHeight && rect.bottom > -100);
+      // Скрываем: низ элемента ушёл на 10px выше верха экрана
+      setSheetVisible(rect.top < window.innerHeight && rect.bottom > -10);
     };
     window.addEventListener('scroll', handleScroll, {
       passive: true
@@ -16848,8 +16856,8 @@ function W_FontTester() {
     style: {
       color: 'var(--green)'
     }
-  }, "\u041E\u0442\u0432\u0435\u0442 \u0432\u0435\u0440\u043D\u044B\u0439")), sheetVisible && /*#__PURE__*/(0,react_dom__WEBPACK_IMPORTED_MODULE_2__.createPortal)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "M_FontTesterControls M_FontTesterControls--sheet-active"
+  }, "\u041E\u0442\u0432\u0435\u0442 \u0432\u0435\u0440\u043D\u044B\u0439")), isMobile ? (/*#__PURE__*/(0,react_dom__WEBPACK_IMPORTED_MODULE_2__.createPortal)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: 'M_FontTesterControls M_FontTesterControls--sheet-active' + (sheetVisible ? '' : ' M_FontTesterControls--sheet-hidden')
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "M_FontTesterTabs"
   }, TABS.map(function (t) {
@@ -16874,7 +16882,7 @@ function W_FontTester() {
         return updateCurrent(s.key, val);
       }
     });
-  }))), document.body), !sheetVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }))), document.body)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "M_FontTesterControls"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "M_FontTesterTabs"
