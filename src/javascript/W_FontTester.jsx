@@ -110,9 +110,7 @@ function W_FontTester() {
         return
       }
       const rect = wrapperRef.current.getBoundingClientRect()
-      // Показываем: верх элемента вошёл в экран
-      // Скрываем: низ элемента ушёл на 10px выше верха экрана
-      setSheetVisible(rect.top < window.innerHeight && rect.bottom > -10)
+      setSheetVisible(rect.top < window.innerHeight - 60 && rect.bottom > 100)
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     window.addEventListener('resize', handleScroll, { passive: true })
