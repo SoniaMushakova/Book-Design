@@ -12,6 +12,10 @@
   },
   "homepage": "https://github.com/ZakharDay/static-site-boilerplate#readme",
   "scripts": {
+    "search-index": "node scripts/build-search-index.js",
+    "prestart": "node scripts/build-search-index.js",
+    "prewatch": "node scripts/build-search-index.js",
+    "prebuild": "node scripts/build-search-index.js",
     "start": "webpack serve --open --config webpack.dev.js",
     "watch": "webpack --watch --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"

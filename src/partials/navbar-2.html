@@ -1,13 +1,29 @@
-<div class="O_mobileMenu" id="mobileMenu">
-  <div class="M_Search M_Search--mobile" style="display: none">
-    <div class="I_Search"></div>
-    <p class="search-placeholder">Поиск по учебнику</p>
-  </div>
-  <nav class="O_mobileMenu__nav">
+<div class="O_mobileMenu" id="mobileMenu" data-state="closed">
+  <!-- Вид: список разделов -->
+  <nav class="O_mobileMenu__nav" data-view="menu">
     <a href="/pages/Theory.html" class="A_mobileMenuItem">Теория</a>
     <a href="/pages/Practice.html" class="A_mobileMenuItem">Практика</a>
     <a href="/pages/About_Us.html" class="A_mobileMenuItem">О нас</a>
   </nav>
+
+  <!-- Вид: поиск -->
+  <div class="O_mobileSearch" data-view="search">
+    <div class="O_mobileSearch__inputWrap">
+      <input
+        class="O_mobileSearch__input"
+        id="mobileSearchInput"
+        type="text"
+        placeholder="Поиск по учебнику"
+        autocomplete="off"
+        spellcheck="false"
+      />
+    </div>
+    <div
+      class="O_mobileSearch__results"
+      id="mobileSearchResults"
+      aria-live="polite"
+    ></div>
+  </div>
 </div>
 
 <header class="W_navbar-2">
@@ -30,12 +46,53 @@
       </ul>
       <div class="M_Search" style="display: none">
         <img src="/images/I_Search.svg" />
-        <!-- заменить -->
         <p class="search-placeholder">Поиск по учебнику</p>
       </div>
-      <div class="A_Burger_Menu" id="burgerBtn">
+
+      <!-- Mobile: иконка поиска / X (закрыть всё) -->
+      <button
+        type="button"
+        class="A_Search_Btn"
+        id="searchBtn"
+        aria-label="Поиск"
+      >
         <svg
-          class="I_Burger_Menu"
+          class="I_Search_Toggle I_Search_Toggle--search"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+        >
+          <circle cx="9" cy="9" r="7" stroke="#3B3B3B" stroke-width="2" />
+          <path
+            d="M14.5 14.5L18 18"
+            stroke="#3B3B3B"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <svg
+          class="I_Search_Toggle I_Search_Toggle--close"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <path
+            d="M2 2L14 14M14 2L2 14"
+            stroke="#3B3B3B"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+
+      <!-- Mobile: бургер / X (закрыть всё) / ≡ (вернуться в меню) -->
+      <div class="A_Burger_Menu" id="burgerBtn" role="button" aria-label="Меню">
+        <svg
+          class="I_Burger_Toggle I_Burger_Toggle--burger"
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="14"
@@ -62,6 +119,21 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
+          />
+        </svg>
+        <svg
+          class="I_Burger_Toggle I_Burger_Toggle--close"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <path
+            d="M2 2L14 14M14 2L2 14"
+            stroke="#3B3B3B"
+            stroke-width="2"
+            stroke-linecap="round"
           />
         </svg>
       </div>

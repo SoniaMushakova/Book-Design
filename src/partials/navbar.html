@@ -20,10 +20,43 @@
         <a href="/pages/About_Us.html">О нас</a>
       </li>
     </ul>
-    <div class="M_Search" style="display: none">
-      <!-- <div class="M_Search" style="display: none"> -->
-      <div class="I_Search"></div>
-      <p class="search-placeholder">Поиск по учебнику</p>
-    </div>
+    <button
+      type="button"
+      class="A_Search_Btn A_Search_Btn--circle"
+      id="searchBtnDesktop"
+      aria-label="Поиск"
+    >
+      <svg
+        class="I_Search_Toggle I_Search_Toggle--search"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <circle cx="9" cy="9" r="7" stroke="#3B3B3B" stroke-width="2" />
+        <path
+          d="M14.5 14.5L18 18"
+          stroke="#3B3B3B"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+      <svg
+        class="I_Search_Toggle I_Search_Toggle--close"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+      >
+        <path
+          d="M2 2L14 14M14 2L2 14"
+          stroke="#3B3B3B"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
   </div>
 </header>
