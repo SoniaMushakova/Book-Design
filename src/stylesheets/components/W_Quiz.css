@@ -1,0 +1,189 @@
+/* Список вопросов: идут подряд друг под другом */
+.W_QuizList {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 32px 0;
+}
+
+/* Один вопрос */
+.W_Quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: var(--font-family-base);
+}
+
+.A_QuizLabel {
+  font-size: 15px;
+  color: var(--black-light);
+  line-height: 1.3;
+}
+
+.A_QuizTitle {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.25;
+  margin: 0;
+}
+
+/* Варианты */
+.M_QuizOptions {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.A_QuizOptionLabel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+/* нативный чекбокс прячем, рисуем свой квадрат */
+.A_QuizCheckbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.A_QuizBox {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--black);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: transparent;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.A_QuizCheck {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+/* выбран (до отправки): тёмная заливка только пока ответ не отправлен,
+   иначе перебивала бы красный/зелёный после ответа */
+.W_Quiz:not(.W_Quiz--success):not(.W_Quiz--error)
+  .A_QuizCheckbox:checked
+  + .A_QuizBox {
+  background: var(--black);
+  border-color: var(--black);
+}
+.W_Quiz:not(.W_Quiz--success):not(.W_Quiz--error)
+  .A_QuizCheckbox:checked
+  + .A_QuizBox
+  .A_QuizCheck {
+  opacity: 1;
+}
+
+.A_QuizOptionText {
+  font-size: 18px;
+  color: var(--black);
+  line-height: 1.4;
+}
+
+/* состояние после ответа */
+.A_QuizOption--correct .A_QuizBox {
+  background: var(--green);
+  border-color: var(--green);
+}
+.A_QuizOption--correct .A_QuizBox .A_QuizCheck {
+  opacity: 1;
+}
+.A_QuizOption--correct .A_QuizOptionText {
+  color: var(--green);
+}
+
+.A_QuizOption--wrong .A_QuizBox {
+  background: #dc3535;
+  border-color: #dc3535;
+}
+.A_QuizOption--wrong .A_QuizBox .A_QuizCheck {
+  opacity: 1;
+}
+.A_QuizOption--wrong .A_QuizOptionText {
+  color: #dc3535;
+}
+
+/* Кнопка «Ответить» */
+.A_QuizSubmit {
+  align-self: flex-start;
+  margin-top: 8px;
+  min-width: 320px;
+  height: 64px;
+  padding: 0 32px;
+  border: none;
+  border-radius: 999px;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-family-base);
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.A_QuizSubmit:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* Плашка с пояснением */
+.A_QuizFeedback {
+  margin-top: 12px;
+  border-radius: 16px;
+  padding: 20px 24px;
+  font-size: 17px;
+  line-height: 1.45;
+  color: var(--black);
+}
+
+.A_QuizFeedback--success {
+  background: #d8f5c6;
+}
+
+.A_QuizFeedback--error {
+  background: rgba(220, 53, 53, 0.15);
+}
+
+/* Адаптив */
+@media (max-width: 743px) {
+  .W_QuizList {
+    gap: 36px;
+    margin: 24px 0;
+  }
+  .A_QuizTitle {
+    font-size: 22px;
+  }
+  .A_QuizBox {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+  .A_QuizOptionText {
+    font-size: 16px;
+  }
+  .A_QuizSubmit {
+    width: 100%;
+    min-width: 0;
+    align-self: stretch;
+    height: 56px;
+    font-size: 17px;
+  }
+  .A_QuizFeedback {
+    font-size: 15px;
+    padding: 16px 18px;
+  }
+}

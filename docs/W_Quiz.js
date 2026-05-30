@@ -16706,7 +16706,11 @@ var QUIZ_SETS = {
   }]
 };
 
-;// ./src/javascript/W_GridQuiz.jsx
+;// ./src/javascript/W_Quiz.jsx
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -16716,146 +16720,124 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
-function W_GridQuiz() {
-  var total = QUIZ_QUESTIONS.length;
-  var _useState = (0,react.useState)(0),
+
+// Сравнение двух наборов индексов без учёта порядка
+function sameSet(a, b) {
+  if (a.length !== b.length) return false;
+  var setB = new Set(b);
+  return a.every(function (x) {
+    return setB.has(x);
+  });
+}
+function QuizQuestion(_ref) {
+  var data = _ref.data,
+    index = _ref.index;
+  var question = data.question,
+    options = data.options,
+    correct = data.correct,
+    correctMessage = data.correctMessage,
+    wrongMessage = data.wrongMessage;
+  var _useState = (0,react.useState)([]),
     _useState2 = _slicedToArray(_useState, 2),
-    current = _useState2[0],
-    setCurrent = _useState2[1];
-  // answers[i]: undefined | 'correct' | 'error'  (что выбрал пользователь)
-  var _useState3 = (0,react.useState)(function () {
-      return Array(total).fill(undefined);
-    }),
+    selected = _useState2[0],
+    setSelected = _useState2[1]; // массив индексов
+  var _useState3 = (0,react.useState)(false),
     _useState4 = _slicedToArray(_useState3, 2),
-    answers = _useState4[0],
-    setAnswers = _useState4[1];
-  var q = QUIZ_QUESTIONS[current];
-  var userAnswer = answers[current];
-  var answered = userAnswer !== undefined;
-  var isCorrect = answered && userAnswer === q.correctAnswer;
-  var answer = function answer(choice) {
-    if (answered) return;
-    setAnswers(function (prev) {
-      var next = prev.slice();
-      next[current] = choice;
-      return next;
+    submitted = _useState4[0],
+    setSubmitted = _useState4[1];
+  var isCorrect = submitted && sameSet(selected, correct);
+  var toggle = function toggle(i) {
+    if (submitted) return;
+    setSelected(function (prev) {
+      return prev.includes(i) ? prev.filter(function (x) {
+        return x !== i;
+      }) : [].concat(_toConsumableArray(prev), [i]);
     });
   };
-  var reset = function reset() {
-    setAnswers(Array(total).fill(undefined));
-    setCurrent(0);
+  var submit = function submit() {
+    if (submitted || selected.length === 0) return;
+    setSubmitted(true);
   };
-  var goPrev = function goPrev() {
-    return setCurrent(function (i) {
-      return Math.max(0, i - 1);
-    });
-  };
-  var goNext = function goNext() {
-    return setCurrent(function (i) {
-      return Math.min(total - 1, i + 1);
-    });
-  };
-  var stateClass = answered ? isCorrect ? ' W_GridQuiz--success' : ' W_GridQuiz--error' : '';
-  var feedback = answered ? isCorrect ? q.correctMessage : q.wrongMessage : null;
   return /*#__PURE__*/react.createElement("div", {
-    className: 'W_GridQuiz' + stateClass
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "M_GridQuizHeader"
+    className: 'W_Quiz' + (submitted ? isCorrect ? ' W_Quiz--success' : ' W_Quiz--error' : '')
   }, /*#__PURE__*/react.createElement("span", {
-    className: "A_GridQuizLabel"
-  }, "\u0417\u0430\u0434\u0430\u0447\u0430"), /*#__PURE__*/react.createElement("p", {
-    className: "A_GridQuizTitle"
-  }, QUIZ_TASK), /*#__PURE__*/react.createElement("button", {
-    type: "button",
-    className: "A_GridQuizReset",
-    onClick: reset
-  }, /*#__PURE__*/react.createElement("span", {
-    className: "A_GridQuizResetIcon",
-    "aria-hidden": "true"
-  }, /*#__PURE__*/react.createElement("svg", {
-    width: "18",
-    height: "18",
-    viewBox: "0 0 18 18",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, /*#__PURE__*/react.createElement("path", {
-    d: "M3 9a6 6 0 1 0 1.76-4.24",
-    stroke: "currentColor",
-    strokeWidth: "1.6",
-    strokeLinecap: "round"
-  }), /*#__PURE__*/react.createElement("path", {
-    d: "M2.4 2.6v3.2h3.2",
-    stroke: "currentColor",
-    strokeWidth: "1.6",
-    strokeLinecap: "round",
-    strokeLinejoin: "round"
-  }))), /*#__PURE__*/react.createElement("span", null, "\u041F\u0440\u043E\u0439\u0442\u0438 \u0442\u0435\u0441\u0442 \u0437\u0430\u043D\u043E\u0432\u043E"))), /*#__PURE__*/react.createElement("div", {
-    className: "M_GridQuizImage"
-  }, /*#__PURE__*/react.createElement("img", {
-    src: q.image,
-    alt: "\u0412\u043E\u043F\u0440\u043E\u0441 ".concat(current + 1),
-    className: "A_GridQuizImage"
-  })), /*#__PURE__*/react.createElement("div", {
-    className: "M_GridQuizControls"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "M_GridQuizPager"
-  }, /*#__PURE__*/react.createElement("button", {
-    type: "button",
-    className: "A_GridQuizArrow",
-    onClick: goPrev,
-    disabled: current === 0,
-    "aria-label": "\u041F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0438\u0439 \u0432\u043E\u043F\u0440\u043E\u0441"
-  }, "\u2190"), /*#__PURE__*/react.createElement("div", {
-    className: "M_GridQuizDots"
-  }, QUIZ_QUESTIONS.map(function (quiz, i) {
-    var a = answers[i];
-    var dotMod = '';
-    if (a !== undefined) {
-      dotMod = a === quiz.correctAnswer ? ' A_GridQuizDot--correct' : ' A_GridQuizDot--wrong';
-    } else if (i === current) {
-      dotMod = ' A_GridQuizDot--active';
+    className: "A_QuizLabel"
+  }, "\u0412\u043E\u043F\u0440\u043E\u0441"), /*#__PURE__*/react.createElement("p", {
+    className: "A_QuizTitle"
+  }, question), /*#__PURE__*/react.createElement("ul", {
+    className: "M_QuizOptions"
+  }, options.map(function (opt, i) {
+    var checked = selected.includes(i);
+    var mod = '';
+    if (submitted) {
+      if (correct.includes(i)) mod = ' A_QuizOption--correct';else if (checked) mod = ' A_QuizOption--wrong';
     }
-    return /*#__PURE__*/react.createElement("button", {
+    return /*#__PURE__*/react.createElement("li", {
       key: i,
-      type: "button",
-      className: 'A_GridQuizDot' + dotMod,
-      onClick: function onClick() {
-        return setCurrent(i);
-      },
-      "aria-label": "\u0412\u043E\u043F\u0440\u043E\u0441 ".concat(i + 1)
-    });
+      className: 'A_QuizOption' + mod
+    }, /*#__PURE__*/react.createElement("label", {
+      className: "A_QuizOptionLabel"
+    }, /*#__PURE__*/react.createElement("input", {
+      type: "checkbox",
+      className: "A_QuizCheckbox",
+      checked: checked,
+      disabled: submitted,
+      onChange: function onChange() {
+        return toggle(i);
+      }
+    }), /*#__PURE__*/react.createElement("span", {
+      className: "A_QuizBox",
+      "aria-hidden": "true"
+    }, /*#__PURE__*/react.createElement("svg", {
+      className: "A_QuizCheck",
+      width: "16",
+      height: "16",
+      viewBox: "0 0 16 16",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /*#__PURE__*/react.createElement("path", {
+      d: "M3 8.5l3 3 7-7",
+      stroke: "currentColor",
+      strokeWidth: "2",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }))), /*#__PURE__*/react.createElement("span", {
+      className: "A_QuizOptionText"
+    }, opt)));
   })), /*#__PURE__*/react.createElement("button", {
     type: "button",
-    className: "A_GridQuizArrow",
-    onClick: goNext,
-    disabled: current === total - 1,
-    "aria-label": "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439 \u0432\u043E\u043F\u0440\u043E\u0441"
-  }, "\u2192")), /*#__PURE__*/react.createElement("div", {
-    className: "M_GridQuizAnswers"
-  }, /*#__PURE__*/react.createElement("button", {
-    type: "button",
-    className: 'A_GridQuizBtn A_GridQuizBtn--error' + (answered && userAnswer === 'error' ? ' A_GridQuizBtn--selected' : ''),
-    onClick: function onClick() {
-      return answer('error');
-    },
-    disabled: answered
-  }, "\u0422\u0443\u0442 \u043E\u0448\u0438\u0431\u043A\u0430"), /*#__PURE__*/react.createElement("button", {
-    type: "button",
-    className: 'A_GridQuizBtn A_GridQuizBtn--correct' + (answered && userAnswer === 'correct' ? ' A_GridQuizBtn--selected' : ''),
-    onClick: function onClick() {
-      return answer('correct');
-    },
-    disabled: answered
-  }, "\u0412\u0441\u0435 \u0432\u0435\u0440\u043D\u043E"))), feedback && /*#__PURE__*/react.createElement("div", {
-    className: 'A_GridQuizFeedback' + (isCorrect ? ' A_GridQuizFeedback--success' : ' A_GridQuizFeedback--error')
-  }, feedback));
+    className: "A_QuizSubmit",
+    onClick: submit,
+    disabled: submitted || selected.length === 0
+  }, "\u041E\u0442\u0432\u0435\u0442\u0438\u0442\u044C"), submitted && /*#__PURE__*/react.createElement("div", {
+    className: 'A_QuizFeedback' + (isCorrect ? ' A_QuizFeedback--success' : ' A_QuizFeedback--error')
+  }, isCorrect ? correctMessage : wrongMessage));
+}
+function W_Quiz(_ref2) {
+  var questions = _ref2.questions;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "W_QuizList"
+  }, questions.map(function (q, i) {
+    return /*#__PURE__*/react.createElement(QuizQuestion, {
+      key: i,
+      data: q,
+      index: i
+    });
+  }));
 }
 document.addEventListener('DOMContentLoaded', function () {
-  var container = document.getElementById('grid-quiz-root');
-  if (container) {
-    (0,client.createRoot)(container).render(/*#__PURE__*/react.createElement(W_GridQuiz, null));
+  var container = document.getElementById('quiz-root');
+  if (!container) return;
+  var setName = container.dataset.quizSet;
+  var questions = QUIZ_SETS[setName];
+  if (!questions) {
+    console.warn("W_Quiz: \u043D\u0430\u0431\u043E\u0440 \"".concat(setName, "\" \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D \u0432 QUIZ_SETS"));
+    return;
   }
+  (0,client.createRoot)(container).render(/*#__PURE__*/react.createElement(W_Quiz, {
+    questions: questions
+  }));
 });
-/* harmony default export */ const javascript_W_GridQuiz = ((/* unused pure expression or super */ null && (W_GridQuiz)));
+/* harmony default export */ const javascript_W_Quiz = ((/* unused pure expression or super */ null && (W_Quiz)));
 /******/ })()
 ;

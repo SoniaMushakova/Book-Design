@@ -18,7 +18,8 @@ module.exports = {
     sidebar: './src/javascript/sidebar.js',
     mobileMenu: './src/javascript/mobileMenu.js',
     W_FontTester: './src/javascript/W_FontTester.jsx',
-    W_GridQuiz: './src/javascript/W_GridQuiz.jsx'
+    W_GridQuiz: './src/javascript/W_GridQuiz.jsx',
+    W_Quiz: './src/javascript/W_Quiz.jsx'
   },
   output: {
     filename: '[name].js',
@@ -110,7 +111,6 @@ module.exports = {
       filename: './pages/Practice.html',
       chunks: ['page', 'index', 'A_CardText', 'mobileMenu']
     }),
-
     // About Us page
     new HtmlWebpackPlugin({
       hash: true,
@@ -174,7 +174,14 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/Article_7.html',
       filename: './pages/Article_7.html',
-      chunks: ['page', 'sidebar', 'mobileMenu', 'W_FontTester', 'W_GridQuiz']
+      chunks: [
+        'page',
+        'sidebar',
+        'mobileMenu',
+        'W_FontTester',
+        'W_GridQuiz',
+        'W_Quiz'
+      ]
     }),
     new HtmlWebpackPlugin({
       hash: true,
