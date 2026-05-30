@@ -17,7 +17,8 @@ module.exports = {
     cardsChevron: './src/javascript/cardsChevron.js',
     sidebar: './src/javascript/sidebar.js',
     mobileMenu: './src/javascript/mobileMenu.js',
-    W_FontTester: './src/javascript/W_FontTester.jsx'
+    W_FontTester: './src/javascript/W_FontTester.jsx',
+    W_GridQuiz: './src/javascript/W_GridQuiz.jsx'
   },
   output: {
     filename: '[name].js',
@@ -118,7 +119,6 @@ module.exports = {
       filename: './pages/About_Us.html',
       chunks: ['page', 'mobileMenu', 'sidebar']
     }),
-
     // All articles
     new HtmlWebpackPlugin({
       hash: true,
@@ -174,7 +174,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/Article_7.html',
       filename: './pages/Article_7.html',
-      chunks: ['page', 'sidebar', 'mobileMenu', 'W_FontTester']
+      chunks: ['page', 'sidebar', 'mobileMenu', 'W_FontTester', 'W_GridQuiz']
     }),
     new HtmlWebpackPlugin({
       hash: true,
