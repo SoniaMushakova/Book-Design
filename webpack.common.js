@@ -146,7 +146,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/Article_3.html',
       filename: './pages/Article_3.html',
-      chunks: ['page', 'sidebar', 'mobileMenu']
+      chunks: ['page', 'sidebar', 'mobileMenu', 'W_Quiz']
     }),
     new HtmlWebpackPlugin({
       hash: true,
@@ -160,7 +160,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/Article_5.html',
       filename: './pages/Article_5.html',
-      chunks: ['page', 'sidebar', 'mobileMenu']
+      chunks: ['page', 'sidebar', 'mobileMenu', 'W_Quiz']
     }),
     new HtmlWebpackPlugin({
       hash: true,
@@ -202,14 +202,14 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/Article_11.html',
       filename: './pages/Article_11.html',
-      chunks: ['page', 'sidebar', 'mobileMenu']
+      chunks: ['page', 'sidebar', 'mobileMenu', 'W_Quiz']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/pages/Article_12.html',
       filename: './pages/Article_12.html',
-      chunks: ['page', 'sidebar', 'mobileMenu']
+      chunks: ['page', 'sidebar', 'mobileMenu', 'W_Quiz']
     }),
     new HtmlWebpackPlugin({
       hash: true,
