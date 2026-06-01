@@ -16667,7 +16667,7 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 var TABS = ['Заголовок', 'Текст'];
 var HEADING_DEFAULTS = {
   lineHeight: 1,
-  fontSize: 38,
+  fontSize: 28,
   marginBottom: 12
 };
 var TEXT_DEFAULTS = {
@@ -16684,8 +16684,8 @@ var SLIDERS = {
   }, {
     key: 'fontSize',
     label: 'Кегль',
-    min: 38,
-    max: 48,
+    min: 28,
+    max: 44,
     step: 1
   }, {
     key: 'marginBottom',
@@ -16703,23 +16703,59 @@ var SLIDERS = {
   }, {
     key: 'fontSize',
     label: 'Кегль',
-    min: 20,
+    min: 18,
     max: 30,
     step: 1
   }]
 };
-function getError(tab, _ref) {
+var MOBILE_SLIDERS = {
+  Заголовок: [{
+    key: 'lineHeight',
+    label: 'Интерлиньяж',
+    min: 0.8,
+    max: 1.8,
+    step: 0.01
+  }, {
+    key: 'fontSize',
+    label: 'Кегль',
+    min: 18,
+    max: 28,
+    step: 1
+  }, {
+    key: 'marginBottom',
+    label: 'Отступ после заголовка',
+    min: 0,
+    max: 50,
+    step: 1
+  }],
+  Текст: [{
+    key: 'lineHeight',
+    label: 'Интерлиньяж',
+    min: 0.8,
+    max: 1.8,
+    step: 0.01
+  }, {
+    key: 'fontSize',
+    label: 'Кегль',
+    min: 14,
+    max: 22,
+    step: 1
+  }]
+};
+function getError(tab, _ref, isMobile) {
   var fontSize = _ref.fontSize,
-    lineHeight = _ref.lineHeight;
+    lineHeight = _ref.lineHeight,
+    marginBottom = _ref.marginBottom;
   var lh = Math.round(lineHeight * 100);
   if (tab === 'Заголовок') {
-    var lhOk = fontSize >= 38 && fontSize <= 43 && lh >= 118 && lh <= 120 || fontSize >= 44 && fontSize <= 48 && lh >= 110 && lh <= 116;
+    if (marginBottom < 10 * lineHeight + 2) return 'Отступ меньше интерлиньяжа';
+    var lhOk = isMobile ? fontSize >= 14 && fontSize <= 18 && lh >= 110 && lh <= 130 || fontSize >= 19 && fontSize <= 28 && lh >= 110 && lh <= 120 : fontSize >= 28 && fontSize <= 30 && lh >= 110 && lh <= 120 || fontSize >= 31 && fontSize <= 44 && lh >= 112 && lh <= 116;
     if (lhOk) return null;
     return 'Ошибка в интерлиньяже';
   }
   if (tab === 'Текст') {
-    var sizeOk = fontSize >= 22 && fontSize <= 28;
-    var _lhOk = fontSize >= 22 && fontSize <= 24 && lh >= 134 && lh <= 144 || fontSize >= 25 && fontSize <= 28 && lh >= 140 && lh <= 150;
+    var sizeOk = isMobile ? fontSize >= 14 && fontSize <= 22 : fontSize >= 18 && fontSize <= 28;
+    var _lhOk = isMobile ? fontSize >= 14 && fontSize <= 18 && lh >= 130 && lh <= 144 || fontSize >= 19 && fontSize <= 22 && lh >= 130 && lh <= 142 : fontSize >= 18 && fontSize <= 24 && lh >= 134 && lh <= 144 || fontSize >= 25 && fontSize <= 28 && lh >= 140 && lh <= 150;
     if (_lhOk) return null;
     if (!sizeOk && !_lhOk) return 'Ошибка в кегле и интерлиньяже';
     if (!sizeOk) return 'Ошибка в кегле';
@@ -16805,6 +16841,7 @@ function W_FontTester() {
     isMobile = _useState10[0],
     setIsMobile = _useState10[1];
   var wrapperRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var sliders = isMobile ? MOBILE_SLIDERS : SLIDERS;
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var handleScroll = function handleScroll() {
       var mobile = window.innerWidth <= 743;
@@ -16828,8 +16865,17 @@ function W_FontTester() {
       window.removeEventListener('resize', handleScroll);
     };
   }, []);
-  var error = touched ? getError(tab, current) : null;
-  var success = touched && !error;
+  var headingError = touched ? getError('Заголовок', heading, isMobile) : null;
+  var textError = touched ? getError('Текст', text, isMobile) : null;
+  var error = null;
+  if (touched) {
+    if (tab === 'Заголовок') {
+      error = headingError || (textError ? 'Настройте блок «Текст»' : null);
+    } else {
+      error = textError || (headingError ? 'Настройте блок «Заголовок»' : null);
+    }
+  }
+  var success = touched && !headingError && !textError;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     ref: wrapperRef,
     className: 'W_FontTester' + (error ? ' W_FontTester--error' : success ? ' W_FontTester--success' : '')
@@ -16844,7 +16890,7 @@ function W_FontTester() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "A_FontTesterCardHeading",
     style: headingStyle
-  }, "\u0414\u043E\u0433\u043D\u0430\u043B\u0438 \u0438 \u043F\u0435\u0440\u0435\u0433\u043D\u0430\u043B\u0438 \u0410\u043C\u0435\u0440\u0438\u043A\u0443 \u0432\xA0\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435 \u043A\u043D\u0438\u0436\u0435\u043A"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  }, "\u0414\u043E\u0433\u043D\u0430\u043B\u0438 \u0438 \u043F\u0435\u0440\u0435\u0433\u043D\u0430\u043B\u0438 \u0410\u043C\u0435\u0440\u0438\u043A\u0443 \u0432\xA0\u0434\u0438\u0437\u0430\u0439\u043D\u0435 \u043A\u043D\u0438\u0436\u0435\u043A"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "A_FontTesterCardBody",
     style: textStyle
   }, "\u0411\u044B\u043B\u043E \u043B\u0438\xA0\u0434\u0435\u043B\u043E \u0432\xA0\u0442\u043E\u043C, \u0447\u0442\u043E\xA0\u0410\u043C\u0435\u0440\u0438\u043A\u0430 \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u043B\u0430 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u044C \u043A\u043D\u0438\u0433\u0438 \u0441\u043E\u0432\u0441\u0435\u043C? \u041D\u0430\u0448\u0438 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0438 \u0433\u043B\u0430\u0441\u044F\u0442, \u0447\u0442\u043E\xA0\u043D\u0435\u0442. \u0414\u0435\u043B\u043E \u0432\xA0\u0438\u0441\u043A\u043B\u044E\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u043C \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0435 \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u043E\u0432 \u043A\xA0\u043A\u043D\u0438\u0436\u043D\u043E\u043C\u0443 \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0443 \u0432\xA0\u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u0421\u041D\u0413. \u0412\u0441\u0435 \u0431\u043E\u043B\u0435\u0435 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0435 \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u044B\u043F\u0443\u0441\u043A\u0430\u044E\u0442 \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u044B \u0438\xA0\u043D\u0430\u0447\u0438\u043D\u0430\u044E\u0449\u0438\u0435 \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u044B.")), error && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
@@ -16868,7 +16914,7 @@ function W_FontTester() {
     }, t);
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "M_FontTesterSliders"
-  }, SLIDERS[tab].map(function (s) {
+  }, sliders[tab].map(function (s) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(M_FontTesterSlider, {
       key: s.key,
       label: s.label,
@@ -16894,7 +16940,7 @@ function W_FontTester() {
     }, t);
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "M_FontTesterSliders"
-  }, SLIDERS[tab].map(function (s) {
+  }, sliders[tab].map(function (s) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(M_FontTesterSlider, {
       key: s.key,
       label: s.label,

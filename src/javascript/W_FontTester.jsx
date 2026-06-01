@@ -4,13 +4,13 @@ import { createPortal } from 'react-dom'
 
 const TABS = ['Заголовок', 'Текст']
 
-const HEADING_DEFAULTS = { lineHeight: 1, fontSize: 38, marginBottom: 12 }
+const HEADING_DEFAULTS = { lineHeight: 1, fontSize: 28, marginBottom: 12 }
 const TEXT_DEFAULTS = { lineHeight: 1, fontSize: 20 }
 
 const SLIDERS = {
   Заголовок: [
     { key: 'lineHeight', label: 'Интерлиньяж', min: 0.8, max: 1.8, step: 0.01 },
-    { key: 'fontSize', label: 'Кегль', min: 38, max: 48, step: 1 },
+    { key: 'fontSize', label: 'Кегль', min: 28, max: 44, step: 1 },
     {
       key: 'marginBottom',
       label: 'Отступ после заголовка',
@@ -21,26 +21,52 @@ const SLIDERS = {
   ],
   Текст: [
     { key: 'lineHeight', label: 'Интерлиньяж', min: 0.8, max: 1.8, step: 0.01 },
-    { key: 'fontSize', label: 'Кегль', min: 20, max: 30, step: 1 }
+    { key: 'fontSize', label: 'Кегль', min: 18, max: 30, step: 1 }
   ]
 }
 
-function getError(tab, { fontSize, lineHeight }) {
+const MOBILE_SLIDERS = {
+  Заголовок: [
+    { key: 'lineHeight', label: 'Интерлиньяж', min: 0.8, max: 1.8, step: 0.01 },
+    { key: 'fontSize', label: 'Кегль', min: 18, max: 28, step: 1 },
+    {
+      key: 'marginBottom',
+      label: 'Отступ после заголовка',
+      min: 0,
+      max: 50,
+      step: 1
+    }
+  ],
+  Текст: [
+    { key: 'lineHeight', label: 'Интерлиньяж', min: 0.8, max: 1.8, step: 0.01 },
+    { key: 'fontSize', label: 'Кегль', min: 14, max: 22, step: 1 }
+  ]
+}
+
+function getError(tab, { fontSize, lineHeight, marginBottom }, isMobile) {
   const lh = Math.round(lineHeight * 100)
 
   if (tab === 'Заголовок') {
-    const lhOk =
-      (fontSize >= 38 && fontSize <= 43 && lh >= 118 && lh <= 120) ||
-      (fontSize >= 44 && fontSize <= 48 && lh >= 110 && lh <= 116)
+    if (marginBottom < 10 * lineHeight + 2) return 'Отступ меньше интерлиньяжа'
+
+    const lhOk = isMobile
+      ? (fontSize >= 14 && fontSize <= 18 && lh >= 110 && lh <= 130) ||
+        (fontSize >= 19 && fontSize <= 28 && lh >= 110 && lh <= 120)
+      : (fontSize >= 28 && fontSize <= 30 && lh >= 110 && lh <= 120) ||
+        (fontSize >= 31 && fontSize <= 44 && lh >= 112 && lh <= 116)
     if (lhOk) return null
     return 'Ошибка в интерлиньяже'
   }
 
   if (tab === 'Текст') {
-    const sizeOk = fontSize >= 22 && fontSize <= 28
-    const lhOk =
-      (fontSize >= 22 && fontSize <= 24 && lh >= 134 && lh <= 144) ||
-      (fontSize >= 25 && fontSize <= 28 && lh >= 140 && lh <= 150)
+    const sizeOk = isMobile
+      ? fontSize >= 14 && fontSize <= 22
+      : fontSize >= 18 && fontSize <= 28
+    const lhOk = isMobile
+      ? (fontSize >= 14 && fontSize <= 18 && lh >= 130 && lh <= 144) ||
+        (fontSize >= 19 && fontSize <= 22 && lh >= 130 && lh <= 142)
+      : (fontSize >= 18 && fontSize <= 24 && lh >= 134 && lh <= 144) ||
+        (fontSize >= 25 && fontSize <= 28 && lh >= 140 && lh <= 150)
     if (lhOk) return null
     if (!sizeOk && !lhOk) return 'Ошибка в кегле и интерлиньяже'
     if (!sizeOk) return 'Ошибка в кегле'
@@ -100,6 +126,7 @@ function W_FontTester() {
   const [sheetVisible, setSheetVisible] = useState(false)
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 743)
   const wrapperRef = useRef(null)
+  const sliders = isMobile ? MOBILE_SLIDERS : SLIDERS
 
   useEffect(() => {
     const handleScroll = () => {
@@ -121,8 +148,19 @@ function W_FontTester() {
     }
   }, [])
 
-  const error = touched ? getError(tab, current) : null
-  const success = touched && !error
+  const headingError = touched ? getError('Заголовок', heading, isMobile) : null
+  const textError = touched ? getError('Текст', text, isMobile) : null
+
+  let error = null
+  if (touched) {
+    if (tab === 'Заголовок') {
+      error = headingError || (textError ? 'Настройте блок «Текст»' : null)
+    } else {
+      error = textError || (headingError ? 'Настройте блок «Заголовок»' : null)
+    }
+  }
+
+  const success = touched && !headingError && !textError
   return (
     <div
       ref={wrapperRef}
@@ -142,7 +180,7 @@ function W_FontTester() {
         </p>
         <div className="M_FontTesterCard">
           <p className="A_FontTesterCardHeading" style={headingStyle}>
-            Догнали и перегнали Америку в производстве книжек
+            Догнали и перегнали Америку в дизайне книжек
           </p>
           <p className="A_FontTesterCardBody" style={textStyle}>
             Было ли дело в том, что Америка перестала производить книги совсем?
@@ -182,7 +220,7 @@ function W_FontTester() {
               ))}
             </div>
             <div className="M_FontTesterSliders">
-              {SLIDERS[tab].map((s) => (
+              {sliders[tab].map((s) => (
                 <M_FontTesterSlider
                   key={s.key}
                   label={s.label}
@@ -214,7 +252,7 @@ function W_FontTester() {
             ))}
           </div>
           <div className="M_FontTesterSliders">
-            {SLIDERS[tab].map((s) => (
+            {sliders[tab].map((s) => (
               <M_FontTesterSlider
                 key={s.key}
                 label={s.label}
